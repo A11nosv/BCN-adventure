@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonButtons, IonBackButton, IonIcon, IonButton, IonCard, IonCardContent, IonProgressBar, IonBadge, IonList, IonItem, IonLabel, IonModal, IonFab, IonFabButton } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { timeOutline, walkOutline, locationOutline, play, bulbOutline, checkmarkCircle, trophyOutline, mapOutline, listOutline, closeOutline, locate, navigate, chevronDownOutline, chevronUpOutline, playOutline, expandOutline, contractOutline } from 'ionicons/icons';
+import { timeOutline, walkOutline, locationOutline, play, bulbOutline, checkmarkCircle, trophyOutline, mapOutline, listOutline, closeOutline, locate, navigate, chevronDownOutline, chevronUpOutline, playOutline, expandOutline, contractOutline, cashOutline, time } from 'ionicons/icons';
 import * as L from 'leaflet';
 import { Geolocation } from '@capacitor/geolocation';
 
@@ -16,6 +16,10 @@ interface Stop {
   info: string;
   theatricalInfo: string;
   imageUrl: string;
+  museumInfo?: {
+    prices: string;
+    note: string;
+  };
 }
 
 interface MapDetails {
@@ -86,7 +90,7 @@ export class MapDetailsPage implements OnInit, OnDestroy {
       title: 'Bakeno (S. VI - II a.C.)',
       duration: '2h 30min',
       distance: '5.2 km',
-      description: 'Viaja a la Barcelona de los íberos. En este recorrido descubrirás los dos núcleos de la antigua Barkeno: el asentamiento sagrado del Monte Taber y el gran centro comercial y de vigilancia en la montaña de Montjuïc. Siente el viento entre las chozas de barro y piedra mientras exploras los vestigios de los antiguos layetanos.',
+      description: 'Descubre los orígenes layetanos de Barcelona entre el Monte Taber y Montjuïc.',
       center: [41.3750, 2.1700],
       zoom: 14,
       stops: [
@@ -94,78 +98,218 @@ export class MapDetailsPage implements OnInit, OnDestroy {
           id: 'taber-summit',
           title: 'La Cima del Monte Taber',
           hints: [
-            'Busca el punto más alto donde los dioses vigilan el mar.',
-            'Cerca de donde cuatro columnas romanas aún se yerguen orgullosas.',
-            'Encuentra una placa en el suelo del carrer del Paradís que marca los 16,9 metros sobre el nivel del mar.'
+            'Lleva tu ofrenda a la morada de los dioses layetanos, el lugar donde el humo de nuestros hogares toca el cielo.',
+            'Busca la cima de la colina donde los sacerdotes vigilan la salida del sol sobre el mar.',
+            'Sube hasta el Carrer del Paradís y busca la placa que marca los 16,9 metros de altitud.'
           ],
-          description: 'Aquí, en el punto más alto, los layetanos establecieron su mirada sobre el llano.',
+          description: 'Núcleo sagrado layetano.',
           coords: [41.3835, 2.1772],
-          info: 'El Monte Taber era el núcleo del asentamiento. Aunque hoy vemos restos romanos, bajo ellos yacen los cimientos de la Barkeno íbera.',
+          info: 'Bajo el foro romano yacen los cimientos de la Barkeno íbera.',
           imageUrl: 'assets/images/bakeno/taber.jpg',
-          theatricalInfo: "¡Alto, viajero! Pisáis suelo sagrado. Aquí, donde el Monte Taber besa las nubes, mis antepasados alzaron sus hogares de piedra. Desde esta cima, el humo de nuestros hogares sube directo a los dioses, mientras nuestros ojos vigilan la espuma del mar. ¡Ved cómo el sol ilumina el llano que nos da la vida!"
+          theatricalInfo: "¡Alto, viajero! Pisáis suelo sagrado. Aquí nuestros antepasados alzaron sus hogares de piedra para estar cerca de los dioses."
         },
         {
           id: 'just-pastor',
           title: 'El Taller de Cerámica',
           hints: [
-            'Baja hacia la plaza donde los santos mártires tienen su basílica.',
-            'Un lugar donde el agua y el barro daban forma a la vida cotidiana.',
-            'Plaza de Sant Just, donde las excavaciones revelaron silos de grano e industria íbera.'
+            '¿Dónde se moldea el barro de la tierra para guardar nuestro vino y nuestro aceite?',
+            'Baja hacia el lugar donde los artesanos cuecen sus vasijas cerca de la fuente de agua dulce.',
+            'Dirígete a la Plaza de Sant Just, donde las excavaciones revelaron los antiguos silos alfareros.'
           ],
-          description: 'Los artesanos íberos trabajaban aquí la arcilla de la tierra.',
+          description: 'Artesanía íbera.',
           coords: [41.3828, 2.1779],
-          info: 'En el subsuelo de la Basílica de los Santos Mártires Justo y Pastor se han hallado los restos más significativos de la industria alfarera de Barkeno.',
+          info: 'Restos de industria alfarera hallados bajo la basílica de Sant Just.',
           imageUrl: 'assets/images/bakeno/ceramica.jpg',
-          theatricalInfo: "¿Oís el crepitar del fuego? Mis manos están manchadas con la sangre de la tierra: el barro rojo. Aquí moldeamos las vasijas que guardarán el vino y el aceite para el invierno. El torno no deja de girar, y el horno devora leña para que nuestra gente nunca carezca de sustento."
+          theatricalInfo: "¿Oís el crepitar del fuego? Moldeamos las vasijas que guardarán nuestra riqueza."
         },
         {
           id: 'placa-nova',
           title: 'La Puerta del Llano',
           hints: [
-            'Ve hacia la gran catedral, pero quédate donde las torres vigilan la entrada.',
-            'Donde hoy ves letras gigantes que deletrean el nombre de la colonia romana.',
-            'Plaza Nova, el límite donde el monte se encuentra con el antiguo llano.'
+            'Cruza el paso donde terminan las cabañas y comienzan los campos de trigo de la llanura.',
+            'Busca la frontera natural donde los pastores traen sus rebaños antes de entrar al recinto sagrado.',
+            'Ve a la Plaza Nova, allí donde las torres romanas se alzaron siglos después sobre nuestro camino.'
           ],
-          description: 'Aquí terminaba la protección del monte y comenzaban los campos de cultivo.',
+          description: 'Acceso a los campos.',
           coords: [41.3845, 2.1754],
-          info: 'Aunque las torres actuales son romanas, este paso natural ya era utilizado por los íberos para acceder a la zona agrícola del llano de Barcelona.',
+          info: 'Paso natural utilizado desde época íbera.',
           imageUrl: 'assets/images/bakeno/puerta.jpg',
-          theatricalInfo: "Mirad hacia el valle. Por este paso cruzan los carros cargados con el trigo de las llanuras. Es la frontera entre la seguridad de nuestras murallas y la inmensidad de los campos. Aquí intercambiamos pieles por sal, y noticias por promesas de lluvia."
+          theatricalInfo: "Mirad hacia el valle. Por aquí cruzan los carros con el trigo de las llanuras."
         },
         {
           id: 'montjuic-silos',
           title: 'Los Silos del Morrot',
           hints: [
-            'Desplázate hacia la montaña que mira al puerto, donde se guardaba el tesoro dorado de la tierra.',
-            'En la ladera que hoy domina el Morrot, se excavaron más de 80 pozos de almacenaje.',
-            'Busca la vertiente este de Montjuïc, donde los íberos comerciaban con los griegos.'
+            'Ve al gran almacén del sol, el lugar donde guardamos el tesoro que vendemos a los barcos extranjeros.',
+            'Busca la ladera que domina el puerto natural, excavada con decenas de pozos circulares.',
+            'Encuentra la zona del Morrot en la ladera este de la montaña de Montjuïc.'
           ],
-          description: 'El gran almacén de Barkeno. Aquí se guardaba el excedente de grano para exportar por todo el Mediterráneo.',
+          description: 'El gran almacén.',
           coords: [41.3650, 2.1650],
-          info: 'Los silos de Montjuïc demuestran que Barkeno no era solo un poblado, sino un potente centro comercial conectado con las rutas del Mediterráneo.',
+          info: 'Centro comercial conectado con las rutas del Mediterráneo.',
           imageUrl: 'assets/images/bakeno/silos.jpg',
-          theatricalInfo: "¡Mirad estas profundidades! Son las entrañas de la montaña, donde guardamos el sol convertido en grano. Los grandes barcos de tierras lejanas, tripulados por hombres de lenguas extrañas, vienen buscando este tesoro. ¡Nadie en el Mediterráneo tiene un grano tan rubio como el de los campos de Barkeno!"
+          theatricalInfo: "¡Entrañas de la montaña! Guardamos el sol convertido en grano para los barcos lejanos."
         },
         {
           id: 'montjuic-poblado',
           title: 'El Poblado de la Cumbre',
           hints: [
-            'Sube hasta lo más alto de la montaña del rayo.',
-            'Bajo los muros del actual castillo, duermen los restos del poblado que controlaba la costa.',
-            'Encuentra el emplazamiento del antiguo poblado íbero junto al foso del Castillo de Montjuïc.'
+            '¿Quién vigila los rayos que caen sobre la montaña y los barcos que asoman por el horizonte?',
+            'Sube al puesto de guardia más alto, el nido que domina la desembocadura del gran río.',
+            'Alcanza la cima de Montjuïc, junto a los muros del actual Castillo.'
           ],
-          description: 'Desde esta posición privilegiada, los layetanos controlaban el acceso por mar y la desembocadura del Llobregat.',
+          description: 'Punto estratégico.',
           coords: [41.3630, 2.1660],
-          info: 'Este poblado en la cima era el punto estratégico de vigilancia más importante de la zona antes de la fundación de la ciudad romana.',
+          info: 'Punto de vigilancia más importante antes de la fundación de la ciudad romana.',
           imageUrl: 'assets/images/bakeno/castillo.jpg',
-          theatricalInfo: "Desde este nido de águilas, nada escapa a nuestra vista. Ni el bajel extranjero que asoma por el horizonte, ni el guerrero que cruza el gran río Llobregat. Somos los guardianes de la costa, los señores del rayo de Montjuïc. Mientras nosotros vigilemos, Barkeno dormirá tranquila."
+          theatricalInfo: "Desde este nido de águilas, nada escapa a nuestra vista. Somos los guardianes de Barkeno."
+        }
+      ]
+    },
+    'barcino': {
+      title: 'Barcino: El Camino de Roma',
+      duration: '2h 30min',
+      distance: '4.2 km',
+      description: 'Entra en la colonia Julia Augusta Faventia Paterna Barcino como un ciudadano romano.',
+      center: [41.3840, 2.1750],
+      zoom: 16,
+      stops: [
+        {
+          id: 'maritima',
+          title: "Puerta del Mar y Termas Portuarias",
+          hints: [
+            'Acabas de desembarcar de un gran birreme cargado de ánforas. ¿Dónde irías a lavarte el salitre antes de entrar en la colonia?',
+            'Busca la entrada sur, el lugar donde las mercancías del imperio entran a través de torres defensivas.',
+            'Ve al Carrer de Regomir, donde los restos del Pati Llimona guardan la puerta marítima.'
+          ],
+          description: "La gran entrada comercial.",
+          coords: [41.3815, 2.1795],
+          info: "La Puerta de Mar era la más transitada de la colonia.",
+          imageUrl: "assets/images/barcino/puerta_mar.jpg",
+          theatricalInfo: "¡Salve! Acabáis de desembarcar en la perla del Mediterráneo. Lavad vuestras deudas y el salitre en nuestras termas antes de subir al Foro."
+        },
+        {
+          id: 'necropolis',
+          title: "Cementerio Romano (Vía Sepulcral)",
+          hints: [
+            'Los ciudadanos de Barcino descansan fuera de los muros. Ve a presentar tus respetos a los antepasados para que te den su bendición.',
+            'Busca el lugar donde las estelas de piedra se alinean junto al camino de salida hacia el norte.',
+            'Dirígete a la Plaza de la Vila de Madrid, cerca de la calle Canuda.'
+          ],
+          description: "Descanso de los ciudadanos.",
+          coords: [41.3848, 2.1725],
+          info: "Necrópolis de los siglos II y III situada junto a una vía de salida de la ciudad.",
+          imageUrl: "assets/images/barcino/necropolis.jpg",
+          theatricalInfo: "Caminad con respeto. Aquí descansan nuestros padres, fuera de la muralla pero bajo el sol de Roma."
+        },
+        {
+          id: 'acueducto',
+          title: "El Acueducto (Plaza de los Arcos)",
+          hints: [
+            'Sigue el rastro de la serpiente de piedra que trae el agua pura desde los montes lejanos.',
+            'Busca los arcos gigantes que alimentan nuestras fuentes y termas extramuros.',
+            'Encuentra la Plaza de los Arcos, frente a la fachada de la actual Catedral.'
+          ],
+          description: "Ingeniería hidráulica.",
+          coords: [41.3848, 2.1758],
+          info: "Recreación de un tramo de acueducto que traía agua desde Collserola.",
+          imageUrl: "assets/images/barcino/aqueducte.jpg",
+          theatricalInfo: "¡Ved el ingenio de nuestros ingenieros! El agua pura viaja por el aire sobre estos arcos."
+        },
+        {
+          id: 'puerta-nova',
+          title: "Puerta Romana (Plaza Nova)",
+          hints: [
+            'Entra triunfante por la puerta principal de la colonia, custodiada por los centuriones que vigilan el llano.',
+            'Busca las dos grandes torres cilíndricas que vigilan el camino hacia los campos agrícolas.',
+            'Ve a la Plaza Nova, donde las letras gigantes de BARCINO te darán la bienvenida.'
+          ],
+          description: "La gran muralla.",
+          coords: [41.3845, 2.1754],
+          info: "Puerta praetoria de la ciudad, protegida por torres cilíndricas.",
+          imageUrl: "assets/images/barcino/muralla.jpg",
+          theatricalInfo: "¡Deteneos ante estas torres! Son el cinturón de piedra de Barcino."
+        },
+        {
+          id: 'domus-honorat',
+          title: "Domus de Sant Honorat",
+          hints: [
+            'Un rico patricio te invita a su mansión para admirar sus nuevos mosaicos y fuentes privadas lejos del ruido callejero.',
+            'Busca la residencia más lujosa situada justo detrás del centro de mando de la colonia.',
+            'Encuentra el Carrer de Sant Honorat, junto al Palau de la Generalitat.'
+          ],
+          description: "Vivienda patricia.",
+          coords: [41.3828, 2.1765],
+          info: "Restos de una gran casa patricia con impresionantes mosaicos.",
+          imageUrl: "assets/images/barcino/domus.jpg",
+          theatricalInfo: "Bienvenidos a mi domus. Pasad al peristilo y dejad que el frescor de la fuente os alivie."
+        },
+        {
+          id: 'foro',
+          title: "El Foro (Plaça Sant Jaume)",
+          hints: [
+            'Es hora de votar en la Curia y escuchar los pleitos en la Basílica. ¡Al centro de la ciudad donde late la vida pública!',
+            'Ve al cruce del Cardo y el Decumanus, donde el mercado y la política se mezclan bajo las arcadas.',
+            'Dirígete a la Plaza Sant Jaume, el corazón administrativo de Barcelona.'
+          ],
+          description: "Corazón de la colonia.",
+          coords: [41.3828, 2.1770],
+          info: "Centro administrativo y comercial de Barcino.",
+          imageUrl: "assets/images/barcino/foro.jpg",
+          theatricalInfo: "¡Escuchad el bullicio! Aquí late la vida de Roma en Hispania."
+        },
+        {
+          id: 'taberna',
+          title: "Taberna de Barcino: El Sabor de Roma",
+          hints: [
+            '¿Tienes sed tras tanto caminar? Busca el mulsum más dulce y el garum más sabroso para reponer fuerzas.',
+            'Busca el local abierto a la calle donde los soldados romanos brindan por la salud del César.',
+            'Ve al carrer de la Llibreteria, a pocos pasos de la plaza del gobierno.'
+          ],
+          description: "Vida social y gastronomía.",
+          coords: [41.3832, 2.1775],
+          info: "Las tabernas servían comida rápida y vino.",
+          imageUrl: "assets/images/barcino/taberna.jpg",
+          theatricalInfo: "¡Pasad, pasad! No todo es política. Mi vino mulsum os devolverá las fuerzas."
+        },
+        {
+          id: 'templo',
+          title: "Templo de Augusto",
+          hints: [
+            'Ves a adorar al Divino Augusto, el primer emperador, en el santuario más sagrado de toda la colonia.',
+            'Busca las cuatro columnas que tocan el cielo en el punto más elevado de la colina sagrada.',
+            'Entra en el Carrer del Paradís número 10.'
+          ],
+          description: "Culto imperial.",
+          coords: [41.3835, 2.1772],
+          info: "Templo dedicado al culto de Augusto en la cima del Mons Taber.",
+          imageUrl: "assets/images/barcino/temple.jpg",
+          theatricalInfo: "Estamos ante la gloria de Roma. Estas columnas tocan el cielo."
+        },
+        {
+          id: 'muhba',
+          title: "MUHBA: El Subsuelo de Barcino",
+          hints: [
+            'La ciudad real ha quedado sepultada bajo tus pies. Busca el portal para descender a las calles originales de piedra.',
+            'Ve a la antigua zona de palacios reales donde hoy puedes bajar al nivel del siglo I.',
+            'Termina tu viaje en la Plaza del Rei, en la entrada del Museo de Historia de Barcelona.'
+          ],
+          description: "Viaje al pasado.",
+          coords: [41.3840, 2.1775],
+          info: "Museo que permite caminar por las calles originales de Barcino.",
+          imageUrl: "assets/images/barcino/muhba.jpg",
+          theatricalInfo: "Vuestro viaje termina bajando al pasado. ¡Descended a las tinieblas de la historia!",
+          museumInfo: {
+            prices: "Entrada General: 7,00 € | Reducida: 5,00 €",
+            note: "Gratis: Domingos a partir de las 15:00h y primer domingo de mes."
+          }
         }
       ]
     }
   };
 
   constructor() {
-    addIcons({ timeOutline, walkOutline, locationOutline, play, bulbOutline, checkmarkCircle, trophyOutline, mapOutline, listOutline, closeOutline, locate, navigate, chevronDownOutline, chevronUpOutline, playOutline, expandOutline, contractOutline });
+    addIcons({ timeOutline, walkOutline, locationOutline, play, bulbOutline, checkmarkCircle, trophyOutline, mapOutline, listOutline, closeOutline, locate, navigate, chevronDownOutline, chevronUpOutline, playOutline, expandOutline, contractOutline, cashOutline, time });
   }
 
   ngOnInit() {
@@ -276,13 +420,10 @@ export class MapDetailsPage implements OnInit, OnDestroy {
     if (!this.map) return;
 
     const points: L.LatLng[] = [];
-    
-    // Añadir ubicación del usuario
     if (this.userCoords) {
       points.push(L.latLng(this.userCoords[0], this.userCoords[1]));
     }
 
-    // Añadir todas las paradas ya descubiertas
     if (this.details) {
       this.details.stops.forEach((stop, index) => {
         if (this.resolvedStops[index]) {
@@ -354,7 +495,9 @@ export class MapDetailsPage implements OnInit, OnDestroy {
   }
 
   closeDiscovery() {
+    if (!this.showDiscoveryModal) return;
     this.showDiscoveryModal = false;
+    
     if (!this.isViewingHistory) {
       if (this.currentStopIndex < (this.details?.stops.length || 0) - 1) {
         this.currentStopIndex++;
@@ -363,12 +506,13 @@ export class MapDetailsPage implements OnInit, OnDestroy {
         this.finishRoute();
       }
     }
+    this.isViewingHistory = false;
   }
 
   private finishRoute() {
     this.isGameActive = false;
     this.stopTracking();
-    alert(`¡Felicidades! Has completado la ruta de Bakeno.\nTu puntuación final es: ${this.score}`);
+    alert(`¡Felicidades! Has completado la ruta de ${this.details?.title}.\nTu puntuación final es: ${this.score}`);
   }
 
   private calculateDistance(lat1: number, lon1: number, lat2: number, lon2: number) {

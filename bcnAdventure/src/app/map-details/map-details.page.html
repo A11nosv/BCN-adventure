@@ -168,6 +168,18 @@
           <p>{{ details?.stops?.[displayStopIndex]?.info }}</p>
         </div>
 
+        <!-- Museum Special Info -->
+        <div class="museum-info-card ion-margin-top" *ngIf="details?.stops?.[displayStopIndex]?.museumInfo">
+          <div class="museum-header">
+            <ion-icon name="cash-outline"></ion-icon>
+            <span>Información de Visita (MUHBA)</span>
+          </div>
+          <div class="museum-details">
+            <p class="prices"><strong>Tarifas:</strong> {{ details?.stops?.[displayStopIndex]?.museumInfo?.prices }}</p>
+            <p class="note">{{ details?.stops?.[displayStopIndex]?.museumInfo?.note }}</p>
+          </div>
+        </div>
+
         <ion-button expand="block" shape="round" color="success" (click)="closeDiscovery()" class="ion-margin-top">
           {{ isViewingHistory ? 'Cerrar' : 'Continuar Aventura' }}
         </ion-button>

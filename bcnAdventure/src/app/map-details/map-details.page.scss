@@ -372,6 +372,44 @@ ion-header {
       line-height: 1.5;
     }
   }
+
+  .museum-info-card {
+    background: #e3f2fd;
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid #bbdefb;
+
+    .museum-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #1976d2;
+      font-weight: 700;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+
+      ion-icon {
+        font-size: 1.2rem;
+      }
+    }
+
+    .museum-details {
+      p {
+        margin: 4px 0;
+        font-size: 0.9rem;
+        color: #1565c0;
+        line-height: 1.4;
+      }
+
+      .note {
+        font-size: 0.8rem;
+        font-style: italic;
+        border-top: 1px solid rgba(25, 118, 210, 0.1);
+        padding-top: 8px;
+        margin-top: 8px;
+      }
+    }
+  }
 }
 
 ion-content {
