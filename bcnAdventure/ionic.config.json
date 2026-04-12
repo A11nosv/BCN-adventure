@@ -1,0 +1,7 @@
+{
+  "name": "bcnAdventure",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

@@ -1,0 +1,28 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>BCN Adventure</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="welcome-container ion-padding">
+    <h1>Explora Barcelona</h1>
+    <p>Selecciona una temática para comenzar tu aventura gamificada por la ciudad.</p>
+  </div>
+
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="6" size-md="4" *ngFor="let theme of themes">
+        <ion-card class="theme-card" [style.--theme-color]="theme.color" (click)="selectTheme(theme)">
+          <div class="card-icon-container">
+            <ion-icon [name]="theme.icon"></ion-icon>
+          </div>
+          <ion-card-header>
+            <ion-card-title>{{ theme.title }}</ion-card-title>
+            <ion-card-subtitle>{{ theme.subtitle }}</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

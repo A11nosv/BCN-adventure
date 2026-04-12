@@ -1,0 +1,36 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ themeInfo?.title || 'Seleccionar Mapa' }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="header-banner" [style.background-color]="themeInfo?.color">
+    <div class="ion-padding">
+      <h1>Rutas Disponibles</h1>
+      <p>Escoge tu próxima aventura en Barcelona</p>
+    </div>
+  </div>
+
+  <div class="content-container">
+    <ion-list lines="full" class="ion-no-padding">
+      <ion-item *ngFor="let map of themeInfo?.maps" button (click)="startAdventure(map.id)" class="map-item">
+        <div slot="start" class="icon-circle" [style.background-color]="themeInfo?.color">
+          <ion-icon [name]="map.icon"></ion-icon>
+        </div>
+        <ion-label>
+          <h2>{{ map.title }}</h2>
+          <p>{{ map.description }}</p>
+        </ion-label>
+        <ion-badge slot="end" color="light">Gratis</ion-badge>
+      </ion-item>
+    </ion-list>
+
+    <div *ngIf="!themeInfo" class="ion-padding ion-text-center">
+      <p>Cargando información de la temática...</p>
+    </div>
+  </div>
+</ion-content>

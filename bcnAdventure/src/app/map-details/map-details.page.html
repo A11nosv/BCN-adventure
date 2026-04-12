@@ -1,0 +1,177 @@
+<ion-header class="ion-no-border" [class.hidden]="isMapExpanded">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ details?.title }}</ion-title>
+    <ion-buttons slot="end" *ngIf="isGameActive">
+      <ion-badge color="warning">
+        <ion-icon name="trophy-outline"></ion-icon>
+        {{ score }}
+      </ion-badge>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="map-wrapper" [class.game-map]="isGameActive" [class.expanded]="isMapExpanded">
+    <div id="map" class="map-container"></div>
+    
+    <ion-fab vertical="top" horizontal="end" slot="fixed" class="map-fab">
+      <ion-fab-button size="small" (click)="centerOnUser()" color="light">
+        <ion-icon name="locate"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button size="small" (click)="toggleMapExpansion()" color="primary" class="ion-margin-top">
+        <ion-icon [name]="isMapExpanded ? 'contract-outline' : 'expand-outline'"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </div>
+
+  <!-- Route Summary View -->
+  <div class="details-card-container" *ngIf="!isGameActive && !isMapExpanded">
+    <ion-card class="route-details-card">
+      <ion-card-content>
+        <div class="route-stats">
+          <div class="stat-item">
+            <ion-icon name="time-outline"></ion-icon>
+            <div class="stat-text">
+              <span class="stat-label">Duración</span>
+              <span class="stat-value">{{ details?.duration }}</span>
+            </div>
+          </div>
+          <div class="stat-item">
+            <ion-icon name="walk-outline"></ion-icon>
+            <div class="stat-text">
+              <span class="stat-label">Distancia</span>
+              <span class="stat-value">{{ details?.distance }}</span>
+            </div>
+          </div>
+          <div class="stat-item">
+            <ion-icon name="location-outline"></ion-icon>
+            <div class="stat-text">
+              <span class="stat-label">Paradas</span>
+              <span class="stat-value">{{ details?.stops?.length || 0 }}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="route-description ion-padding-top">
+          <h3>Sobre esta aventura</h3>
+          <p>{{ details?.description }}</p>
+        </div>
+
+        <ion-button expand="block" shape="round" class="start-button ion-margin-top" (click)="startAdventure()">
+          <ion-icon slot="start" name="play"></ion-icon>
+          Comenzar Ruta
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <!-- Game UI View -->
+  <div class="game-ui-container" *ngIf="isGameActive && details && !isMapExpanded">
+    <ion-card class="game-card">
+      <ion-card-content>
+        <div class="game-header">
+          <div class="stop-progress">
+            <span class="stop-label">Buscando parada {{ currentStopIndex + 1 }} de {{ details.stops.length }}</span>
+            <ion-progress-bar [value]="(currentStopIndex + 1) / (details.stops.length || 1)"></ion-progress-bar>
+          </div>
+        </div>
+
+        <div class="hints-container">
+          <div class="hint-box visible current-hint-box">
+            <div class="hint-header">
+              <ion-icon name="bulb-outline"></ion-icon>
+              <span>Pista {{ currentHintIndex + 1 }} de 3</span>
+            </div>
+            <p class="hint-text">{{ details.stops[currentStopIndex].hints[currentHintIndex] }}</p>
+          </div>
+        </div>
+
+        <div class="game-actions">
+          <ion-button expand="block" fill="solid" shape="round" color="warning" (click)="useHint()" *ngIf="currentHintIndex < 2" class="unlock-button">
+            <ion-icon slot="start" name="bulb-outline"></ion-icon>
+            Desbloquear siguiente pista
+          </ion-button>
+
+          <ion-button expand="block" fill="outline" shape="round" color="primary" (click)="toggleMapExpansion()">
+            <ion-icon slot="start" name="map-outline"></ion-icon>
+            Ver mi posición en el mapa
+          </ion-button>
+          
+          <ion-button fill="clear" color="medium" size="small" (click)="simulateArrival()" class="ion-margin-top">
+            (Simular llegada para tests)
+          </ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Discovered Stops Section -->
+    <div class="resolved-stops-section ion-padding-horizontal">
+      <ion-button expand="block" fill="clear" color="dark" class="toggle-list-button" (click)="toggleResolvedList()">
+        <ion-icon slot="start" [name]="showResolvedList ? 'chevron-up-outline' : 'chevron-down-outline'"></ion-icon>
+        Paradas descubiertas ({{ resolvedStopsCount }})
+      </ion-button>
+
+      <div class="resolved-list-container" *ngIf="showResolvedList">
+        <ion-list lines="none">
+          <ion-item *ngFor="let stop of details.stops; let i = index" 
+                    [hidden]="!resolvedStops[i]" 
+                    button 
+                    (click)="openStopHistory(i)"
+                    class="resolved-item">
+            <ion-icon name="checkmark-circle" color="success" slot="start"></ion-icon>
+            <ion-label>
+              <h2>{{ stop.title }}</h2>
+              <p>Toca para ver información</p>
+            </ion-label>
+            <ion-icon name="play-outline" slot="end" color="medium" size="small"></ion-icon>
+          </ion-item>
+        </ion-list>
+        
+        <div *ngIf="resolvedStopsCount === 0" class="ion-padding ion-text-center empty-resolved">
+          <p>Aún no has descubierto ninguna parada.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Discovery Modal -->
+  <ion-modal [isOpen]="showDiscoveryModal" (didDismiss)="closeDiscovery()">
+    <ng-template>
+      <ion-header class="ion-no-border">
+        <ion-toolbar>
+          <ion-title>{{ isViewingHistory ? 'Información' : '¡Ubicación Descubierta!' }}</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="closeDiscovery()">
+              <ion-icon name="close-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding discovery-modal-content">
+        <div class="discovery-image-container">
+          <img [src]="details?.stops?.[displayStopIndex]?.imageUrl" [alt]="details?.stops?.[displayStopIndex]?.title">
+          <div class="discovery-overlay-title">
+            <h2>{{ details?.stops?.[displayStopIndex]?.title }}</h2>
+          </div>
+        </div>
+
+        <div class="theatrical-section ion-padding">
+          <ion-icon name="play-outline" class="theatre-icon"></ion-icon>
+          <p class="theatrical-text">"{{ details?.stops?.[displayStopIndex]?.theatricalInfo }}"</p>
+        </div>
+
+        <div class="info-section ion-padding">
+          <h3>Contexto Histórico</h3>
+          <p>{{ details?.stops?.[displayStopIndex]?.info }}</p>
+        </div>
+
+        <ion-button expand="block" shape="round" color="success" (click)="closeDiscovery()" class="ion-margin-top">
+          {{ isViewingHistory ? 'Cerrar' : 'Continuar Aventura' }}
+        </ion-button>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+</ion-content>

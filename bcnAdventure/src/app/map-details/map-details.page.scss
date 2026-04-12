@@ -1,0 +1,379 @@
+ion-header {
+  transition: transform 0.3s ease-in-out;
+  &.hidden {
+    transform: translateY(-100%);
+  }
+}
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  z-index: 1;
+  transition: height 0.3s ease-in-out;
+
+  &.game-map {
+    height: 40%;
+  }
+
+  &.expanded {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  .map-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .map-fab {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+}
+
+/* User Location Marker Styles */
+.user-location-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .pulse-container {
+    position: relative;
+    width: 20px;
+    height: 20px;
+
+    .pulse-dot {
+      width: 12px;
+      height: 12px;
+      background: #3880ff;
+      border: 2px solid white;
+      border-radius: 50%;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      z-index: 2;
+    }
+
+    .pulse-ring {
+      width: 20px;
+      height: 20px;
+      background: rgba(56, 128, 255, 0.4);
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: pulse 2s infinite;
+      z-index: 1;
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+.details-card-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  
+  .route-details-card {
+    margin: 0;
+    border-radius: 32px 32px 0 0;
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.1);
+    background: white;
+    padding: 16px 8px;
+
+    .route-stats {
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 1px solid #f0f0f0;
+      padding-bottom: 16px;
+
+      .stat-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        ion-icon {
+          font-size: 24px;
+          color: var(--ion-color-primary);
+        }
+
+        .stat-text {
+          display: flex;
+          flex-direction: column;
+
+          .stat-label {
+            font-size: 0.75rem;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+          }
+
+          .stat-value {
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 0.95rem;
+          }
+        }
+      }
+    }
+
+    .route-description {
+      h3 {
+        margin: 0 0 8px 0;
+        font-weight: 700;
+        color: #2c3e50;
+        font-size: 1.2rem;
+      }
+
+      p {
+        margin: 0;
+        color: #34495e;
+        line-height: 1.5;
+        font-size: 0.95rem;
+      }
+    }
+
+    .start-button {
+      --box-shadow: 0 4px 12px rgba(var(--ion-color-primary-rgb), 0.3);
+      font-weight: 600;
+      height: 52px;
+      margin-top: 24px;
+    }
+  }
+}
+
+.game-ui-container {
+  padding: 0 8px 24px 8px;
+  
+  .game-card {
+    border-radius: 24px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+
+    .stop-progress {
+      margin-bottom: 16px;
+      
+      .stop-label {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: #7f8c8d;
+        display: block;
+        margin-bottom: 8px;
+      }
+    }
+
+    .hint-box {
+      background: #f8f9fa;
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 12px;
+      border: 1px solid #edf0f2;
+      transition: all 0.3s ease;
+
+      &.current-hint-box {
+        background: white;
+        border: 2px solid #f1c40f;
+        box-shadow: 0 4px 12px rgba(241, 196, 15, 0.15);
+        padding: 20px 16px;
+
+        .hint-header {
+          span {
+            font-size: 1rem;
+            color: #f39c12;
+          }
+          ion-icon {
+            font-size: 1.4rem;
+          }
+        }
+
+        .hint-text {
+          font-size: 1.1rem;
+          margin-top: 12px;
+          font-weight: 500;
+        }
+      }
+
+      .hint-header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 4px;
+
+        ion-icon {
+          color: #f1c40f;
+          font-size: 1.1rem;
+        }
+
+        span {
+          font-weight: 700;
+          font-size: 0.85rem;
+          color: #2c3e50;
+        }
+      }
+
+      .hint-text {
+        margin: 4px 0 0 0;
+        font-size: 0.95rem;
+        color: #2c3e50;
+        line-height: 1.4;
+      }
+    }
+
+    .game-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 16px;
+
+      .unlock-button {
+        height: 50px;
+        font-weight: 700;
+        --box-shadow: 0 4px 8px rgba(241, 196, 15, 0.3);
+      }
+    }
+  }
+
+  .resolved-stops-section {
+    margin-top: 10px;
+
+    .toggle-list-button {
+      text-transform: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      --color: #2c3e50;
+    }
+
+    .resolved-list-container {
+      background: white;
+      border-radius: 16px;
+      margin-top: 8px;
+      padding: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+      ion-list {
+        background: transparent;
+        padding: 0;
+      }
+
+      .resolved-item {
+        --padding-start: 12px;
+        --inner-padding-end: 12px;
+        margin-bottom: 4px;
+        border-radius: 8px;
+        --background: #f8f9fa;
+
+        h2 {
+          font-weight: 600;
+          font-size: 0.95rem;
+          color: #2c3e50;
+        }
+
+        p {
+          font-size: 0.8rem;
+          color: #7f8c8d;
+        }
+      }
+
+      .empty-resolved {
+        color: #7f8c8d;
+        font-style: italic;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+.discovery-modal-content {
+  .discovery-image-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .discovery-overlay-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 40px 16px 16px 16px;
+      background: linear-gradient(transparent, rgba(0,0,0,0.8));
+      color: white;
+
+      h2 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .theatrical-section {
+    background: #fff9e6;
+    border-left: 4px solid #f1c40f;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative;
+
+    .theatre-icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 1.5rem;
+      color: #f1c40f;
+      opacity: 0.3;
+    }
+
+    .theatrical-text {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #5d4037;
+      margin: 0;
+    }
+  }
+
+  .info-section {
+    h3 {
+      font-weight: 700;
+      color: #2c3e50;
+      font-size: 1.1rem;
+      margin-top: 0;
+    }
+
+    p {
+      color: #455a64;
+      line-height: 1.5;
+    }
+  }
+}
+
+ion-content {
+  --background: #f5f7fa;
+}
