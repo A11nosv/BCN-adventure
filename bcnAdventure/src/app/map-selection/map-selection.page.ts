@@ -58,7 +58,8 @@ export class MapSelectionPage implements OnInit {
         { id: 'independencia', title: 'Guerra de la Independencia (1808 - 1814)', description: 'La ocupación napoleónica', icon: 'flag' },
         { id: 'rosa-foc', title: 'La Rosa de Fuego (1890 - 1909)', description: 'El auge del anarquismo barcelonés', icon: 'flag' },
         { id: 'setmana-tragica', title: 'Setmana Tràgica (1909)', description: 'Las revueltas populares de julio', icon: 'time' },
-        { id: 'guerra-civil', title: 'Guerra Civil (1936 - 1939)', description: 'Refugios antiaéreos y bombardeos', icon: 'flag' }
+        { id: 'guerra-civil', title: 'Guerra Civil (1936 - 1939)', description: 'Refugios antiaéreos y bombardeos', icon: 'flag' },
+        { id: 'inquisicion', title: 'La Inquisición (1487 - 1820)', description: 'La sombra del Santo Oficio en Barcelona', icon: 'flag' }
       ]
     },
     'arquitectura': {
@@ -71,7 +72,8 @@ export class MapSelectionPage implements OnInit {
         { id: 'park-guell', title: 'Park Güell (1900 - 1914)', description: 'Naturaleza y arquitectura', icon: 'business' },
         { id: 'sant-pau', title: 'Hospital de Sant Pau (1902 - 1930)', description: 'La ciudad jardín de Domènech i Montaner', icon: 'business' },
         { id: 'casa-batllo', title: 'Casa Batlló (1904 - 1906)', description: 'La fachada marítima de Gaudí', icon: 'business' },
-        { id: 'racionalismo', title: 'Racionalismo BCN (1929 - 1936)', description: 'La vanguardia del grupo GATCPAC', icon: 'business' }
+        { id: 'racionalismo', title: 'Racionalismo BCN (1929 - 1936)', description: 'La vanguardia del grupo GATCPAC', icon: 'business' },
+        { id: 'parques-jardines', title: 'Parques y Jardines', description: 'Oasis urbanos y paisajismo histórico', icon: 'business' }
       ]
     },
     'novelas': {
@@ -84,7 +86,9 @@ export class MapSelectionPage implements OnInit {
         { id: 'joan-marse-cai', title: 'Si te dicen que caí (1940 - 1950)', description: 'La dura postguerra de Joan Marsé', icon: 'book' },
         { id: 'nada', title: 'Nada (1940 - 1945)', description: 'La soledad urbana de Carmen Laforet', icon: 'book' },
         { id: 'joan-marse-teresa', title: 'Últimas tardes con Teresa (1956)', description: 'Amor y clases sociales en el Guinardó', icon: 'book' },
-        { id: 'sombra-viento', title: 'La Sombra del Viento (1945 - 1966)', description: 'El Cementerio de los Libros Olvidados', icon: 'book' }
+        { id: 'sombra-viento', title: 'La Sombra del Viento (1945 - 1966)', description: 'El Cementerio de los Libros Olvidados', icon: 'book' },
+        { id: 'rodoreda', title: 'Mercè Rodoreda: El universo de Colometa', description: 'La Barcelona de posguerra en el barrio de Gràcia', icon: 'book' },
+        { id: 'insolita-secreta', title: 'Barcelona Insólita y Secreta', description: 'Los misterios y curiosidades ocultas del Gótico', icon: 'book' }
       ]
     },
     'gastronomia': {

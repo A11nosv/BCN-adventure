@@ -1,0 +1,61 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" aria-label="Volver al inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ajustes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list lines="inset" aria-label="Ajustes de la aplicación">
+    <ion-item>
+      <ion-icon slot="start" name="moon-outline" color="primary" aria-hidden="true"></ion-icon>
+      <ion-label>Modo Oscuro</ion-label>
+      <ion-toggle slot="end" [checked]="settings.darkMode" (ionChange)="updateSetting('darkMode', $event.detail.checked)" aria-label="Activar o desactivar modo oscuro"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon slot="start" name="notifications-outline" color="success" aria-hidden="true"></ion-icon>
+      <ion-label>Notificaciones de proximidad</ion-label>
+      <ion-toggle slot="end" [checked]="settings.proximityNotifications" (ionChange)="updateSetting('proximityNotifications', $event.detail.checked)" aria-label="Activar o desactivar notificaciones de proximidad"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon slot="start" name="navigate-outline" color="tertiary" aria-hidden="true"></ion-icon>
+      <ion-label>Mostrar distancia</ion-label>
+      <ion-toggle slot="end" [checked]="settings.showDistance" (ionChange)="updateSetting('showDistance', $event.detail.checked)" aria-label="Mostrar u ocultar distancia a la siguiente parada"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon slot="start" name="language-outline" color="warning" aria-hidden="true"></ion-icon>
+      <ion-label>Idioma</ion-label>
+      <ion-select slot="end" [value]="settings.language" interface="popover" (ionChange)="updateSetting('language', $event.detail.value)" aria-label="Seleccionar idioma de la aplicación">
+        <ion-select-option value="es">Español</ion-select-option>
+        <ion-select-option value="ca">Català</ion-select-option>
+        <ion-select-option value="en">English</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon slot="start" name="color-palette-outline" color="danger" aria-hidden="true"></ion-icon>
+      <ion-label>Tema de color</ion-label>
+      <ion-select slot="end" [value]="settings.colorTheme" interface="popover" (ionChange)="updateSetting('colorTheme', $event.detail.value)" aria-label="Seleccionar tema visual">
+        <ion-select-option value="blue">Clásico</ion-select-option>
+        <ion-select-option value="gold">Dorado</ion-select-option>
+        <ion-select-option value="dark">Nocturno</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-list lines="inset" class="ion-margin-top">
+    <ion-item button detail="true" aria-label="Consultar información sobre la aplicación">
+      <ion-icon slot="start" name="information-circle-outline" color="medium" aria-hidden="true"></ion-icon>
+      <ion-label>Acerca de BCN Adventure</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <div class="ion-padding ion-text-center">
+    <p style="color: #7f8c8d; font-size: 0.8rem;">Versión 1.0.0</p>
+  </div>
+</ion-content>

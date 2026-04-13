@@ -1,9 +1,9 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonGrid, IonRow, IonCol, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonIcon } from '@ionic/angular/standalone';
+import { Router, RouterModule } from '@angular/router';
+import { IonHeader, IonToolbar, IonTitle, IonContent, IonGrid, IonRow, IonCol, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonIcon, IonButton, IonButtons } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { library, business, book, fastFood, skull, videocam, map } from 'ionicons/icons';
+import { library, business, book, fastFood, skull, videocam, map, settingsOutline } from 'ionicons/icons';
 
 interface Theme {
   id: string;
@@ -18,22 +18,8 @@ interface Theme {
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [
-    CommonModule,
-    IonHeader,
-    IonToolbar,
-    IonTitle,
-    IonContent,
-    IonGrid,
-    IonRow,
-    IonCol,
-    IonCard,
-    IonCardHeader,
-    IonCardTitle,
-    IonCardSubtitle,
-    IonIcon
-  ],
-})
+  imports: [CommonModule, IonHeader, IonToolbar, IonTitle, IonContent, IonGrid, IonRow, IonCol, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonIcon, IonButton, IonButtons, RouterModule],
+  })
 export class HomePage {
   private router = inject(Router);
 
@@ -83,7 +69,7 @@ export class HomePage {
   ];
 
   constructor() {
-    addIcons({ library, business, book, 'fast-food': fastFood, skull, videocam, map });
+    addIcons({ library, business, book, 'fast-food': fastFood, skull, videocam, map, settingsOutline });
   }
 
   selectTheme(theme: Theme) {

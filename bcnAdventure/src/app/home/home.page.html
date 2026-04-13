@@ -1,6 +1,11 @@
 <ion-header [translucent]="true" class="ion-no-border">
   <ion-toolbar>
     <ion-title>BCN Adventure</ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/settings']" aria-label="Abrir ajustes de la aplicación">
+        <ion-icon slot="icon-only" name="settings-outline" aria-hidden="true"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -13,9 +18,9 @@
   <ion-grid fixed>
     <ion-row>
       <ion-col size="6" size-md="4" *ngFor="let theme of themes">
-        <ion-card class="theme-card" [style.--theme-color]="theme.color" (click)="selectTheme(theme)">
+        <ion-card class="theme-card" [style.--theme-color]="theme.color" (click)="selectTheme(theme)" button="true" [attr.aria-label]="'Comenzar aventura temática: ' + theme.title + '. ' + theme.subtitle">
           <div class="card-icon-container">
-            <ion-icon [name]="theme.icon"></ion-icon>
+            <ion-icon [name]="theme.icon" aria-hidden="true"></ion-icon>
           </div>
           <ion-card-header>
             <ion-card-title>{{ theme.title }}</ion-card-title>

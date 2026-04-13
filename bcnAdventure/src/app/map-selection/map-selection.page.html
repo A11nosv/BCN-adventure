@@ -1,7 +1,7 @@
 <ion-header [translucent]="true" class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/home"></ion-back-button>
+      <ion-back-button defaultHref="/home" aria-label="Volver al inicio"></ion-back-button>
     </ion-buttons>
     <ion-title>{{ themeInfo?.title || 'Seleccionar Mapa' }}</ion-title>
   </ion-toolbar>
@@ -16,9 +16,9 @@
   </div>
 
   <div class="content-container">
-    <ion-list lines="full" class="ion-no-padding">
-      <ion-item *ngFor="let map of themeInfo?.maps" button (click)="startAdventure(map.id)" class="map-item">
-        <div slot="start" class="icon-circle" [style.background-color]="themeInfo?.color">
+    <ion-list lines="full" class="ion-no-padding" [attr.aria-label]="'Lista de rutas disponibles de ' + themeInfo?.title">
+      <ion-item *ngFor="let map of themeInfo?.maps" button (click)="startAdventure(map.id)" class="map-item" [attr.aria-label]="'Comenzar ruta: ' + map.title + '. ' + map.description">
+        <div slot="start" class="icon-circle" [style.background-color]="themeInfo?.color" aria-hidden="true">
           <ion-icon [name]="map.icon"></ion-icon>
         </div>
         <ion-label>

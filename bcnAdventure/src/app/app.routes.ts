@@ -16,6 +16,10 @@ export const routes: Routes = [
   },
   {
     path: 'map-details/:themeId/:mapId',
-    loadComponent: () => import('./map-details/map-details.page').then( m => m.MapDetailsPage)
+    loadComponent: () => import('./map-details/map-details.page').then(m => m.MapDetailsPage)
   },
-];
+  {
+    path: 'settings',
+    loadComponent: () => import('./settings/settings.page').then(m => m.SettingsPage)
+  },
+  ];
