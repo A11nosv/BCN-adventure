@@ -7,6 +7,11 @@ export interface AppSettings {
   showDistance: boolean;
   language: string;
   colorTheme: string;
+  // Accessibility
+  fontSizeMultiplier: number;
+  fontFamily: string;
+  lineHeight: number;
+  textAlign: string;
 }
 
 @Injectable({
@@ -20,7 +25,11 @@ export class SettingsService {
     proximityNotifications: true,
     showDistance: true,
     language: 'es',
-    colorTheme: 'blue'
+    colorTheme: 'blue',
+    fontSizeMultiplier: 1,
+    fontFamily: 'system',
+    lineHeight: 1.5,
+    textAlign: 'left'
   };
 
   private settingsSubject = new BehaviorSubject<AppSettings>(this.loadSettings());

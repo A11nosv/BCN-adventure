@@ -1,3 +1,38 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>BCN Adventure</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list id="menu-list">
+          <ion-menu-toggle auto-hide="false">
+            <ion-item routerLink="/home" routerDirection="root" aria-label="Ir a la página de inicio">
+              <ion-icon slot="start" name="home-outline" aria-hidden="true"></ion-icon>
+              <ion-label>Inicio</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          
+          <ion-menu-toggle auto-hide="false">
+            <ion-item routerLink="/settings" routerDirection="root" aria-label="Ir a ajustes de la aplicación">
+              <ion-icon slot="start" name="settings-outline" aria-hidden="true"></ion-icon>
+              <ion-label>Ajustes</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle auto-hide="false">
+            <ion-item routerLink="/about" routerDirection="root" aria-label="Ir a información sobre la aplicación">
+              <ion-icon slot="start" name="information-circle-outline" aria-hidden="true"></ion-icon>
+              <ion-label>Acerca de</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <div class="ion-page" id="main-content">
+      <ion-router-outlet></ion-router-outlet>
+    </div>
+  </ion-split-pane>
 </ion-app>

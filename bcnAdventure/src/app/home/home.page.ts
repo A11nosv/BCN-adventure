@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonGrid, IonRow, IonCol, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonIcon, IonButton, IonButtons } from '@ionic/angular/standalone';
+import { IonHeader, IonToolbar, IonTitle, IonContent, IonGrid, IonRow, IonCol, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonIcon, IonButton, IonButtons, IonMenuButton } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { library, business, book, fastFood, skull, videocam, map, settingsOutline } from 'ionicons/icons';
 
@@ -18,7 +18,7 @@ interface Theme {
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [CommonModule, IonHeader, IonToolbar, IonTitle, IonContent, IonGrid, IonRow, IonCol, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonIcon, IonButton, IonButtons, RouterModule],
+  imports: [CommonModule, IonHeader, IonToolbar, IonTitle, IonContent, IonGrid, IonRow, IonCol, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonIcon, IonButton, IonButtons, RouterModule, IonMenuButton],
   })
 export class HomePage {
   private router = inject(Router);
@@ -33,17 +33,17 @@ export class HomePage {
     },
     {
       id: 'arquitectura',
-      title: 'Arquitectura',
-      subtitle: 'Modernismo y Gaudí',
+      title: 'Barcelona Monumental',
+      subtitle: 'Genios, Formas y Piedras',
       icon: 'business',
       color: '#2980b9'
     },
     {
       id: 'novelas',
-      title: 'Novelas',
-      subtitle: 'Rutas Literarias',
+      title: 'BCN de Novela',
+      subtitle: 'Historias entre Páginas',
       icon: 'book',
-      color: '#d35400'
+      color: '#8e44ad'
     },
     {
       id: 'gastronomia',

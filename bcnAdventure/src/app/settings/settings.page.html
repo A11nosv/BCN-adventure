@@ -48,10 +48,67 @@
     </ion-item>
   </ion-list>
 
+  <ion-list lines="inset" class="ion-margin-top" aria-label="Ajustes de accesibilidad">
+    <ion-item-divider sticky="true">
+      <ion-label>Accesibilidad</ion-label>
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-icon slot="start" name="text-outline" color="primary" aria-hidden="true"></ion-icon>
+      <ion-label>Tamaño de fuente</ion-label>
+      <ion-select slot="end" [value]="settings.fontSizeMultiplier" interface="popover" (ionChange)="updateSetting('fontSizeMultiplier', $event.detail.value)" aria-label="Seleccionar multiplicador de tamaño de fuente">
+        <ion-select-option [value]="0.5">Muy pequeño (0.5x)</ion-select-option>
+        <ion-select-option [value]="0.8">Pequeño (0.8x)</ion-select-option>
+        <ion-select-option [value]="1.0">Normal (1x)</ion-select-option>
+        <ion-select-option [value]="1.2">Grande (1.2x)</ion-select-option>
+        <ion-select-option [value]="1.5">Muy grande (1.5x)</ion-select-option>
+        <ion-select-option [value]="2.0">Gigante (2x)</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon slot="start" name="text-outline" color="secondary" aria-hidden="true"></ion-icon>
+      <ion-label>Tipo de letra</ion-label>
+      <ion-select slot="end" [value]="settings.fontFamily" interface="popover" (ionChange)="updateSetting('fontFamily', $event.detail.value)" aria-label="Seleccionar familia tipográfica">
+        <ion-select-option value="system">Sistema</ion-select-option>
+        <ion-select-option value="sans-serif">Sans-serif</ion-select-option>
+        <ion-select-option value="serif">Serif (con remates)</ion-select-option>
+        <ion-select-option value="monospace">Monoespaciada</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon slot="start" name="reorder-three-outline" color="tertiary" aria-hidden="true"></ion-icon>
+      <ion-label>Interlineado</ion-label>
+      <ion-select slot="end" [value]="settings.lineHeight" interface="popover" (ionChange)="updateSetting('lineHeight', $event.detail.value)" aria-label="Seleccionar espacio entre líneas">
+        <ion-select-option [value]="1.0">Compacto (1x)</ion-select-option>
+        <ion-select-option [value]="1.5">Normal (1.5x)</ion-select-option>
+        <ion-select-option [value]="2.0">Amplio (2x)</ion-select-option>
+        <ion-select-option [value]="2.5">Extra amplio (2.5x)</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon slot="start" name="reorder-three-outline" color="success" aria-hidden="true"></ion-icon>
+      <ion-label>Alineación del texto</ion-label>
+      <ion-select slot="end" [value]="settings.textAlign" interface="popover" (ionChange)="updateSetting('textAlign', $event.detail.value)" aria-label="Seleccionar alineación del texto">
+        <ion-select-option value="left">Izquierda</ion-select-option>
+        <ion-select-option value="center">Centro</ion-select-option>
+        <ion-select-option value="right">Derecha</ion-select-option>
+        <ion-select-option value="justify">Justificado</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
   <ion-list lines="inset" class="ion-margin-top">
     <ion-item button detail="true" aria-label="Consultar información sobre la aplicación">
       <ion-icon slot="start" name="information-circle-outline" color="medium" aria-hidden="true"></ion-icon>
       <ion-label>Acerca de BCN Adventure</ion-label>
+    </ion-item>
+    
+    <ion-item button (click)="restoreDefaults()" aria-label="Restablecer todos los ajustes a sus valores por defecto">
+      <ion-icon slot="start" name="refresh-outline" color="warning" aria-hidden="true"></ion-icon>
+      <ion-label color="warning">Restablecer valores por defecto</ion-label>
     </ion-item>
   </ion-list>
 

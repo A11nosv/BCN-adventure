@@ -938,6 +938,382 @@ export class MapDetailsPage implements OnInit, OnDestroy {
           info: "Ubicados en el solar del antiguo Parque de Atracciones de Montjuïc, estos jardines combinan vegetación mediterránea con elementos lúdicos y poesía visual.",
           imageUrl: "assets/images/parques/brossa.jpg",
           theatricalInfo: "Si escucháis con atención, todavía se oyen los gritos de alegría de los niños de antaño. El tiempo lo devora todo, pero la naturaleza siempre reclama su lugar con una sonrisa verde."
+        },
+        {
+          id: 'palauet-albeniz',
+          title: "Palauet Albéniz (Palacio Real de Montjuïc)",
+          hints: [
+            "Busca la residencia oficial de la Familia Real en Barcelona, escondida entre los jardines de la montaña.",
+            "Encuentra un palacete rodeado de fuentes y estatuas que se construyó para la Exposición de 1929.",
+            "Dirígete a los Jardines de Joan Maragall, situados entre el Estadio Olímpico y el Museo Nacional (MNAC)."
+          ],
+          description: "Residencia real y jardines de gala.",
+          coords: [41.3665, 2.1530],
+          info: "El Palauet Albéniz es la residencia oficial de la Familia Real Española en sus estancias en Barcelona. Está rodeado por los Jardines de Joan Maragall, unos de los más elegantes y clásicos de la ciudad, con fuentes, esculturas de mármol y amplias avenidas de césped.",
+          imageUrl: "assets/images/parques/albeniz.jpg",
+          theatricalInfo: "¡Bienvenidos a la corte de Montjuïc! Aquí el aire huele a distinción y las fuentes cantan para los reyes. Un lugar donde la naturaleza se ordena con la elegancia de un baile de palacio."
+        }
+      ]
+    },
+    'catedral-mar': {
+      title: 'La Catedral del Mar (S. XIV)',
+      duration: '2h 30min',
+      distance: '3.8 km',
+      description: 'Sigue los pasos de Arnau Estanyol en la Barcelona medieval. Desde su llegada como un niño huido hasta la construcción de la basílica que los bastaixos alzaron con su propio esfuerzo.',
+      center: [41.3835, 2.1815],
+      zoom: 16,
+      stops: [
+        {
+          id: 'santa-maria-mar-novela',
+          title: "Basílica de Santa Maria del Mar",
+          hints: [
+            "Busca el templo que los habitantes de la Ribera construyeron para ellos mismos, sin ayuda de reyes ni obispos.",
+            "Encuentra la iglesia gótica que es el corazón de la novela de Ildefonso Falcones.",
+            "Dirígete a la Plaza de Santa Maria, en el barrio del Born."
+          ],
+          description: "El símbolo del esfuerzo del pueblo.",
+          coords: [41.3835, 2.1815],
+          info: "Eje central de la novela. Fue construida en solo 54 años (1329-1383) gracias al trabajo de los estibadores del puerto (bastaixos) y las donaciones de los mercaderes.",
+          imageUrl: "assets/images/novelas/catedral_mar.jpg",
+          theatricalInfo: "¡Mirad estas piedras! Cada una fue traída desde Montjuïc en las espaldas de hombres libres. Esta no es la catedral de los ricos, es la nuestra, la de los hombres del mar."
+        },
+        {
+          id: 'fossar-moreres-novela',
+          title: "Fossar de les Moreres",
+          hints: [
+            "Busca el lugar junto a la basílica donde Arnau trabajó como bastaix, cargando las pesadas piedras destinadas al templo.",
+            "Encuentra la plaza que antaño fue el cementerio de la parroquia y hoy es un memorial.",
+            "Ve al lado este de la Basílica de Santa Maria del Mar."
+          ],
+          description: "El lugar de trabajo de los bastaixos.",
+          coords: [41.3838, 2.1825],
+          info: "En la época de la novela, esta zona era un hervidero de actividad donde los bastaixos descargaban las piedras que llegaban por mar para la construcción de la iglesia.",
+          imageUrl: "assets/images/novelas/fossar.jpg",
+          theatricalInfo: "Aquí el sudor se mezcla con la sal. No hay descanso para un bastaix mientras falte una piedra por colocar. ¡Ánimo, hermanos, que la Virgen nos mira!"
+        },
+        {
+          id: 'carrer-montcada-novela',
+          title: "Carrer de Montcada",
+          hints: [
+            "Camina por la calle de los palacios donde Arnau vivió sus días de mayor gloria y riqueza como cambista.",
+            "Busca la vía medieval más prestigiosa de Barcelona, llena de patios góticos y escudos de armas.",
+            "Carrer de Montcada, sede actual del Museo Picasso."
+          ],
+          description: "La calle de la nobleza y el éxito.",
+          coords: [41.3845, 2.1810],
+          info: "Arnau Estanyol pasó de ser un bastaix a ser un hombre rico con un palacio en esta calle, el eje señorial de la Barcelona del siglo XIV.",
+          imageUrl: "assets/images/novelas/montcada.jpg",
+          theatricalInfo: "¿Recordáis cuando no tenía nada? Ahora los nobles me saludan, pero bajo mi túnica de seda sigo sintiendo el peso de las piedras de la Virgen."
+        },
+        {
+          id: 'el-call-novela',
+          title: "El Call (Barrio Judío)",
+          hints: [
+            "Busca el laberinto de calles donde Arnau encontró la protección y la sabiduría de Hasdai.",
+            "Encuentra el barrio que sufrió los terribles ataques de 1391, un momento clave en el destino de los personajes.",
+            "Dirígete al cruce de las calles Sant Domènec del Call y Marlet."
+          ],
+          description: "Refugio y conflicto.",
+          coords: [41.3825, 2.1755],
+          info: "La relación de Arnau con la comunidad judía es fundamental en la trama, especialmente su amistad con Hasdai y cómo esto influye en su juicio ante la Inquisición.",
+          imageUrl: "assets/images/novelas/call.jpg",
+          theatricalInfo: "En estas calles estrechas vive un pueblo sabio y perseguido. Aquí aprendí que la fe tiene muchas caras, pero el dolor y la amistad son iguales para todos."
+        },
+        {
+          id: 'placa-del-rei-novela',
+          title: "Plaça del Rei",
+          hints: [
+            "Acude a la plaza donde el Rey Pedro el Ceremonioso dictaba justicia y donde Arnau tuvo que enfrentarse a sus acusadores.",
+            "Busca el recinto palaciego que representa el poder absoluto de la Corona de Aragón en la Edad Media.",
+            "Plaza del Rey, junto al Salón del Tinell."
+          ],
+          description: "El escenario del poder real.",
+          coords: [41.3842, 2.1775],
+          info: "Lugar de juicios y recepciones reales. En la novela, representa el poder institucional frente al que Arnau debe defender su honor y su vida.",
+          imageUrl: "assets/images/novelas/placa_rei.jpg",
+          theatricalInfo: "Bajo estos muros fríos, la palabra del Rey es ley. He subido estas gradas con el corazón encogido, sabiendo que aquí la justicia a veces olvida al hombre sencillo."
+        },
+        {
+          id: 'casa-verdugo-novela',
+          title: "La Casa del Verdugo",
+          hints: [
+            "Busca el rincón más sombrío junto a la muralla, donde vivía aquel a quien nadie quería saludar.",
+            "Encuentra la pequeña casa adosada a la torre romana, hogar del ejecutor de las sentencias del Rey.",
+            "Dirígete a la Plaza del Rey y mira hacia el rincón que conecta con la Catedral."
+          ],
+          description: "El hogar del ejecutor de Barcelona.",
+          coords: [41.3841, 2.1768],
+          info: "Históricamente, el verdugo de la ciudad vivía en esta pequeña vivienda apartada, ya que su oficio era considerado impuro. En la novela, representa el destino final de muchos de los que caían en desgracia.",
+          imageUrl: "assets/images/novelas/verdugo.jpg",
+          theatricalInfo: "No me miréis a los ojos... nadie lo hace. Vivo entre los muros y la muerte, cumpliendo la ley que otros dictan desde sus tronos de seda. Mi casa es pequeña, pero mi sombra es larga."
+        },
+        {
+          id: 'llotja-mar-novela',
+          title: "Llotja de Mar",
+          hints: [
+            "Busca el lugar donde los mercaderes de Barcelona dominaban el comercio del Mediterráneo.",
+            "Encuentra el edificio gótico donde se regulaban los fletes y seguros marítimos que hicieron rica a la ciudad.",
+            "Paseo de Isabel II, frente al puerto."
+          ],
+          description: "El motor económico de Barcelona.",
+          coords: [41.3825, 2.1835],
+          info: "Sede del Consolat de Mar. En la novela, refleja el auge comercial de Barcelona y el sistema financiero en el que Arnau prospera.",
+          imageUrl: "assets/images/novelas/llotja.jpg",
+          theatricalInfo: "Barcelona mira al mar y el mar le devuelve oro. En este salón se decide el destino de las naves que van a Oriente. Es el pulso de una ciudad que no tiene límites."
+        }
+      ]
+    },
+    'quijote': {
+      title: 'Don Quijote en Barcelona (1615)',
+      duration: '2h 00min',
+      distance: '4.2 km',
+      description: 'Acompaña al ingenioso hidalgo en su única visita al mar. Descubre la Barcelona que Cervantes elogió como "archivo de la cortesía" y el escenario donde el Quijote colgó sus armas para siempre.',
+      center: [41.3800, 2.1800],
+      zoom: 15,
+      stops: [
+        {
+          id: 'playa-barceloneta-quijote',
+          title: "Playa de la Barceloneta (El Primer Mar)",
+          hints: [
+            "Busca el lugar donde el caballero de la triste figura vio por primera vez el horizonte infinito del mar Mediterráneo.",
+            "Encuentra la arena que fue testigo de la llegada de Don Quijote y Sancho en la víspera de San Juan.",
+            "Dirígete al tramo de playa frente al actual barrio de la Barceloneta."
+          ],
+          description: "Donde el Quijote descubrió el mar.",
+          coords: [41.3785, 2.1925],
+          info: "En el capítulo LXI de la segunda parte, Don Quijote llega a la playa de Barcelona un amanecer de San Juan, quedando maravillado por la inmensidad del mar y las galeras reales.",
+          imageUrl: "assets/images/novelas/quijote_playa.jpg",
+          theatricalInfo: "¡Mirad, Sancho, amigo! El azul no tiene fin. Aquí el mundo es más ancho y el aire huele a sal y libertad. ¿Oís el saludo de las galeras?"
+        },
+        {
+          id: 'casa-cervantes',
+          title: "Casa de Cervantes",
+          hints: [
+            "Busca el edificio frente al puerto donde la tradición dice que Miguel de Cervantes se alojó durante su estancia en la ciudad.",
+            "Encuentra la casa señorial del Paseo de Colón que guarda la memoria del autor del Quijote.",
+            "Paseo de Colón, número 2."
+          ],
+          description: "La morada del autor.",
+          coords: [41.3812, 2.1815],
+          info: "Aunque no hay pruebas documentales definitivas, la tradición barcelonesa sitúa la residencia de Cervantes en este edificio renacentista durante su visita en 1610.",
+          imageUrl: "assets/images/novelas/casa_cervantes.jpg",
+          theatricalInfo: "Bajo este techo descansó la pluma que me dio la vida. Cervantes miró este mismo puerto mientras soñaba mis nuevas desventuras."
+        },
+        {
+          id: 'fuente-santa-anna-quijote',
+          title: "Fuente de Santa Anna (El primer trago)",
+          hints: [
+            "Busca la fuente más antigua de Barcelona, donde los viajeros calmaban su sed al entrar en la ciudad vieja.",
+            "Encuentra el abrevadero de piedra del siglo XIV decorado con escudos, hoy rodeado de tiendas modernas.",
+            "Dirígete al cruce de la Avenida Portal de l'Àngel con la calle de Santa Anna."
+          ],
+          description: "La fuente donde bebió el hidalgo.",
+          coords: [41.3855, 2.1720],
+          info: "Construida en 1356, es la fuente más antigua de la ciudad. La tradición literaria cuenta que Don Quijote y Sancho se detuvieron aquí para refrescarse tras su largo viaje desde las áridas tierras de Castilla.",
+          imageUrl: "assets/images/novelas/santa_anna.jpg",
+          theatricalInfo: "¡Bebed, Sancho! Esta agua sabe a gloria tras tanto polvo y sol. Barcelona nos recibe con su cristal más puro antes de mostrarnos sus maravillas."
+        },
+        {
+          id: 'imprenta-quijote',
+          title: "La Imprenta de Sebastián de Cormellas",
+          hints: [
+            "Busca el lugar donde Don Quijote visitó una imprenta y se sorprendió al ver cómo se corregían los pliegos de su propia historia.",
+            "Encuentra la calle de los libreros y mercaderes en el corazón del Barrio Gótico.",
+            "Dirígete al Carrer del Call, muy cerca de la Plaza Sant Jaume."
+          ],
+          description: "Donde los libros cobran vida.",
+          coords: [41.3822, 2.1762],
+          info: "En el capítulo LXII, Don Quijote visita una imprenta real en Barcelona. Históricamente, la imprenta de Cormellas en el Carrer del Call era la más importante de la época.",
+          imageUrl: "assets/images/novelas/imprenta.jpg",
+          theatricalInfo: "¡Asombraos, Sancho! Aquí los pensamientos se graban en plomo y el papel vuela cargado de verdades... y de algunas mentiras que dicen ser mi vida."
+        },
+        {
+          id: 'drassanes-quijote',
+          title: "Drassanes Reials (Las Galeras)",
+          hints: [
+            "Visita las atarazanas donde se construían los grandes barcos del Rey que Don Quijote tanto admiró en el puerto.",
+            "Busca el recinto gótico que guardaba las galeras listas para surcar el Mediterráneo.",
+            "Entra en el actual Museo Marítimo de Barcelona."
+          ],
+          description: "El poder naval de la época.",
+          coords: [41.3755, 2.1745],
+          info: "Don Quijote y Sancho visitaron las galeras del puerto, maravillados por la organización y la fuerza de los remeros. Las Drassanes eran el centro neurálgico de esta actividad.",
+          imageUrl: "assets/images/novelas/drassanes.jpg",
+          theatricalInfo: "¡Ved qué orden! ¡Qué grandeza! Estos barcos son los castillos del mar, y sus remos son las alas que llevan la gloria de España hasta el fin del mundo."
+        },
+        {
+          id: 'duelo-final-quijote',
+          title: "El Duelo con el Caballero de la Blanca Luna",
+          hints: [
+            "Busca el escenario de la derrota final, donde Don Quijote fue vencido y obligado a abandonar la caballería andante.",
+            "Encuentra el tramo de arena donde el bachiller Sansón Carrasco, disfrazado de caballero, puso fin a las aventuras del hidalgo.",
+            "Playa de la Barceloneta, cerca del actual Somorrostro."
+          ],
+          description: "El fin de la aventura.",
+          coords: [41.3825, 2.1950],
+          info: "En las playas de Barcelona, el Caballero de la Blanca Luna derrota a Don Quijote y le impone la condición de regresar a su aldea y no tomar las armas durante un año.",
+          imageUrl: "assets/images/novelas/duelo.jpg",
+          theatricalInfo: "Aquí cayeron mis armas, pero no mi honor. Dulcinea es la más hermosa y yo el más desdichado caballero, pero la verdad de mi amor no necesita de mi espada para ser eterna."
+        }
+      ]
+    },
+    'hemingway': {
+      title: 'Ernest Hemingway: Crónica de Guerra',
+      duration: '2h 15min',
+      distance: '4.5 km',
+      description: 'Revive la Barcelona de la Guerra Civil a través de los ojos del premio Nobel. Descubre los lugares donde Hemingway escribió sus crónicas, bebió su legendaria absenta y fue testigo del drama de una ciudad bajo el fuego.',
+      center: [41.3850, 2.1750],
+      zoom: 15,
+      stops: [
+        {
+          id: 'hotel-majestic-hemingway',
+          title: "Hotel Majestic",
+          hints: [
+            "Busca el lujoso hotel del Passeig de Gràcia que fue el hogar de los corresponsales extranjeros durante la guerra.",
+            "Encuentra el balcón desde el cual Hemingway observaba la vida de una ciudad que se negaba a rendirse.",
+            "Passeig de Gràcia, número 68."
+          ],
+          description: "La base de los corresponsales.",
+          coords: [41.3928, 2.1645],
+          info: "Durante su estancia como corresponsal de la North American Newspaper Alliance (NANA), Hemingway se alojó en este hotel, convirtiéndose en un centro de reunión para intelectuales y periodistas internacionales.",
+          imageUrl: "assets/images/novelas/majestic.jpg",
+          theatricalInfo: "¡Camarero, otro whisky! Desde este balcón la guerra parece una película de sombras, pero el ruido de los motores en el cielo nos recuerda que la muerte no descansa. Escribir aquí es como disparar palabras contra el olvido."
+        },
+        {
+          id: 'placa-catalunya-hemingway',
+          title: "Antiguo Hotel Colón (Plaça Catalunya)",
+          hints: [
+            "Ve al lugar donde se alzaba el hotel que Hemingway describió como el epicentro de los primeros combates de 1936.",
+            "Busca el solar que hoy ocupa un gran centro comercial, frente al corazón de la plaza.",
+            "Plaça de Catalunya, lado montaña."
+          ],
+          description: "Escenario de la revolución.",
+          coords: [41.3875, 2.1705],
+          info: "Hemingway documentó la importancia estratégica del Hotel Colón, tomado por las milicias al inicio de la guerra. Sus crónicas capturaron la euforia revolucionaria de los primeros días.",
+          imageUrl: "assets/images/novelas/colon.jpg",
+          theatricalInfo: "Mirad esa plaza. Aquí el mundo cambió en una mañana. Los fusiles sustituyeron a los bastones y el pueblo se hizo dueño de sus calles. Barcelona olía a pólvora y a esperanza, un aroma que nunca olvidaré."
+        },
+        {
+          id: 'bar-marsella-hemingway',
+          title: "Bar Marsella",
+          hints: [
+            "Busca la taberna más antigua del Raval, donde el tiempo parece haberse congelado en el siglo XIX.",
+            "Encuentra el rincón donde Hemingway buscaba refugio en el fondo de un vaso de absenta entre crónica y crónica.",
+            "Carrer de Sant Ramon, número 1."
+          ],
+          description: "Refugio de absenta y bohemia.",
+          coords: [41.3785, 2.1715],
+          info: "Frecuentado por artistas y escritores, el Bar Marsella es una parada obligatoria en la ruta de Hemingway. Se dice que el autor disfrutaba de la atmósfera decadente y del ritual de la absenta en este local.",
+          imageUrl: "assets/images/novelas/marsella.jpg",
+          theatricalInfo: "Un terrón de azúcar, un poco de agua fría... y el hada verde empieza a bailar. Aquí el ruido de las bombas no llega. En el Marsella, la guerra es solo una historia que alguien cuenta en la barra de al lado."
+        },
+        {
+          id: 'liceu-hemingway',
+          title: "Gran Teatre del Liceu",
+          hints: [
+            "Busca el templo de la ópera que Hemingway mencionó en sus despachos de guerra, destacando que incluso en el asedio, la cultura no moría.",
+            "Encuentra el edificio de las Ramblas que simbolizaba la resistencia moral de la ciudad.",
+            "La Rambla, número 51."
+          ],
+          description: "Cultura bajo el asedio.",
+          coords: [41.3800, 2.1735],
+          info: "Hemingway se maravilló de que los teatros y la ópera siguieran funcionando durante los bombardeos, viendo en ello un signo de la indomable voluntad barcelonesa.",
+          imageUrl: "assets/images/novelas/liceu_h.jpg",
+          theatricalInfo: "Las luces se apagan, pero la música empieza. Fuera caen trozos de acero, pero dentro, Wagner nos hace sentir eternos. Barcelona es una ciudad que prefiere morir cantando que vivir en silencio."
+        },
+        {
+          id: 'port-bcn-hemingway',
+          title: "Puerto de Barcelona",
+          hints: [
+            "Dirígete al lugar por donde Hemingway llegó y partió de la ciudad, viendo los barcos que traían ayuda y llevaban esperanza.",
+            "Busca el muelle donde las grúas y los mástiles se recortan contra el cielo mediterráneo.",
+            "Moll de la Fusta, frente a la estatua de Colón."
+          ],
+          description: "La puerta al mundo.",
+          coords: [41.3765, 2.1785],
+          info: "El puerto fue una zona crítica durante la guerra y el punto de entrada para los voluntarios de las Brigadas Internacionales que Hemingway tanto admiraba.",
+          imageUrl: "assets/images/novelas/puerto_h.jpg",
+          theatricalInfo: "Adiós, Barcelona. Tus muelles se quedan atrás, pero tu valor viaja conmigo en mi maleta. He visto a hombres de todo el mundo venir a morir aquí por una idea. El mar guarda vuestros secretos, yo guardaré vuestra historia."
+        }
+      ]
+    },
+    'joan-marse': {
+      title: 'Joan Marsé: La BCN de Pijoaparte',
+      duration: '2h 30min',
+      distance: '5.2 km',
+      description: 'Recorre la geografía sentimental de Juan Marsé. Desde las barracas del Carmel hasta los chalets del Guinardó, descubre los escenarios donde el Pijoaparte soñó con conquistar a Teresa y a una Barcelona que le cerraba las puertas.',
+      center: [41.4150, 2.1650],
+      zoom: 14,
+      stops: [
+        {
+          id: 'bunkers-marse',
+          title: "Bunkers del Carmel (Las Barracas)",
+          hints: [
+            "Busca la cima desde donde se domina toda Barcelona, donde antaño crecía un barrio de barracas y sueños rotos.",
+            "Encuentra el balcón de la ciudad donde el Pijoaparte miraba las luces del centro imaginando su ascenso social.",
+            "Sube hasta las antiguas baterías antiaéreas del Turó de la Rovira."
+          ],
+          description: "Escenario de la supervivencia.",
+          coords: [41.4192, 2.1618],
+          info: "El barrio del Carmel y sus barracas son el epicentro del universo de Marsé. Aquí vivía Manolo 'el Pijoaparte', el carismático charnego que personifica la lucha de clases en la Barcelona de posguerra.",
+          imageUrl: "assets/images/novelas/carmel_marse.jpg",
+          theatricalInfo: "Mirad abajo... ¿veis esas luces? Allí está la Barcelona de verdad, la que sale en los periódicos. Nosotros solo somos la sombra que proyecta la montaña. Pero algún día, esa ciudad será mía, aunque solo sea por una tarde."
+        },
+        {
+          id: 'carrer-segle-xx',
+          title: "Carrer del Segle XX (Guinardó)",
+          hints: [
+            "Busca la calle que representa el límite entre los barrios humildes y la zona de los chalets de la burguesía.",
+            "Encuentra la vía donde el Pijoaparte robaba motos para impresionar a las chicas del centro.",
+            "Dirígete al Carrer del Segle XX, en el barrio del Guinardó."
+          ],
+          description: "Frontera de clases sociales.",
+          coords: [41.4165, 2.1725],
+          info: "Esta calle es emblemática en 'Últimas tardes con Teresa'. Representa la frontera física y social que el protagonista intenta cruzar constantemente.",
+          imageUrl: "assets/images/novelas/segle_xx.jpg",
+          theatricalInfo: "Un pie aquí y otro allá. En esta calle se sabe quién es quién por el ruido de los motores. Si robas una Sanglas, eres un rey por un momento; si vuelves a pie, vuelves a ser nadie."
+        },
+        {
+          id: 'parc-guinardo-marse',
+          title: "Parc del Guinardó (Plaza Sanllehy)",
+          hints: [
+            "Busca el rincón del parque donde se celebraban los bailes populares bajo la mirada de los pinos.",
+            "Encuentra el escenario de los encuentros furtivos y las verbenas que Marsé describió con tanta nostalgia.",
+            "Ve a la entrada del Parque del Guinardó por la Plaza Sanllehy."
+          ],
+          description: "Escenario de verbenas y amores.",
+          coords: [41.4135, 2.1610],
+          info: "El Parque del Guinardó es el escenario de momentos clave en las novelas de Marsé, un lugar de ocio para las clases populares donde la música y el baile servían para olvidar la dureza del día a día.",
+          imageUrl: "assets/images/novelas/parc_guinardo.jpg",
+          theatricalInfo: "¿Oís la orquesta? El pasodoble lo tapa todo. Bajo estos árboles las mentiras suenan a verdad si las dices al oído. Es el refugio de los que no tienen salón donde bailar."
+        },
+        {
+          id: 'biblioteca-marse',
+          title: "Biblioteca Juan Marsé",
+          hints: [
+            "Busca el templo de la memoria dedicado al autor, con vistas a los tejados del Carmel que él tanto amó.",
+            "Encuentra el centro cultural que guarda el legado literario del cronista de la Barcelona de los barrios.",
+            "Carrer de Murtra, número 135."
+          ],
+          description: "El legado del cronista.",
+          coords: [41.4215, 2.1585],
+          info: "Inaugurada en honor al escritor, esta biblioteca es un punto de referencia cultural en el barrio del Carmel y ofrece una de las mejores panorámicas de la geografía literaria de Marsé.",
+          imageUrl: "assets/images/novelas/biblioteca_marse.jpg",
+          theatricalInfo: "Aquí las palabras han encontrado casa. Mis personajes ya no corren por las calles, descansan en los estantes. Si queréis conocerme de verdad, leed lo que escribí sobre el polvo y la gloria de estas colinas."
+        },
+        {
+          id: 'cinema-delicias',
+          title: "Antiguo Cinema Delicias",
+          hints: [
+            "Busca el solar donde se alzaba el cine de barrio que fue el refugio de los aventis y las historias soñadas por los niños de posguerra.",
+            "Encuentra el rincón del Guinardó donde la magia de la pantalla hacía olvidar el hambre y el frío.",
+            "Carrer de la Mare de Déu de Montserrat, cerca de la calle Periodistes."
+          ],
+          description: "La fábrica de sueños: Las Aventis.",
+          coords: [41.4155, 2.1705],
+          info: "El Cinema Delicias es una referencia constante en la obra de Marsé, especialmente en 'Si te dicen que caí', como el lugar donde nacían las 'aventis' (historias inventadas por los niños).",
+          imageUrl: "assets/images/novelas/cine_delicias.jpg",
+          theatricalInfo: "¡Silencio, que empieza la película! En la oscuridad del Delicias todos éramos iguales. Inventábamos vidas mejores porque la nuestra nos quedaba pequeña. ¿Queréis que os cuente una aventi?"
         }
       ]
     },
@@ -1018,6 +1394,100 @@ export class MapDetailsPage implements OnInit, OnDestroy {
           info: "Este jardín suspendido alberga las plantas y flores mencionadas en la obra de Rodoreda, manteniendo vivo su legado literario y botánico.",
           imageUrl: "assets/images/novelas/jardi_rodoreda.jpg",
           theatricalInfo: "He vuelto a mi jardín. A través de mis palabras, las flores nunca mueren. Si me buscáis, me encontraréis aquí, entre el aroma de las glicinas y el susurro de las hojas que cuentan mi historia."
+        }
+      ]
+    },
+    'sombra-viento': {
+      title: 'La Sombra del Viento',
+      duration: '3h 00min',
+      distance: '6.5 km',
+      description: 'Adéntrate en la Barcelona gótica y misteriosa de Carlos Ruiz Zafón. Sigue a Daniel Sempere desde el Cementerio de los Libros Olvidados hasta los secretos que esconden las mansiones del Tibidabo.',
+      center: [41.3850, 2.1750],
+      zoom: 14,
+      stops: [
+        {
+          id: 'libreria-sempere',
+          title: "Carrer de Santa Anna (Librería Sempere e Hijos)",
+          hints: [
+            "Busca la calle donde Daniel Sempere vivía y trabajaba en la librería de viejo de su padre.",
+            "Encuentra la vía que une el bullicio de Portal de l'Àngel con la tranquilidad de la iglesia románica de Santa Anna.",
+            "Dirígete al Carrer de Santa Anna, cerca de la Plaza de Catalunya."
+          ],
+          description: "El hogar de los Sempere.",
+          coords: [41.3858, 2.1718],
+          info: "Aunque la librería es ficticia, Zafón sitúa el hogar y el negocio familiar en esta calle, capturando la atmósfera de las librerías de viejo de la Barcelona de posguerra.",
+          imageUrl: "assets/images/novelas/sempere.jpg",
+          theatricalInfo: "Entrad en el aroma del papel viejo y el polvo de los siglos. Mi padre dice que los libros tienen alma, el alma de quien los escribió y de quienes los leyeron y soñaron con ellos."
+        },
+        {
+          id: 'cementerio-libros',
+          title: "Carrer de l'Arc del Teatre (El Cementerio de los Libros Olvidados)",
+          hints: [
+            "Busca el callejón oscuro donde un portal discreto esconde el mayor tesoro literario de Barcelona.",
+            "Encuentra la entrada al lugar donde los libros que nadie recuerda esperan a ser adoptados.",
+            "Ve al Carrer de l'Arc del Teatre, cerca de las Ramblas y el Raval."
+          ],
+          description: "Donde el misterio comienza.",
+          coords: [41.3782, 2.1745],
+          info: "Escenario icónico de la novela. Es aquí donde Daniel es conducido por su padre para elegir el libro que cambiará su vida para siempre: 'La Sombra del Viento' de Julián Carax.",
+          imageUrl: "assets/images/novelas/arc_del_teatre.jpg",
+          theatricalInfo: "Este es un lugar sagrado, Daniel. Cada libro que ves aquí fue el mejor amigo de alguien. Aquí se guardan los sueños olvidados para que el tiempo no los borre del todo."
+        },
+        {
+          id: 'plaza-reial-fermin',
+          title: "Plaça Reial (Encuentro con Fermín)",
+          hints: [
+            "Busca la plaza porticada donde Daniel encuentra a Fermín Romero de Torres viviendo entre los cartones de las fuentes.",
+            "Encuentra el rincón donde la sabiduría de la calle y la lealtad incondicional se cruzaron en el camino de los Sempere.",
+            "Dirígete a la Plaza Real, bajo los soportales cerca de la fuente."
+          ],
+          description: "Lealtad y sabiduría de calle.",
+          coords: [41.3800, 2.1750],
+          info: "La Plaza Real es el escenario donde aparece Fermín, personaje vital que aporta humor y profundidad a la búsqueda de la verdad sobre Julián Carax.",
+          imageUrl: "assets/images/novelas/reial_zafon.jpg",
+          theatricalInfo: "¡A sus pies, caballero! El mundo es un pañuelo y Barcelona el bolsillo donde nos encontramos todos. Fermín Romero de Torres, a su entera disposición para desentrañar misterios o vaciar botellas."
+        },
+        {
+          id: '4-gats-zafon',
+          title: "Els 4 Gats (Confidencias)",
+          hints: [
+            "Busca la taberna donde Daniel y Gustavo Barceló compartían secretos literarios rodeados de la sombra de los grandes artistas.",
+            "Encuentra el edificio modernista de la calle Montsió que es el refugio de los bibliófilos de la novela.",
+            "Carrer de Montsió, número 3."
+          ],
+          description: "Cónclave de bibliófilos.",
+          coords: [41.3858, 2.1738],
+          info: "Els 4 Gats es un punto de encuentro frecuente en la obra, representando la conexión de los personajes con la tradición cultural y artística de la ciudad.",
+          imageUrl: "assets/images/novelas/4gats_zafon.jpg",
+          theatricalInfo: "Hablemos bajo, Daniel. En Barcelona las paredes oyen y los libros a veces gritan. Aquí, entre el humo del café, la verdad sobre Carax empieza a asomar sus garras."
+        },
+        {
+          id: 'felip-neri-zafon',
+          title: "Plaça de Sant Felip Neri (Tragedia y Silencio)",
+          hints: [
+            "Busca la plaza que Daniel describe como una herida en el corazón del Barrio Gótico, marcada por el silencio y el recuerdo.",
+            "Encuentra el lugar donde el destino de los personajes se cruza con las cicatrices de la guerra en la piedra.",
+            "Dirígete a la Plaza de Sant Felip Neri."
+          ],
+          description: "El alma melancólica de BCN.",
+          coords: [41.3830, 2.1755],
+          info: "Zafón utiliza la carga emocional y trágica de esta plaza para reflejar los momentos más íntimos y dolorosos de la trama, vinculando el pasado de la ciudad con el de sus personajes.",
+          imageUrl: "assets/images/novelas/felip_neri_zafon.jpg",
+          theatricalInfo: "Barcelona es una ciudad de espejos y sombras. En esta plaza el tiempo se queda atrapado en los agujeros de la metralla. Es el lugar donde los secretos vienen a morir... o a renacer."
+        },
+        {
+          id: 'mansio-aldaya',
+          title: "Avenida del Tibidabo (Palacete de los Aldaya)",
+          hints: [
+            "Sube a la zona alta para encontrar la mansión maldita que guarda las respuestas finales al enigma de Julián Carax.",
+            "Encuentra la avenida de los palacetes señoriales, donde los jardines esconden fantasmas del pasado burgués.",
+            "Dirígete a la zona alta de la Avenida del Tibidabo."
+          ],
+          description: "El fin del laberinto.",
+          coords: [41.4125, 2.1350],
+          info: "La mansión de los Aldaya es el escenario del clímax de la novela. Representa la decadencia de una clase social y el refugio final de los secretos más oscuros de la historia.",
+          imageUrl: "assets/images/novelas/aldaya.jpg",
+          theatricalInfo: "¡Deteneos ante este portón! Aquí la piedra guarda el eco de un amor prohibido y una venganza que ha esperado décadas. Bienvenidos al corazón de la Sombra del Viento."
         }
       ]
     },
@@ -1233,7 +1703,7 @@ export class MapDetailsPage implements OnInit, OnDestroy {
           hints: ['Los ciudadanos de Barcino descansan fuera de los muros. Ve a presentar tus respetos a los antepasados para que te den su bendición.', 'Busca el lugar donde las estelas de piedra se alinean junto al camino de salida hacia el norte.', 'Dirígete a la Plaza de la Vila de Madrid, cerca de la calle Canuda.'],
           description: "Descanso de los ciudadanos.",
           coords: [41.3848, 2.1725],
-          info: "Necrópolis de los siglos II y III situada junto a una vía de salida de la ciudad.",
+          info: "Conjunto funerario conocido como la Vía Sepulcral Romana, situado fuera de las murallas de la ciudad. Se extendía a lo largo de una de las vías de salida y contenía monumentos como aras, estelas y cupas para los ciudadanos enterrados allí.",
           imageUrl: "assets/images/barcino/necropolis.jpg",
           theatricalInfo: "Caminad con respeto. Aquí descansan nuestros padres, fuera de la muralla pero bajo el sol de Roma."
         },
@@ -1312,7 +1782,1417 @@ export class MapDetailsPage implements OnInit, OnDestroy {
           }
         }
       ]
-    }
+    },
+    'iglesias-conventos': {
+      title: 'Iglesias y Conventos (S. XII - XIV)',
+      duration: '3h 30min',
+      distance: '5.8 km',
+      description: 'Un viaje espiritual por el tiempo. Descubre desde los monasterios románicos escondidos en el Raval hasta las majestuosas basílicas del gótico catalán.',
+      center: [41.3830, 2.1750],
+      zoom: 15,
+      stops: [
+        {
+          id: 'sant-pau-camp-iglesia',
+          title: "Sant Pau del Camp",
+          hints: [
+            "Busca el monasterio románico más antiguo de la ciudad, un oasis de paz entre los muros del Raval.",
+            "Encuentra el claustro con arcos lobulados que parece un trozo de campo en medio de la ciudad vieja.",
+            "Dirígete al Carrer de Sant Pau, cerca de la Avenida Paral·lel."
+          ],
+          description: "Joyas del románico barcelonés.",
+          coords: [41.3750, 2.1695],
+          info: "Este antiguo monasterio benedictino es el ejemplo mejor conservado del románico en Barcelona, con un claustro único en Europa por sus arcos de influencia mudéjar.",
+          imageUrl: "assets/images/arquitectura/sant_pau_camp.jpg",
+          theatricalInfo: "Entrad en el silencio. Estos muros de piedra tosca han visto pasar siglos de oración mientras la ciudad crecía fuera de sus huertos. Es el latido más antiguo de Barcelona."
+        },
+        {
+          id: 'santa-maria-pi',
+          title: "Basílica de Santa Maria del Pi",
+          hints: [
+            "Busca el rosetón más grande de Barcelona, que domina una plaza donde antaño crecía un pino solitario.",
+            "Encuentra la iglesia de una sola nave inmensa, joya del gótico catalán más puro y austero.",
+            "Ve a la Plaza del Pi, en el corazón del barrio gótico."
+          ],
+          description: "Gótico catalán puro.",
+          coords: [41.3835, 2.1738],
+          info: "Construida en el siglo XIV, destaca por su imponente rosetón (reconstruido tras la guerra) y su gran nave única de 16,5 metros de ancho.",
+          imageUrl: "assets/images/arquitectura/santa_maria_pi.jpg",
+          theatricalInfo: "¡Mirad hacia arriba! No hay columnas que estorben la vista. Es la elegancia de la piedra que se eleva buscando la luz a través de su gran ojo de cristal."
+        },
+        {
+          id: 'catedral-bcn',
+          title: "Catedral de la Santa Creu i Santa Eulàlia",
+          hints: [
+            "Busca el corazón de la diócesis, donde trece ocas blancas custodian el claustro en memoria de una joven mártir.",
+            "Encuentra la fachada neogótica que corona la colina sagrada de la ciudad amurallada.",
+            "Dirígete al Pla de la Seu, frente a la gran escalinata de la Catedral."
+          ],
+          description: "Sede episcopal de Barcelona.",
+          coords: [41.3840, 2.1762],
+          info: "Aunque la fachada es del siglo XIX, el grueso del edificio es gótico (siglos XIII-XV). En su cripta descansa Santa Eulalia, la patrona histórica de la ciudad.",
+          imageUrl: "assets/images/arquitectura/catedral.jpg",
+          theatricalInfo: "Bajo estas bóvedas late la fe de los siglos. Escuchad el graznido de las ocas; ellas son las guardianas del honor de nuestra pequeña mártir Eulàlia."
+        },
+        {
+          id: 'justo-pastor',
+          title: "Basílica de los Santos Mártires Justo y Pastor",
+          hints: [
+            "Busca una de las iglesias con más historia cristiana de la ciudad, donde dos niños mártires guardan la entrada al Barrio Gótico.",
+            "Encuentra la plaza con la fuente más antigua de Barcelona, justo frente a una basílica gótica de torre única.",
+            "Dirígete a la Plaza de Sant Just, muy cerca de la Plaza Sant Jaume."
+          ],
+          description: "Una de las parroquias más antiguas.",
+          coords: [41.3828, 2.1778],
+          info: "Fundada en el siglo IV, es uno de los lugares de culto cristiano más antiguos de Barcelona. El edificio actual es gótico del siglo XIV y destaca por su austeridad y su impresionante retablo de la Pasión.",
+          imageUrl: "assets/images/arquitectura/justo_pastor.jpg",
+          theatricalInfo: "Entrad en el corazón del tiempo. Aquí los siglos se amontonan uno sobre otro, desde los primeros cristianos hasta hoy. Es el rincón más humilde y a la vez más sagrado de nuestra ciudad."
+        },
+        {
+          id: 'basilica-merce',
+          title: "Basílica de Nuestra Señora de la Merced",
+          hints: [
+            "Busca el templo de la co-patrona de Barcelona, cuya cúpula está coronada por una estatua de bronce que mira al mar.",
+            "Encuentra la iglesia barroca construida sobre un antiguo convento medieval de la orden de los mercedarios.",
+            "Dirígete a la Plaza de la Mercè, en el extremo sur del Barrio Gótico."
+          ],
+          description: "Santuario de la patrona de la ciudad.",
+          coords: [41.3790, 2.1795],
+          info: "Construida en el siglo XVIII sobre una iglesia gótica anterior, es el principal exponente del barroco en Barcelona. Alberga la imagen de la Virgen de la Merced, patrona de la diócesis y co-patrona de la ciudad.",
+          imageUrl: "assets/images/arquitectura/merce.jpg",
+          theatricalInfo: "¡Madre de los cautivos! Bajo esta cúpula de oro y esperanza, Barcelona reza a su protectora. Sentid el aroma a incienso y mar; aquí la fe se viste de gala para celebrar la libertad."
+        },
+        {
+          id: 'santa-anna',
+          title: "Monasterio de Santa Anna",
+          hints: [
+            "Busca un claustro secreto a pocos pasos del bullicio de Plaza Cataluña, donde el tiempo parece haberse detenido en el siglo XII.",
+            "Encuentra la iglesia que combina el románico tardío con el gótico inicial en un rincón escondido cerca del centro.",
+            "Entra por el Carrer de Santa Anna y busca el pasaje que conduce al monasterio."
+          ],
+          description: "Transición románico-gótica.",
+          coords: [41.3860, 2.1715],
+          info: "Antigua sede de la Orden del Santo Sepulcro en Barcelona, conserva un claustro de gran belleza y una tranquilidad inaudita en pleno centro comercial.",
+          imageUrl: "assets/images/arquitectura/santa_anna.jpg",
+          theatricalInfo: "Cruza el umbral y deja que el ruido de la ciudad se apague. Aquí, la piedra respira una paz que solo los antiguos caballeros del Sepulcro sabían guardar."
+        },
+        {
+          id: 'santa-maria-mar-iglesia',
+          title: "Basílica de Santa Maria del Mar",
+          hints: [
+            "Busca la 'Catedral del Mar', alzada con el sudor de los cargadores del puerto que trajeron las piedras desde Montjuïc.",
+            "Encuentra la iglesia más equilibrada y bella del gótico catalán, símbolo del orgullo del barrio de la Ribera.",
+            "Ve a la Plaza de Santa Maria, junto al Fossar de les Moreres."
+          ],
+          description: "La joya del gótico catalán.",
+          coords: [41.3835, 2.1815],
+          info: "Construida en tiempo récord (54 años) en el siglo XIV, es el mejor ejemplo de gótico catalán por su simetría y la esbeltez de sus columnas.",
+          imageUrl: "assets/images/arquitectura/santa_maria_mar.jpg",
+          theatricalInfo: "Sentid el peso de la piedra... y la ligereza del alma. Esta iglesia no la hicieron los reyes, la hicimos nosotros, los hombres del mar, con nuestras propias manos."
+        },
+        {
+          id: 'capella-marcus',
+          title: "Capilla de Marcús",
+          hints: [
+            "Busca una de las capillas más pequeñas y antiguas de la ciudad, que servía de parada a los correos que salían de Barcelona.",
+            "Encuentra el pequeño edificio románico en la encrucijada de los antiguos caminos que iban hacia Francia.",
+            "Dirígete al Carrer de Carders, en su unión con el Carrer de Montcada."
+          ],
+          description: "Hospitalidad medieval.",
+          coords: [41.3855, 2.1818],
+          info: "Fundada en el siglo XII por el burgués Bernat Marcús, formaba parte de un hospital y una posta de correos a caballo, de las primeras de Europa.",
+          imageUrl: "assets/images/arquitectura/marcus.jpg",
+          theatricalInfo: "Aquí se encomendaban los viajeros antes de cruzar las murallas. Pequeña, humilde y eterna, esta capilla ha visto partir a miles hacia caminos inciertos."
+        },
+        {
+          id: 'sant-andreu-palomar',
+          title: "Parroquia de Sant Andreu de Palomar",
+          hints: [
+            "Busca la gran cúpula que domina el antiguo pueblo que se unió a Barcelona, famosa por su altura y sus reconstrucciones.",
+            "Encuentra el templo neoclásico donde se firmó el documento de los Segadores en el siglo XVII.",
+            "Dirígete a la Plaza de Orfila, en el corazón del barrio de Sant Andreu."
+          ],
+          description: "Símbolo de la identidad de Sant Andreu.",
+          coords: [41.4355, 2.1910],
+          info: "Situada en el antiguo municipio de Sant Andreu de Palomar, esta iglesia destaca por su imponente cúpula, una de las más grandes de la ciudad. El edificio actual combina elementos neoclásicos y detalles modernistas en su fachada e interior.",
+          imageUrl: "assets/images/arquitectura/sant_andreu.jpg",
+          theatricalInfo: "Bajo esta cúpula late el orgullo de un pueblo que nunca olvidó sus raíces. Mirad hacia arriba: es el cielo de Sant Andreu capturado en piedra y luz para gloria de sus vecinos."
+        },
+        {
+          id: 'pedralbes-monasterio',
+          title: "Real Monasterio de Santa María de Pedralbes",
+          hints: [
+            "Busca el monasterio real fundado por la reina Elisenda, un tesoro del gótico catalán alejado del ruido del centro.",
+            "Encuentra el claustro gótico de tres pisos más grande y bello del mundo, donde las clarisas han vivido durante siglos.",
+            "Sube hasta el barrio de Pedralbes, al final de la Avenida que lleva su nombre."
+          ],
+          description: "Joya del gótico catalán.",
+          coords: [41.3955, 2.1125],
+          info: "Fundado en 1327 por la reina Elisenda de Montcada, es uno de los mejores ejemplos del gótico catalán. Su claustro de tres plantas es uno de los más amplios y armoniosos del mundo, y el monasterio conserva tesoros artísticos y la tumba de su fundadora.",
+          imageUrl: "assets/images/arquitectura/pedralbes.jpg",
+          theatricalInfo: "La reina Elisenda quiso que este fuera su refugio y su descanso eterno. Caminad por estas galerías y sentiréis la paz de un tiempo en el que la piedra hablaba de eternidad y belleza absoluta."
+        }
+      ]
+    },
+    'gaudi': {
+      title: 'Antoni Gaudí: El Genio (1883 - 1926)',
+      duration: '4h 00min',
+      distance: '8.2 km',
+      description: 'Recorre las obras maestras del arquitecto que transformó Barcelona. Desde sus primeros encargos hasta su obra póstuma, descubre el simbolismo y la naturaleza en la arquitectura de Gaudí.',
+      center: [41.3950, 2.1650],
+      zoom: 13,
+      stops: [
+        {
+          id: 'casa-vicens',
+          title: "Casa Vicens",
+          hints: [
+            "Busca el primer gran encargo de Gaudí, una explosión de azulejos verdes y blancos con influencias orientales.",
+            "Encuentra la casa que parece un oasis mudéjar en el corazón del barrio de Gràcia.",
+            "Dirígete al Carrer de les Carolines, en el barrio de Gràcia."
+          ],
+          description: "La primera obra maestra.",
+          coords: [41.4035, 2.1505],
+          info: "Construida entre 1883 y 1885 como casa de veraneo, es la obra que marca el inicio del estilo único de Gaudí, combinando elementos hispano-árabes con el naciente modernismo.",
+          imageUrl: "assets/images/arquitectura/vicens.jpg",
+          theatricalInfo: "¡Bienvenidos a mi primer sueño de azulejo! Aquí las flores de caléndula no se marchitan nunca porque las he atrapado en el barro cocido."
+        },
+        {
+          id: 'palau-guell',
+          title: "Palau Güell",
+          hints: [
+            "Busca el palacio urbano que Gaudí construyó para su gran mecenas, con chimeneas mágicas que parecen árboles de colores.",
+            "Encuentra la fachada austera que esconde un interior lleno de lujo y techos que imitan el cielo estrellado.",
+            "Baja por las Ramblas y gira por el Carrer Nou de la Rambla."
+          ],
+          description: "La residencia del mecenas.",
+          coords: [41.3788, 2.1742],
+          info: "Eusebi Güell encargó este palacio para ampliar su casa de las Ramblas. Destaca su cúpula central parabólica y la innovadora ventilación del sótano para las caballerizas.",
+          imageUrl: "assets/images/arquitectura/palau_guell.jpg",
+          theatricalInfo: "Entrad en la mansión de mi amigo Eusebi. Aquí el hierro se retuerce como ramas y las chimeneas bailan sobre el tejado para que los vecinos miren al cielo."
+        },
+        {
+          id: 'casa-batllo-gaudi',
+          title: "Casa Batlló",
+          hints: [
+            "Busca la casa de los huesos, con una fachada que brilla como las escamas de un pez bajo el sol.",
+            "Encuentra el edificio donde el tejado es el lomo de un dragón vencido por la espada de San Jorge.",
+            "Passeig de Gràcia, en plena Manzana de la Discordia."
+          ],
+          description: "La leyenda de Sant Jordi en piedra.",
+          coords: [41.3915, 2.1648],
+          info: "Gaudí transformó un edificio convencional en esta obra de arte orgánica, donde cada detalle evoca el mundo marino y la leyenda de Sant Jordi.",
+          imageUrl: "assets/images/arquitectura/batllo.jpg",
+          theatricalInfo: "¿Oís el rugido? El dragón descansa sobre el tejado. He convertido la piedra en esqueleto y el cristal en mar para que Barcelona nunca olvide sus leyendas."
+        },
+        {
+          id: 'la-pedrera-gaudi',
+          title: "Casa Milà (La Pedrera)",
+          hints: [
+            "Busca la montaña de piedra ondulada que no tiene ni una sola línea recta en su fachada.",
+            "Encuentra el edificio cuya azotea está habitada por gigantes de piedra que guardan las chimeneas.",
+            "Cruce de Passeig de Gràcia con la calle Provença."
+          ],
+          description: "La cantera de piedra de Gaudí.",
+          coords: [41.3953, 2.1619],
+          info: "Representa la etapa de plenitud naturalista de Gaudí. Es famosa por sus patios interiores de luz y su innovadora estructura de columnas sin muros de carga.",
+          imageUrl: "assets/images/arquitectura/pedrera.jpg",
+          theatricalInfo: "He traído la montaña de Montserrat al centro de la ciudad. Dicen que es una cantera... ¡y lo es! Una cantera de sueños donde la piedra fluye como el agua."
+        },
+        {
+          id: 'park-guell-gaudi',
+          title: "Park Güell",
+          hints: [
+            "Busca la salamandra de mosaico de colores que guarda la escalera de una ciudad jardín fallida.",
+            "Encuentra el bosque de columnas dóricas que sostienen una gran plaza con vistas a toda Barcelona.",
+            "Sube hasta el Carrer d'Olot, en la ladera del Monte Carmelo."
+          ],
+          description: "La naturaleza hecha arquitectura.",
+          coords: [41.4145, 2.1528],
+          info: "Concebido como una urbanización de lujo integrada en la naturaleza, terminó siendo un parque público lleno de formas orgánicas y simbolismo masónico y religioso.",
+          imageUrl: "assets/images/arquitectura/park_guell.jpg",
+          theatricalInfo: "Aquí el cemento imita los nidos de los pájaros y el banco se retuerce como una serpiente de colores. Es mi regalo a la ciudad: un bosque de piedra donde la imaginación no tiene límites."
+        },
+        {
+          id: 'sagrada-familia-gaudi',
+          title: "Sagrada Família",
+          hints: [
+            "Busca la Biblia de piedra cuyas torres buscan el cielo como los dedos de un gigante.",
+            "Encuentra el templo donde las columnas parecen árboles y la luz del sol pinta el interior con los colores del arcoíris.",
+            "Dirígete al Carrer de Mallorca, entre las calles Marina y Sardenya."
+          ],
+          description: "El templo expiatorio eterno.",
+          coords: [41.4035, 2.1745],
+          info: "La obra a la que Gaudí dedicó los últimos 40 años de su vida. Es una síntesis de todo su conocimiento arquitectónico y una expresión máxima de su fe religiosa.",
+          imageUrl: "assets/images/arquitectura/sagrada_familia.jpg",
+          theatricalInfo: "Mi cliente no tiene prisa. Las piedras subirán poco a poco hasta tocar las nubes. He puesto en este templo todo lo que sé de la vida, de la fe y de esta tierra catalana."
+        }
+      ]
+    },
+    'gaudi-desconocido': {
+      title: 'Gaudí Desconocido',
+      duration: '3h 30min',
+      distance: '9.5 km',
+      description: 'Descubre los tesoros menos conocidos de Antoni Gaudí. Desde sus primeros trabajos municipales hasta edificios residenciales y religiosos que a menudo pasan desapercibidos.',
+      center: [41.3900, 2.1500],
+      zoom: 13,
+      stops: [
+        {
+          id: 'farolas-reial',
+          title: "Farolas de la Plaza Real",
+          hints: [
+            "Busca el primer encargo oficial del Ayuntamiento a un joven Gaudí recién graduado.",
+            "Encuentra las farolas de seis brazos coronadas por el casco de Mercurio y dos serpientes enroscadas.",
+            "Dirígete al centro de la Plaza Real, cerca de las Ramblas."
+          ],
+          description: "Su primer trabajo público.",
+          coords: [41.3800, 2.1752],
+          info: "Diseñadas en 1878, estas farolas muestran ya la atención al detalle y el uso del simbolismo (Mercurio como dios del comercio) que caracterizarían su obra futura.",
+          imageUrl: "assets/images/arquitectura/farolas.jpg",
+          theatricalInfo: "Aquí empezó todo. Con estas luces quise iluminar el camino de una Barcelona que despertaba al progreso. Hierro y mito fundidos en el corazón de la plaza."
+        },
+        {
+          id: 'cascada-ciutadella',
+          title: "Cascada Monumental de la Ciutadella",
+          hints: [
+            "Busca la gran fuente del parque donde un estudiante llamado Antoni ayudó a diseñar la gruta y los detalles hidráulicos.",
+            "Encuentra el conjunto escultórico con carros de caballos dorados y una gran concha de piedra.",
+            "Dentro del Parque de la Ciutadella."
+          ],
+          description: "La huella del joven estudiante.",
+          coords: [41.3892, 2.1895],
+          info: "Gaudí colaboró como ayudante de Josep Fontserè en 1875. Se le atribuyen el diseño de la gruta bajo la cascada y algunos detalles de forja y jardinería.",
+          imageUrl: "assets/images/arquitectura/cascada.jpg",
+          theatricalInfo: "Aprendí del agua y de la fuerza de la piedra antes de volar solo. En esta fuente dejé mis primeros susurros de naturaleza."
+        },
+        {
+          id: 'colegio-teresiana',
+          title: "Colegio de las Teresianas",
+          hints: [
+            "Busca un edificio de ladrillo de una austeridad sorprendente, coronado por pináculos que terminan en cruces de cuatro brazos.",
+            "Encuentra el colegio religioso donde Gaudí tuvo que trabajar con un presupuesto muy ajustado, demostrando su genio con materiales humildes.",
+            "Dirígete al Carrer de Ganduxer, en la zona alta de la ciudad."
+          ],
+          description: "Gaudismo austero y espiritual.",
+          coords: [41.3995, 2.1345],
+          info: "Construido entre 1888 y 1889, destaca por el uso extensivo del ladrillo y el arco parabólico, logrando una gran expresividad con materiales muy económicos.",
+          imageUrl: "assets/images/arquitectura/teresinas.jpg",
+          theatricalInfo: "La pobreza no está reñida con la belleza. Con ladrillo y fe, levanté un castillo para el espíritu donde la luz entra de forma humilde pero eterna."
+        },
+        {
+          id: 'torre-bellesguard',
+          title: "Torre Bellesguard (Casa Figueras)",
+          hints: [
+            "Busca el castillo neogótico construido sobre las ruinas del palacio del último rey de la dinastía catalana.",
+            "Encuentra la casa que parece una fortaleza medieval con una torre esbelta coronada por la bandera catalana.",
+            "Sube a los pies de Collserola, en el Carrer de Bellesguard."
+          ],
+          description: "Homenaje a la historia de Cataluña.",
+          coords: [41.4095, 2.1265],
+          info: "Construida entre 1900 y 1909 sobre el antiguo palacio del rey Martí l'Humà. Gaudí diseñó una obra que fusiona el gótico con el modernismo, llena de referencias patrióticas.",
+          imageUrl: "assets/images/arquitectura/bellesguard.jpg",
+          theatricalInfo: "Aquí el pasado respira a través de la piedra. He devuelto la corona a este monte con un castillo que guarda la memoria de nuestros reyes bajo el cielo de Barcelona."
+        },
+        {
+          id: 'puerta-miralles',
+          title: "Puerta de la Finca Miralles",
+          hints: [
+            "Busca un muro ondulado que parece una ola de piedra, con una puerta de hierro que recuerda a la piel de un reptil.",
+            "Encuentra el resto de una finca desaparecida, donde hoy una estatua de Gaudí te da la bienvenida.",
+            "Passeig de Manuel Girona, en el barrio de Sarrià."
+          ],
+          description: "La ondulación perfecta.",
+          coords: [41.3905, 2.1225],
+          info: "Es el único resto de la cerca de la finca Miralles (1901). Presenta un diseño orgánico único con una marquesina de fibrocemento y un muro lobulado de piedra caliza.",
+          imageUrl: "assets/images/arquitectura/miralles.jpg",
+          theatricalInfo: "La línea recta pertenece a los hombres, la curva a Dios. Ved cómo la pared se mueve como si estuviera viva, invitándoos a pasar a un mundo que ya no existe."
+        },
+        {
+          id: 'pabellones-guell',
+          title: "Pabellones Güell",
+          hints: [
+            "Busca la puerta de hierro más espectacular de Barcelona: un dragón articulado que guarda la entrada a una antigua finca real.",
+            "Encuentra el complejo con cúpulas de escamas y una torre con forma de linterna oriental.",
+            "Avenida de Pedralbes, cerca de la Ciudad Universitaria."
+          ],
+          description: "El guardián de hierro.",
+          coords: [41.3885, 2.1195],
+          info: "Primer encargo importante para Eusebi Güell (1884). El dragón de la puerta representa al guardián del Jardín de las Hespérides de la mitología clásica.",
+          imageUrl: "assets/images/arquitectura/pavellons.jpg",
+          theatricalInfo: "¡Cuidado con Ladón! El dragón de hierro vigila la entrada a mi paraíso particular. El ladrillo y la fantasía se unen aquí para servir a mi gran mecenas."
+        },
+        {
+          id: 'fuente-hercules',
+          title: "Fuente de Hércules",
+          hints: [
+            "Busca una obra de Gaudí que estuvo 'perdida' y olvidada durante más de 60 años en un jardín real.",
+            "Encuentra la fuente de piedra con una cabeza de dragón de hierro que escupe agua sobre un busto del héroe griego.",
+            "Entra en los Jardines del Palacio Real de Pedralbes y busca entre la vegetación cerca del palacio."
+          ],
+          description: "La obra olvidada de Gaudí.",
+          coords: [41.3878, 2.1175],
+          info: "Construida en 1884, esta fuente permaneció oculta por la maleza y olvidada hasta que fue redescubierta en 1984 durante unos trabajos de restauración de los jardines. Presenta un busto de Hércules sobre un pedestal con el escudo de Cataluña y un caño con forma de dragón chino.",
+          imageUrl: "assets/images/arquitectura/fuente_hercules.jpg",
+          theatricalInfo: "El tiempo y la hiedra intentaron devorar mi obra, pero el agua nunca dejó de correr. Aquí Hércules descansa bajo la mirada del dragón, en un rincón donde el silencio es el mejor guardián de la belleza."
+        }
+      ]
+    },
+    'modernismo-desconocido': {
+      title: 'Modernismo Desconocido',
+      duration: '3h 00min',
+      distance: '7.2 km',
+      description: 'Barcelona esconde joyas modernistas que escapan a las rutas habituales. Fachadas de colores vibrantes, edificios con dos caras y el modernismo más tardío te esperan en este recorrido por los tesoros ocultos de la ciudad.',
+      center: [41.4000, 2.1550],
+      zoom: 14,
+      stops: [
+        {
+          id: '4-gats',
+          title: "Els 4 Gats (Casa Martí)",
+          hints: [
+            "Busca la taberna donde los genios del modernismo se reunían para arreglar el mundo entre sombras y chimeneas.",
+            "Encuentra el edificio de estilo gótico nórdico diseñado por Puig i Cadafalch que fue el epicentro de la bohemia barcelonesa.",
+            "Dirígete al Carrer de Montsió, muy cerca de la Avenida del Portal de l'Àngel."
+          ],
+          description: "Cuna de la bohemia modernista.",
+          coords: [41.3858, 2.1738],
+          info: "Inaugurada en 1897 en los bajos de la Casa Martí, esta taberna fue el punto de encuentro de artistas como Picasso, Casas y Rusiñol. Su arquitectura mezcla el gótico catalán con influencias del norte de Europa.",
+          imageUrl: "assets/images/arquitectura/4gats.jpg",
+          theatricalInfo: "¡Pasad y pedid una copa! Aquí Picasso dibujó sus primeros menús y la 'Idea' se mezclaba con el humo del tabaco. Es el rincón donde el arte aprendió a ser libre y rebelde."
+        },
+        {
+          id: 'hotel-espana',
+          title: "Hotel España (Fonda España)",
+          hints: [
+            "Busca el comedor más bello de Barcelona, donde las sirenas de piedra y los esgrafiados marinos te transportan al fondo del mar.",
+            "Encuentra la obra maestra interior de Domènech i Montaner escondida en una fonda del siglo XIX cerca del Liceu.",
+            "Dirígete al Carrer de Sant Pau, a pocos metros de las Ramblas."
+          ],
+          description: "El Modernismo bajo techo.",
+          coords: [41.3803, 2.1730],
+          info: "Reformado por Lluís Domènech i Montaner en 1903, su comedor 'Sirenas' es una joya de la decoración modernista con mosaicos, esgrafiados y una chimenea de alabastro de Eusebi Arnau.",
+          imageUrl: "assets/images/arquitectura/hotelespana.jpg",
+          theatricalInfo: "Entrad en este palacio de la gastronomía. Las sirenas os vigilan desde las paredes y el tiempo se detiene entre cristales y maderas nobles. Es el lujo que la burguesía guardaba para sus mejores banquetes."
+        },
+        {
+          id: 'casa-padua',
+          title: "Casa Pàdua",
+          hints: [
+            "Busca una de las fachadas más coloridas de Barcelona, con esgrafiados rojos y verdes que parecen sacados de un cuento.",
+            "Encuentra el edificio que destaca por sus tribunas de hierro y sus motivos florales en una calle estrecha de Sant Gervasi.",
+            "Dirígete al Carrer de Pàdua, número 75."
+          ],
+          description: "La explosión del color.",
+          coords: [41.4045, 2.1455],
+          info: "Diseñada por Jeroni Granell i Manresa en 1903, es famosa por su vibrante policromía y sus esgrafiados florales, siendo uno de los ejemplos más singulares del modernismo residencial.",
+          imageUrl: "assets/images/arquitectura/padua.jpg",
+          theatricalInfo: "¡Mirad este rojo! He querido que la primavera viva siempre en estas paredes. En una ciudad de piedra gris, mi casa es un ramo de flores que nunca se marchita."
+        },
+        {
+          id: 'casa-sayrach',
+          title: "Casa Sayrach",
+          hints: [
+            "Busca el último gran edificio del modernismo barcelonés, con una fachada de líneas curvas que anuncian el final de una era.",
+            "Encuentra el portal cuyo vestíbulo blanco y orgánico parece el interior de una ballena o una cueva de hielo.",
+            "Cruce de la Avenida Diagonal con la calle Enric Granados."
+          ],
+          description: "El canto del cisne del modernismo.",
+          coords: [41.3945, 2.1545],
+          info: "Construida en 1918 por Manuel Sayrach, esta obra muestra una clara influencia gaudiniana en sus formas orgánicas y es considerada una de las últimas manifestaciones del movimiento en la ciudad.",
+          imageUrl: "assets/images/arquitectura/sayrach.jpg",
+          theatricalInfo: "Entrad en mi cueva de luz blanca. Las curvas no terminan, se deslizan como el agua. Es mi adiós a un estilo que nos hizo soñar con formas imposibles."
+        },
+        {
+          id: 'casa-ramos',
+          title: "Casa Ramos",
+          hints: [
+            "Busca el edificio de esgrafiados amarillos que domina una de las plazas más animadas de Gràcia.",
+            "Encuentra la casa señorial que Almodóvar eligió para rodar algunas escenas de 'Todo sobre mi madre'.",
+            "Dirígete a la Plaza de Lesseps."
+          ],
+          description: "El modernismo de plaza.",
+          coords: [41.4075, 2.1505],
+          info: "Obra de Jaume Torres i Grau (1906), destaca por su fachada tripartita y la riqueza de sus esgrafiados amarillentos, así como por sus impresionantes interiores que conservan todo el mobiliario original.",
+          imageUrl: "assets/images/arquitectura/ramos.jpg",
+          theatricalInfo: "Soy el guardián de la plaza. Mis tres cuerpos miran al sol de la mañana mientras los vecinos pasan bajo mis balcones de hierro forjado. Soy la elegancia que Gràcia merece."
+        },
+        {
+          id: 'el-pinar',
+          title: "El Pinar (Casa Arnús)",
+          hints: [
+            "Busca el castillo de cuento de hadas que vigila la ciudad desde las faldas del Tibidabo, rodeado de un bosque de pinos.",
+            "Encuentra la mansión de piedra con torres afiladas que parece transportada desde las leyendas centroeuropeas hasta Barcelona.",
+            "Sube por la Avenida del Tibidabo y busca el inicio de la calle Manuel Arnús."
+          ],
+          description: "El castillo modernista de la zona alta.",
+          coords: [41.4158, 2.1328],
+          info: "Obra de Enric Sagnier (1903), este palacete destaca por su silueta fortificada y su integración en el entorno natural. Sus tejados de pizarra y su torre del homenaje le dan un aire romántico y legendario.",
+          imageUrl: "assets/images/arquitectura/pinar.jpg",
+          theatricalInfo: "Soy el guardián de la montaña. Desde mis torres de piedra, veo cómo Barcelona crece y cambia mientras yo permanezco inmutable entre los pinos. Soy el sueño de un castillo hecho realidad bajo el sol mediterráneo."
+        },
+        {
+          id: 'casa-planells',
+          title: "Casa Planells",
+          hints: [
+            "Busca el edificio construido en un solar tan pequeño y estrecho que parece imposible que alguien pueda vivir dentro.",
+            "Encuentra la obra maestra de Jujol, el colaborador de Gaudí, que destaca por sus curvas aerodinámicas en un chaflán imposible.",
+            "Cruce de la Avenida Diagonal con la calle Sicilia."
+          ],
+          description: "El ingenio de Jujol.",
+          coords: [41.4005, 2.1765],
+          info: "Josep Maria Jujol logró en 1924 aprovechar un solar minúsculo para crear una obra de gran ligereza visual y soluciones espaciales ingeniosas, marcando la transición hacia el racionalismo.",
+          imageUrl: "assets/images/arquitectura/planells.jpg",
+          theatricalInfo: "¿Poca anchura? ¡Ningún problema para la imaginación! He doblado la esquina como si fuera papel para que el aire y la luz inunden cada rincón de este triángulo de piedra."
+        },
+        {
+          id: 'casa-altures',
+          title: "Casa de les Altures",
+          hints: [
+            "Busca un palacete de estilo neomudéjar que parece transportado desde Granada hasta las faldas de los bunkers del Guinardó.",
+            "Encuentra el edificio que fue la sede de la compañía de aguas, decorado con ladrillo visto y arcos de herradura.",
+            "Parque de las Aguas, en el distrito de Horta-Guinardó."
+          ],
+          description: "Exotismo en el Guinardó.",
+          coords: [41.4125, 2.1655],
+          info: "Construida en 1890 por Enric Figueres para el director de la Sociedad General de Aguas de Barcelona, es un ejemplo único de modernismo de inspiración árabe (neomudéjar).",
+          imageUrl: "assets/images/arquitectura/altures.jpg",
+          theatricalInfo: "Buscad la sombra de mis arcos. He traído el aroma de la Alhambra a estas colinas para que el agua de Barcelona se sienta como en un palacio de sultanes."
+        },
+        {
+          id: 'casa-tosquella',
+          title: "Casa Tosquella",
+          hints: [
+            "Busca una villa de veraneo con un estilo ecléctico que mezcla el modernismo con toques arabescos y una torre singular.",
+            "Encuentra la casa que destaca por su jardín y sus decoraciones cerámicas en un rincón tranquilo de Sant Gervasi.",
+            "Cruce de la calle Ballester con la Ronda del General Mitre."
+          ],
+          description: "Eclecticismo modernista.",
+          coords: [41.4065, 2.1435],
+          info: "Juan Rubio i Bellver reformó esta casa en 1906, convirtiéndola en una joya modernista con una rica decoración de forja, vidrieras y mosaicos que ha sobrevivido milagrosamente a la presión urbanística.",
+          imageUrl: "assets/images/arquitectura/tosquella.jpg",
+          theatricalInfo: "Soy una superviviente. Los coches pasan veloces por la Ronda, pero yo sigo aquí, guardando el silencio de mis vidrieras y el recuerdo de los veranos de principios de siglo."
+        }
+      ]
+    },
+    'racionalismo': {
+      title: 'Racionalismo BCN (1929 - 1936)',
+      duration: '3h 00min',
+      distance: '10.5 km',
+      description: 'Descubre la arquitectura del grupo GATCPAC. Una revolución de líneas puras, luz y funcionalidad que buscaba mejorar la vida de los ciudadanos a través del diseño moderno.',
+      center: [41.4000, 2.1600],
+      zoom: 13,
+      stops: [
+        {
+          id: 'dispensari-antituberculos',
+          title: "Dispensari Antituberculós",
+          hints: [
+            "Busca un edificio que parece una máquina de curar, con grandes ventanales para que entre el sol y el aire puro en el Raval.",
+            "Encuentra la obra maestra de Sert y Torres Clavé que rompió con la ornamentación para centrarse en la higiene.",
+            "Passatge de Sant Bernat, en el corazón del Raval."
+          ],
+          description: "Arquitectura al servicio de la salud.",
+          coords: [41.3845, 2.1665],
+          info: "Construido entre 1934 y 1938, es uno de los edificios más importantes del racionalismo europeo. Su diseño permitía la máxima ventilación y asoleo para combatir la tuberculosis.",
+          imageUrl: "assets/images/arquitectura/dispensari.jpg",
+          theatricalInfo: "¡Fuera el polvo y las sombras! Aquí la arquitectura es medicina. Líneas blancas, acero y cristal para que la luz del Mediterráneo cure los pulmones de la ciudad."
+        },
+        {
+          id: 'casa-sert-muntaner',
+          title: "Edifici de Viviendas Carrer Muntaner",
+          hints: [
+            "Busca un edificio de viviendas donde la fachada se retira para crear balcones profundos que parecen cajas de luz.",
+            "Encuentra la residencia que Josep Lluís Sert diseñó para demostrar que la elegancia está en la proporción y no en el adorno.",
+            "Carrer de Muntaner, número 342."
+          ],
+          description: "El lujo de la razón.",
+          coords: [41.3985, 2.1465],
+          info: "Construido in 1931, Sert aplicó aquí las teorías de Le Corbusier, creando viviendas funcionales con dúplex y una innovadora estructura metálica vista.",
+          imageUrl: "assets/images/arquitectura/casa_sert.jpg",
+          theatricalInfo: "Vivir bien es vivir con orden. He quitado las molduras para que podáis ver la belleza de la estructura. Menos es más cuando el espacio fluye libremente."
+        },
+        {
+          id: 'casa-rodriguez-arias',
+          title: "Casa Rodríguez Arias",
+          hints: [
+            "Busca un edificio en una gran avenida que destaca por su simetría perfecta y sus ventanas horizontales corridas.",
+            "Encuentra una de las primeras obras del GATCPAC que trajo la estética naval a la arquitectura urbana.",
+            "Via Augusta, número 61."
+          ],
+          description: "La estética de la máquina.",
+          coords: [41.4005, 2.1515],
+          info: "Obra de Germán Rodríguez Arias (1931), es un ejemplo canónico de racionalismo, con una fachada plana, ausencia total de decoración y un uso audaz de las ventanas en banda.",
+          imageUrl: "assets/images/arquitectura/arias.jpg",
+          theatricalInfo: "¿Un barco en la ciudad? Mirad mis ventanas horizontales; parece que estemos navegando hacia el futuro. La razón es nuestro timón."
+        },
+        {
+          id: 'edifici-astoria',
+          title: "Edifici Astòria",
+          hints: [
+            "Busca un edificio que albergaba un cine y cuya fachada curva parece la proa de un transatlántico moderno.",
+            "Encuentra la obra de Germán Rodríguez Arias que combinó ocio y vivienda bajo las premisas de la vanguardia.",
+            "Carrer de París, número 193."
+          ],
+          description: "Ocio y modernidad.",
+          coords: [41.3935, 2.1535],
+          info: "Construido en 1934, destaca por su gran marquesina y la integración de un cine en la planta baja, siendo un icono de la vida cosmopolita de la Barcelona de los años 30.",
+          imageUrl: "assets/images/arquitectura/astoria.jpg",
+          theatricalInfo: "¡Bienvenidos al espectáculo de la modernidad! Bajo este techo, el cine y la vida se unen. Líneas curvas para una ciudad que ya no quiere mirar atrás."
+        },
+        {
+          id: 'casa-bloc-racionalisme',
+          title: "Casa Bloc",
+          hints: [
+            "Busca el gran edificio en forma de 'S' diseñado para que todos los obreros tuvieran luz, aire y un jardín común.",
+            "Encuentra el experimento de vivienda social más ambicioso de la República, un bloque que quería dignificar la vida del trabajador.",
+            "Passeig de Torras i Bages, en el barrio de Sant Andreu."
+          ],
+          description: "Vivienda social revolucionaria.",
+          coords: [41.4395, 2.1915],
+          info: "Obra de Sert, Torres Clavé y Subirana (1932-1936). Rompió con el modelo de manzana cerrada del Eixample para crear un espacio abierto y saludable para las clases trabajadoras.",
+          imageUrl: "assets/images/arquitectura/casa_bloc.jpg",
+          theatricalInfo: "Esta no es una casa, es un derecho. Aquí no hay patios oscuros ni habitaciones sin aire. Hemos construido un monumento a la dignidad del obrero bajo el sol de Barcelona."
+        },
+        {
+          id: 'pavello-republica',
+          title: "Pavelló de la República",
+          hints: [
+            "Busca la reconstrucción del edificio que representó a España en la Exposición de París de 1937, donde se expuso el Guernica por primera vez.",
+            "Encuentra el pabellón de cristal y acero que hoy guarda el Archivo Histórico de la ciudad en un entorno universitario.",
+            "Avenida del Cardenal Vidal i Barraquer, en el Valle de Hebrón."
+          ],
+          description: "Símbolo de la libertad.",
+          coords: [41.4285, 2.1485],
+          info: "Aunque es una reconstrucción de 1992, respeta fielmente el diseño original de Sert y Lacasa. Fue el grito de libertad de una República que defendía la cultura frente a las bombas.",
+          imageUrl: "assets/images/arquitectura/pavello.jpg",
+          theatricalInfo: "Aquí la arquitectura es un manifiesto. Cristal para la transparencia, acero para la fuerza. Es el último refugio de un sueño que se negaba a morir."
+        }
+      ]
+    },
+    'mercados-historicos': {
+      title: 'Catedrales del Pueblo: Mercados Históricos',
+      duration: '2h 45min',
+      distance: '5.5 km',
+      description: 'Barcelona se explica a través de sus mercados. Descubre la arquitectura del hierro y la vida palpitante en estos templos del comercio popular que definen el carácter de cada barrio.',
+      center: [41.3850, 2.1750],
+      zoom: 14,
+      stops: [
+        {
+          id: 'mercat-boqueria-arq',
+          title: "Mercat de Sant Josep (La Boqueria)",
+          hints: [
+            "Busca el mercado más famoso del mundo, nacido donde antaño se alzaba un convento quemado.",
+            "Encuentra el gran arco de entrada modernista de hierro y vidrios de colores que da la bienvenida desde las Ramblas.",
+            "La Rambla, número 91."
+          ],
+          description: "El icono mundial de Barcelona.",
+          coords: [41.3817, 2.1715],
+          info: "Inaugurado en 1840 sobre el antiguo convento de San José. Su cubierta de hierro actual data de 1914 y es el corazón gastronómico de la ciudad.",
+          imageUrl: "assets/images/arquitectura/boqueria.jpg",
+          theatricalInfo: "¡Pasad, pasad! Aquí el hambre no existe. Bajo este techo de hierro, la tierra y el mar se dan la mano cada mañana. Es el teatro de la vida en su estado más puro."
+        },
+        {
+          id: 'mercat-sant-antoni-arq',
+          title: "Mercat de Sant Antoni",
+          hints: [
+            "Busca el mercado con planta en forma de cruz griega que ocupa una manzana entera del Eixample.",
+            "Encuentra la joya del hierro diseñada por Antoni Rovira i Trias que esconde un baluarte de la antigua muralla en su subsuelo.",
+            "Carrer del Comte d'Urgell, número 1."
+          ],
+          description: "Arquitectura del hierro en estado puro.",
+          coords: [41.3785, 2.1625],
+          info: "Construido en 1882, fue el primer mercado fuera de las murallas. Su estructura de hierro es de las más impresionantes de Europa por su geometría y dimensiones.",
+          imageUrl: "assets/images/arquitectura/sant_antoni.jpg",
+          theatricalInfo: "Mirad la simetría... el orden de la razón aplicado al mercado. Aquí el hierro se vuelve ligero para dejar que el barrio respire entre hortalizas y libros viejos."
+        },
+        {
+          id: 'mercat-concepcio-arq',
+          title: "Mercat de la Concepció",
+          hints: [
+            "Busca el mercado de las flores, un edificio elegante de ladrillo y hierro en el corazón del Eixample 'derecho'.",
+            "Encuentra el templo del comercio que destaca por sus grandes ventanales y su aire señorial.",
+            "Carrer d'Aragó, número 311."
+          ],
+          description: "Elegancia en el Eixample.",
+          coords: [41.3945, 2.1685],
+          info: "Inaugurado en 1888, destaca por su gran nave central y el uso decorativo del ladrillo visto, integrándose perfectamente en la trama urbana de Cerdà.",
+          imageUrl: "assets/images/arquitectura/concepcio.jpg",
+          theatricalInfo: "Huele a flores frescas... Este mercado es el jardín del Eixample. Un lugar donde la burguesía y el pueblo se encuentran bajo el cristal para celebrar la abundancia de la ciudad."
+        },
+        {
+          id: 'mercat-lleytad-arq',
+          title: "Mercat de la Llibertat",
+          hints: [
+            "Busca un mercado modernista en una pequeña plaza de Gràcia, decorado con escudos y motivos vegetales de hierro.",
+            "Encuentra la obra de Miquel Pasqual i Tintorer que es el alma del antiguo pueblo de Gràcia.",
+            "Plaça de la Llibertat, en Gràcia."
+          ],
+          description: "Modernismo de barrio.",
+          coords: [41.3995, 2.1545],
+          info: "Construido en 1888 y reformado en estilo modernista en 1893. Destaca por su rica ornamentación de forja y su escala humana, muy ligada a la vida del barrio.",
+          imageUrl: "assets/images/arquitectura/llibertat.jpg",
+          theatricalInfo: "¡Gràcia es libre y su mercado también! Pequeño pero orgulloso, como nuestro pueblo. Aquí los detalles de hierro cuentan historias de libertad y trabajo."
+        },
+        {
+          id: 'mercat-galvany-arq',
+          title: "Mercat de Galvany",
+          hints: [
+            "Busca el mercado que parece una catedral de ladrillo, con vidrieras artísticas que iluminan el comercio de lujo.",
+            "Encuentra el edificio monumental en la zona alta que destaca por su torre del reloj y su elegancia clásica.",
+            "Carrer de Santaló, número 65."
+          ],
+          description: "La catedral del comercio.",
+          coords: [41.3965, 2.1445],
+          info: "Inaugurado in 1927, es uno de los mercados más bellos estéticamente. Su interior diáfano y sus grandes vidrieras lo convierten en un espacio casi sagrado dedicado al producto de calidad.",
+          imageUrl: "assets/images/arquitectura/galvany.jpg",
+          theatricalInfo: "La luz entra aquí como en un templo. No venimos solo a comprar, venimos a admirar la obra bien hecha. Es el triunfo de la forma sobre la función, la catedral de los sabores."
+        },
+        {
+          id: 'mercat-santa-caterina-arq',
+          title: "Mercat de Santa Caterina",
+          hints: [
+            "Busca el tejado ondulado de colores que parece un mar de cerámica flotando sobre el barrio de la Ribera.",
+            "Encuentra el mercado que renació con una arquitectura rompedora sobre los restos de un antiguo monasterio.",
+            "Avinguda de Francesc Cambó, número 16."
+          ],
+          description: "Tradición y vanguardia.",
+          coords: [41.3862, 2.1785],
+          info: "Originalmente de 1848, fue remodelado en 2005 por Enric Miralles y Benedetta Tagliabue. Su cubierta de mosaico hexagonal es un homenaje a la paleta de colores de las frutas y verduras.",
+          imageUrl: "assets/images/arquitectura/caterina.jpg",
+          theatricalInfo: "¡Mirad qué olas! El color fluye sobre nosotros como si la huerta hubiera inundado el tejado. Aquí el pasado de las piedras del convento baila con el futuro de la arquitectura más libre."
+        }
+      ]
+    },
+    'bcn-92': {
+      title: 'Barcelona \'92 (1992)',
+      duration: '2h 30min',
+      distance: '6.5 km',
+      description: 'Revive el espíritu olímpico de 1992 y descubre cómo los juegos transformaron para siempre la cara de Barcelona, abriéndola al mar y modernizando sus infraestructuras.',
+      center: [41.3650, 2.1550],
+      zoom: 14,
+      stops: [
+        {
+          id: 'estadi-olimpic',
+          title: "Estadi Olímpic Lluís Companys",
+          hints: [
+            "Busca el lugar donde la llama olímpica iluminó el cielo tras el vuelo de una flecha.",
+            "Encuentra el estadio que fue el corazón de los juegos, reconstruido sobre un recinto de 1929.",
+            "Dirígete a la Anella Olímpica de Montjuïc, frente a la fachada principal del estadio."
+          ],
+          description: "Corazón de los Juegos Olímpicos.",
+          coords: [41.3615, 2.1555],
+          info: "Originalmente construido para la Exposición de 1929, fue remodelado íntegramente para ser la sede de las ceremonias de apertura y clausura de 1992.",
+          imageUrl: "assets/images/historia/estadi_olimpic.jpg",
+          theatricalInfo: "¡Bienvenidos al templo del esfuerzo! Aquí, bajo este sol, el mundo entero miró a Barcelona. ¿Oís todavía el eco del 'Amics per sempre'?"
+        },
+        {
+          id: 'palau-sant-jordi',
+          title: "Palau Sant Jordi",
+          hints: [
+            "Busca el caparazón plateado que parece una tortuga futurista descansando en la montaña.",
+            "Encuentra la joya arquitectónica diseñada por Arata Isozaki para la gimnasia y el baloncesto.",
+            "Ve a la explanada de la Anella Olímpica, junto al gran pabellón cubierto."
+          ],
+          description: "Vanguardia arquitectónica olímpica.",
+          coords: [41.3635, 2.1525],
+          info: "Considerado una obra maestra de la arquitectura moderna, su cúpula se construyó en el suelo y se elevó mediante gatos hidráulicos.",
+          imageUrl: "assets/images/historia/sant_jordi.jpg",
+          theatricalInfo: "Mirad este techo... parece que flote. Es el símbolo de una Barcelona que quiso ser la más moderna del Mediterráneo."
+        },
+        {
+          id: 'torre-calatrava',
+          title: "Torre de Comunicaciones de Montjuïc",
+          hints: [
+            "Busca la silueta de un atleta sosteniendo la llama olímpica, fabricada en acero blanco.",
+            "Encuentra el gran reloj de sol diseñado por Santiago Calatrava que domina el perfil de la montaña.",
+            "Dirígete a la plaza junto al Palau Sant Jordi, donde se alza la esbelta torre blanca."
+          ],
+          description: "Icono visual de los juegos.",
+          coords: [41.3640, 2.1505],
+          info: "Con 136 metros de altura, su forma inclinada representa a un deportista portando la antorcha olímpica.",
+          imageUrl: "assets/images/historia/torre_calatrava.jpg",
+          theatricalInfo: "Esbelta y orgullosa, esta torre envió las imágenes de nuestra gloria a todos los rincones del planeta. Es nuestro faro de modernidad."
+          },
+          {
+          id: 'piscina-montjuic',
+          title: "Piscina Municipal de Montjuïc",
+          hints: [
+            "Busca el trampolín con las vistas más espectaculares de la ciudad, donde los saltadores parecían volar sobre la Sagrada Familia.",
+            "Encuentra la piscina exterior de Montjuïc que se hizo famosa mundialmente por sus panorámicas durante los juegos.",
+            "Dirígete a la Avenida Miramar, cerca del funicular, para encontrar este balcón al agua."
+          ],
+          description: "Escenario de los saltos de trampolín.",
+          coords: [41.3685, 2.1645],
+          info: "Famosa por sus impresionantes vistas panorámicas de Barcelona, fue la sede de las competiciones de saltos y waterpolo en 1992. La imagen de los saltadores con la ciudad de fondo es uno de los iconos de los Juegos.",
+          imageUrl: "assets/images/historia/piscina_montjuic.jpg",
+          theatricalInfo: "¡Mirad esa caída! Los saltadores no solo competían contra la gravedad, sino que lo hacían con toda Barcelona a sus pies. Es, sin duda, la imagen más bella que los Juegos regalaron al mundo."
+          },
+          {
+          id: 'vila-olimpica',
+          title: "La Vila Olímpica del Poblenou",
+          hints: [
+            "Ve al barrio que nació donde antes solo había humo de fábricas y vías de tren muertas.",
+            "Busca el lugar donde descansaron los atletas y que devolvió a los barceloneses el acceso directo a sus playas.",
+            "Dirígete a la Plaza de los Voluntarios Olímpicos, en el barrio de la Vila Olímpica."
+          ],
+          description: "Transformación urbana radical.",
+          coords: [41.3895, 2.1955],
+          info: "La construcción de la Vila Olímpica permitió recuperar el frente marítimo de la ciudad, eliminando las barreras industriales que la separaban del mar.",
+          imageUrl: "assets/images/historia/vila_olimpica.jpg",
+          theatricalInfo: "Donde antes había muros y óxido, ahora hay vida y brisa marina. Barcelona por fin rompió sus cadenas para abrazar el mar."
+        },
+        {
+          id: 'port-olimpic',
+          title: "Port Olímpic",
+          hints: [
+            "Finaliza tu ruta en el puerto que se llenó de velas blancas bajo la mirada de dos grandes torres gemelas.",
+            "Busca el recinto náutico creado para las competiciones de vela que hoy es un centro de ocio.",
+            "Alcanza el centro del Puerto Olímpico, frente a la escultura del Pez de Frank Gehry."
+          ],
+          description: "La nueva fachada marítima.",
+          coords: [41.3860, 2.1970],
+          info: "Diseñado por los arquitectos Oriol Bohigas, Josep Martorell, David Mackay y Albert Puigdomènech, es el emblema del éxito de la transformación olímpica.",
+          imageUrl: "assets/images/historia/port_olimpic.jpg",
+          theatricalInfo: "Sentid el salitre. Este puerto es el regalo que los Juegos nos dejaron. Una ventana abierta al mundo desde las playas de nuestra ciudad."
+        }
+      ]
+    },
+    'born-tapas': {
+      title: 'El Born: Tapas y Vinos',
+      duration: '2h 30min',
+      distance: '2.5 km',
+      description: 'Disfruta de la mejor gastronomía en el barrio más chic de Barcelona. Un recorrido por bodegas históricas y locales vanguardistas en el laberinto medieval del Born.',
+      center: [41.3840, 2.1820],
+      zoom: 16,
+      stops: [
+        {
+          id: 'santa-maria-mar-tapas',
+          title: "Plaça de Santa Maria (Aperitivo)",
+          hints: [
+            "Comienza tu ruta frente a la basílica más bella del gótico catalán, donde las terrazas invitan al primer brindis.",
+            "Busca la plaza donde los cargadores de mar descansaban y hoy los locales disfrutan del vermut.",
+            "Dirígete a la fachada principal de Santa Maria del Mar."
+          ],
+          description: "El inicio gastronómico.",
+          coords: [41.3835, 2.1815],
+          info: "La plaza de Santa Maria es el corazón del Born y un lugar ideal para empezar una ruta de tapas rodeado de historia y arquitectura.",
+          imageUrl: "assets/images/gastronomia/born_vermut.jpg",
+          theatricalInfo: "¡Salud! Bajo la mirada de la Virgen, empezamos nuestro viaje de sabores. Que el vermut abra el apetito y la brisa del Born nos guíe."
+        },
+        {
+          id: 'carrer-montcada-vinos',
+          title: "Bodegas del Carrer de Montcada",
+          hints: [
+            "Busca la calle de los palacios donde el vino se sirve en copas de cristal entre muros de piedra del siglo XIV.",
+            "Encuentra los rincones donde el arte del Museo Picasso se mezcla con el aroma de las mejores barricas.",
+            "Camina por el Carrer de Montcada."
+          ],
+          description: "Vinos entre palacios.",
+          coords: [41.3845, 2.1810],
+          info: "Esta calle alberga algunas de las tabernas y vinotecas más exclusivas, situadas en los bajos de antiguos palacios medievales.",
+          imageUrl: "assets/images/gastronomia/montcada_vino.jpg",
+          theatricalInfo: "Sentid el peso de la historia en cada trago. Aquí el vino sabe a tiempo y a nobleza. Un brindis por los que alzaron estos muros."
+        },
+        {
+          id: 'mercat-santa-caterina-tapas',
+          title: "Mercat de Santa Caterina (Tapas de Mercado)",
+          hints: [
+            "Busca el mercado del tejado de colores donde el producto fresco se convierte en miniatura culinaria.",
+            "Encuentra las barras de cocina donde los chefs del barrio compran y cocinan en el mismo lugar.",
+            "Avinguda de Francesc Cambó, frente al mercado."
+          ],
+          description: "Del mercado al plato.",
+          coords: [41.3862, 2.1785],
+          info: "Famoso por su arquitectura vanguardista, el mercado de Santa Caterina ofrece una oferta gastronómica de primer nivel con productos de proximidad.",
+          imageUrl: "assets/images/gastronomia/caterina_tapas.jpg",
+          theatricalInfo: "¡Mirad qué colores! La huerta de Barcelona está aquí mismo. Probad una tapa de temporada y entenderéis por qué nuestra cocina es única en el mundo."
+        },
+        {
+          id: 'passeig-born-copas',
+          title: "Passeig del Born (El epicentro nocturno)",
+          hints: [
+            "Finaliza tu ruta en la antigua zona de justas medievales, hoy llena de bares de diseño y coctelerías chic.",
+            "Busca el paseo que une el antiguo mercado con la iglesia, donde la noche siempre es joven.",
+            "Passeig del Born."
+          ],
+          description: "Copas y diseño.",
+          coords: [41.3845, 2.1835],
+          info: "El Paseo del Born es el lugar por excelencia para terminar la jornada con una buena copa en un ambiente cosmopolita y vibrante.",
+          imageUrl: "assets/images/gastronomia/passeig_born.jpg",
+          theatricalInfo: "La noche cae sobre el Born y las luces se encienden. Aquí la historia sale de fiesta. Un último brindis por Barcelona y sus secretos mejor guardados."
+        }
+      ]
+    },
+    'gotic-tabernas': {
+      title: 'Gòtic: Tabernas Históricas',
+      duration: '2h 15min',
+      distance: '3.2 km',
+      description: 'Viaja al pasado a través de los locales con más solera de Barcelona. Desde la taberna más antigua fundada en el siglo XVIII hasta los rincones favoritos de artistas y bohemios.',
+      center: [41.3820, 2.1750],
+      zoom: 16,
+      stops: [
+        {
+          id: 'can-culleretes',
+          title: "Can Culleretes (1786)",
+          hints: [
+            "Busca el restaurante más antiguo de Barcelona y el segundo de España, escondido en una calle estrecha cerca de las Ramblas.",
+            "Encuentra el lugar donde las 'culleretes' (cucharitas) dieron nombre a un templo de la cocina tradicional catalana.",
+            "Dirígete al Carrer d'en Quintana, número 5."
+          ],
+          description: "La decana de Barcelona.",
+          coords: [41.3815, 2.1745],
+          info: "Fundada en 1786, es famosa por sus platos de caza, canelones y postres de crema. Sus paredes están llenas de fotos de personajes ilustres que han pasado por sus mesas.",
+          imageUrl: "assets/images/gastronomia/culleretes.jpg",
+          theatricalInfo: "¡Bienvenidos a la historia viva! Aquí el aroma a guiso no ha cambiado en dos siglos. Tomad asiento donde se sentaron reyes y poetas para celebrar que Barcelona sabe cocinar como nadie."
+        },
+        {
+          id: 'bar-la-plata',
+          title: "Bar La Plata (1945)",
+          hints: [
+            "Busca el bar de esquina que solo sirve cuatro tapas desde hace décadas y siempre está lleno de gente sonriente.",
+            "Encuentra el rincón favorito de Bono de U2 donde los boquerones fritos son la ley.",
+            "Dirígete al cruce de las calles de la Mercè y de la Plata."
+          ],
+          description: "La perfección de la sencillez.",
+          coords: [41.3810, 2.1795],
+          info: "Inaugurado en 1945, este bar es un icono del Barrio Gótico. Su menú se reduce a cuatro opciones (pescaíto, ensalada de tomate, butifarra y boquerones), pero su calidad es legendaria.",
+          imageUrl: "assets/images/gastronomia/laplata.jpg",
+          theatricalInfo: "¡Una de boquerones! Aquí no necesitamos cartas largas. La Plata es el sabor de la Barcelona auténtica, la que se encuentra en una servilleta de papel y un vaso de vino del Priorat."
+        },
+        {
+          id: 'los-caracoles',
+          title: "Restaurante Los Caracoles (1835)",
+          hints: [
+            "Busca el restaurante con los pollos asándose al fuego en la misma calle y una chimenea que nunca se apaga.",
+            "Encuentra el local con entrada por la cocina donde el mármol y la madera cuentan historias de siglos.",
+            "Carrer dels Escudellers, número 14."
+          ],
+          description: "Fuego y tradición.",
+          coords: [41.3795, 2.1765],
+          info: "Originalmente una taberna de vinos, se hizo mundialmente famoso por sus caracoles y su pollo asado. Ha mantenido su decoración original y su ambiente bohemio desde el siglo XIX.",
+          imageUrl: "assets/images/gastronomia/caracoles.jpg",
+          theatricalInfo: "Entrad por la cocina, no tengáis miedo. Sentid el calor de las brasas que llevan encendidas desde tiempos de vuestros bisabuelos. Aquí Barcelona se come a fuego lento."
+        },
+        {
+          id: 'bar-del-pi',
+          title: "Bar del Pi",
+          hints: [
+            "Busca la taberna frente a la iglesia del pino, refugio de estudiantes, artistas y políticos durante la transición.",
+            "Encuentra la terraza con mejores vistas a la fachada gótica donde el tiempo parece detenerse.",
+            "Plaça de Sant Josep Oriol, junto a la Plaza del Pi."
+          ],
+          description: "Epicentro de la cultura popular.",
+          coords: [41.3835, 2.1735],
+          info: "Punto de encuentro vital en la vida social del Gótico. Ha sido testigo de tertulias políticas, encuentros artísticos y es un lugar privilegiado para observar el pulso del barrio.",
+          imageUrl: "assets/images/gastronomia/bardelpi.jpg",
+          theatricalInfo: "Sentaos bajo los árboles. En esta plaza se ha arreglado el mundo mil veces. Pedid una caña y dejad que las campanas de Santa Maria del Pi os cuenten los secretos de la ciudad vieja."
+        },
+        {
+          id: 'cafe-opera',
+          title: "Café de l'Òpera (1929)",
+          hints: [
+            "Finaliza tu ruta en el café modernista frente al Liceu, donde los espejos guardan los reflejos de todas las óperas representadas.",
+            "Encuentra el rincón elegante de las Ramblas que conserva su decoración original de principios del siglo XX.",
+            "La Rambla, número 74."
+          ],
+          description: "Elegancia modernista en las Ramblas.",
+          coords: [41.3812, 2.1735],
+          info: "Situado en un edificio del siglo XVIII, se convirtió en café modernista en 1929. Es el último café histórico de las Ramblas, manteniendo su atmósfera de tertulia y distinción.",
+          imageUrl: "assets/images/gastronomia/cafeopera.jpg",
+          theatricalInfo: "Mirad estos espejos... han visto pasar a Caruso y a Dalí. Aquí las Ramblas se vuelven silenciosas y elegantes. Un chocolate con churros para terminar nuestro viaje por la memoria de Barcelona."
+        }
+      ]
+    },
+    'gracia-cocina': {
+      title: 'Gràcia: Cocina Creativa',
+      duration: '2h 15min',
+      distance: '2.8 km',
+      description: 'Explora el barrio más bohemio a través de sus sabores más innovadores. Un recorrido por la cocina de autor, la fusión internacional y los dulces artesanales que hacen de Gràcia el paraíso de los foodies.',
+      center: [41.4030, 2.1550],
+      zoom: 16,
+      stops: [
+        {
+          id: 'virreina-creative',
+          title: "Plaça de la Virreina (Aperitivo Bohemio)",
+          hints: [
+            "Busca la plaza presidida por una iglesia donde las terrazas ofrecen platillos que mezclan la tradición con toques de autor.",
+            "Encuentra el rincón donde la vida de barrio se encuentra con la creatividad culinaria a la sombra de los árboles.",
+            "Dirígete a la Plaza de la Virreina, en el corazón de Gràcia."
+          ],
+          description: "Tradición renovada.",
+          coords: [41.4035, 2.1575],
+          info: "Gràcia es famosa por sus plazas, y la de la Virreina es un punto clave donde pequeños locales experimentan con tapas creativas y productos de proximidad.",
+          imageUrl: "assets/images/gastronomia/virreina_tapas.jpg",
+          theatricalInfo: "Sentaos y dejad que la calma os inspire. Aquí, una simple aceituna se convierte en arte si se acompaña de una buena idea y un sol de tarde."
+        },
+        {
+          id: 'llibertat-creative',
+          title: "Mercat de la Llibertat (Gourmet de Barrio)",
+          hints: [
+            "Busca el mercado modernista donde los chefs no solo compran, sino que reinventan el concepto de 'puesto de mercado'.",
+            "Encuentra las barras donde se sirven ostras, platillos de mar y creaciones de temporada en un ambiente de hierro y cristal.",
+            "Ve al Mercat de la Llibertat, cerca de Via Augusta."
+          ],
+          description: "Alta cocina en el mercado.",
+          coords: [41.3995, 2.1545],
+          info: "Muchos de los puestos de este histórico mercado han evolucionado para ofrecer degustaciones gourmet de alta calidad, fusionando la frescura del producto con técnicas modernas.",
+          imageUrl: "assets/images/gastronomia/llibertat_gourmet.jpg",
+          theatricalInfo: "¡Mirad qué brillo! El pescado de la mañana se viste de gala en estas barras. En Gràcia, el mercado es el lienzo y el producto es la pintura."
+        },
+        {
+          id: 'torrijos-fusion',
+          title: "Carrer de Torrijos (El Eje Gastronómico)",
+          hints: [
+            "Camina por la calle de los cines y las librerías donde el aroma de Japón, México y el Mediterráneo se funden en cada portal.",
+            "Busca la vía donde los restaurantes de fusión internacional compiten por ofrecer el bocado más sorprendente de la ciudad.",
+            "Recorre el Carrer de Torrijos."
+          ],
+          description: "Viaje de sabores sin salir del barrio.",
+          coords: [41.4045, 2.1585],
+          info: "Esta calle es el epicentro de la nueva restauración en Gràcia, albergando desde locales de ramen de autor hasta tabernas de tapas progresivas.",
+          imageUrl: "assets/images/gastronomia/torrijos_fusion.jpg",
+          theatricalInfo: "Un paso por aquí es un viaje por el mundo. Cerramos los ojos y estamos en Kioto, los abrimos y seguimos en el corazón de Barcelona. ¡Qué maravilla es la mezcla!"
+        },
+        {
+          id: 'revolucio-dulce',
+          title: "Plaça de la Revolució (El Toque Final)",
+          hints: [
+            "Termina tu ruta en la plaza dedicada a la libertad, donde los helados artesanales y los postres de diseño son los protagonistas.",
+            "Busca el lugar donde la ciencia del frío y la pastelería creativa te ofrecen un final dulce e inolvidable.",
+            "Dirígete a la Plaza de la Revolució de Septiembre de 1868."
+          ],
+          description: "Vanguardia dulce.",
+          coords: [41.4025, 2.1565],
+          info: "Famosa por sus heladerías de autor y cafeterías de especialidad, esta plaza ofrece el cierre perfecto para una ruta gastronómica moderna.",
+          imageUrl: "assets/images/gastronomia/revolucio_dulce.jpg",
+          theatricalInfo: "Un último bocado para recordar que la vida en Barcelona es dulce. La creatividad no tiene límites, ni siquiera cuando se trata de un simple helado. ¡A vuestra salud!"
+        }
+      ]
+    },
+    'crimenes-raval': {
+      title: 'Crímenes del Raval',
+      duration: '1h 45min',
+      distance: '3.2 km',
+      description: 'Sumérgete en la cara más oscura de Barcelona. Un recorrido por los callejones del Raval tras las huellas de asesinos, leyendas negras y misterios sin resolver.',
+      center: [41.3800, 2.1700],
+      zoom: 15,
+      stops: [
+        {
+          id: 'vampira-raval',
+          title: "La Casa de Enriqueta Martí",
+          hints: [
+            "Busca el número 29 de la calle que antes se llamaba Poniente, donde la leyenda de la secuestradora más famosa cobró vida.",
+            "Encuentra el portal donde los niños desaparecían para alimentar el mito de la Vampira.",
+            "Dirígete al Carrer de Joaquín Costa, número 29."
+          ],
+          description: "El hogar del horror.",
+          coords: [41.3831, 2.1648],
+          info: "Enriqueta Martí, conocida como la Vampira del Raval, fue detenida aquí en 1912. Se decía que fabricaba ungüentos mágicos con restos humanos, aunque la realidad histórica es un reflejo de la miseria y la injusticia social de la época.",
+          imageUrl: "assets/images/misterios/vampira_casa.jpg",
+          theatricalInfo: "¡Shhh! No levantéis la voz... En este portal, la sombra de Enriqueta aún parece acechar. ¿Fue una asesina o una víctima del miedo de una ciudad entera? La verdad se esconde tras esas ventanas viejas."
+        },
+        {
+          id: 'asesinato-segui',
+          title: "El Crimen de la Cadena",
+          hints: [
+            "Busca la esquina donde el plomo de los pistoleros de la patronal segó la vida del 'Noi del Sucre'.",
+            "Encuentra el lugar donde la lucha obrera se tiñó de sangre en una emboscada traicionera.",
+            "Cruce de Carrer de la Cadena con Sant Rafael."
+          ],
+          description: "Pistolerismo y traición.",
+          coords: [41.3789, 2.1691],
+          info: "Salvador Seguí, líder anarcosindicalista, fue asesinado en esta esquina en 1923 por pistoleros del Sindicato Libre. Un crimen político que marcó el fin de una era de esperanza para el movimiento obrero.",
+          imageUrl: "assets/images/misterios/asesinato_segui.jpg",
+          theatricalInfo: "¡Pum! Dos disparos y el mundo cambió. Aquí cayó el gigante, el hombre que soñó con ocho horas de sol y justicia. Los ecos de las balas aún resuenan en estos callejones estrechos."
+        },
+        {
+          id: 'crimen-calle-cera',
+          title: "Misterio en la Calle de la Cera",
+          hints: [
+            "Busca la calle cuna de la rumba catalana, donde un crimen pasional sacudió a la comunidad gitana en el siglo XIX.",
+            "Encuentra el rincón donde el honor y la navaja se encontraron bajo la luz de la luna.",
+            "Carrer de la Cera."
+          ],
+          description: "Honor y rumba.",
+          coords: [41.3782, 2.1655],
+          info: "La calle de la Cera ha sido escenario de múltiples leyendas urbanas y crímenes de barrio que, con el tiempo, se han fundido con la rica historia de la rumba catalana y la vida vecinal del Raval.",
+          imageUrl: "assets/images/misterios/calle_cera.jpg",
+          theatricalInfo: "Aquí las guitarras lloran y las navajas brillan. En el Raval, la pasión siempre ha sido un arma de doble filo. ¿Oís ese ritmo? Es el latido de un barrio que nunca olvida a sus muertos."
+        },
+        {
+          id: 'monasterio-leyendas',
+          title: "Sant Pau del Camp (Final del Misterio)",
+          hints: [
+            "Termina tu ruta en el monasterio románico más antiguo, donde los monjes guardan secretos de siglos de oscuridad.",
+            "Busca el lugar donde las sombras de los antiguos cementerios parecen cobrar vida entre los arcos de piedra.",
+            "Carrer de Sant Pau, 101."
+          ],
+          description: "Paz y sombras.",
+          coords: [41.3755, 2.1695],
+          info: "Este monasterio del siglo IX es un oasis de paz que ha sobrevivido a incendios, revueltas y crímenes. Su claustro es uno de los lugares más enigmáticos y bellos de toda Barcelona.",
+          imageUrl: "assets/images/misterios/sant_pau_camp.jpg",
+          theatricalInfo: "El final del camino. Aquí la piedra calla lo que los hombres gritan. El Raval es un laberinto de crímenes y santos, y en este monasterio, todos encuentran su descanso eterno... o casi todos."
+        }
+      ]
+    },
+    'fantasmas-gotic': {
+      title: 'Fantasmas del Gòtic',
+      duration: '1h 30min',
+      distance: '2.5 km',
+      description: 'Descubre las almas en pena que vagan por el laberinto de piedra del Barrio Gótico. Historias de fantasmas, exorcismos y apariciones que desafían la razón.',
+      center: [41.3835, 2.1765],
+      zoom: 16,
+      stops: [
+        {
+          id: 'campanero-catedral',
+          title: "El Fantasma del Campanero",
+          hints: [
+            "Busca la gran catedral gótica, donde se dice que un antiguo campanero aún hace sonar las campanas en las noches de tormenta.",
+            "Encuentra las gárgolas que vigilan el templo desde las alturas.",
+            "Pla de la Seu, frente a la Catedral."
+          ],
+          description: "Vigilante eterno.",
+          coords: [41.3839, 2.1762],
+          info: "Cuenta la leyenda que un campanero que amaba su oficio más que a su vida sigue subiendo a la torre de la Catedral para avisar de los peligros que acechan a la ciudad.",
+          imageUrl: "assets/images/misterios/catedral_fantasmas.jpg",
+          theatricalInfo: "¿Oís eso? No es el viento... es el repique fantasma. Dicen que si miras hacia la torre de San Ivo a medianoche, verás una luz tenue subiendo las escaleras de caracol."
+        },
+        {
+          id: 'voces-ninos-neri',
+          title: "Las Voces de San Felipe Neri",
+          hints: [
+            "Busca la plaza más silenciosa del Gótico, donde las paredes aún conservan las cicatrices de una tragedia aérea.",
+            "Encuentra la fuente central donde, según dicen, se escuchan risas de niños que ya no están.",
+            "Plaza de San Felipe Neri."
+          ],
+          description: "Eco de la tragedia.",
+          coords: [41.3831, 2.1751],
+          info: "En 1938, un bombardeo durante la Guerra Civil acabó con la vida de 42 personas, la mayoría niños que se refugiaban en la iglesia. Las marcas en la fachada son un recordatorio mudo del horror.",
+          imageUrl: "assets/images/misterios/ninos_neri.jpg",
+          theatricalInfo: "Aquí el silencio pesa. Las piedras hablan de aquel día en que el cielo se desplomó. Muchos juran que, al caer la tarde, se oyen juegos de niños en los rincones de la plaza..."
+        },
+        {
+          id: 'hechiceros-estruc',
+          title: "Carrer d'Estruc: Calle de Brujos",
+          hints: [
+            "Busca una calle pequeña cerca de la Plaza Cataluña que antaño fue el centro de la alquimia y la astrología.",
+            "Encuentra la placa que recuerda al famoso astrólogo Estruc.",
+            "Carrer d'Estruc."
+          ],
+          description: "Magia y sombras.",
+          coords: [41.3862, 2.1725],
+          info: "Esta calle era conocida en la Edad Media por albergar a brujos y alquimistas. El nombre proviene de Astruc Sacanera, un influyente judío experto en artes ocultas.",
+          imageUrl: "assets/images/misterios/calle_estruc.jpg",
+          theatricalInfo: "¡Cuidado donde pisáis! En esta calle, las sombras tienen memoria. Aquí se fabricaban filtros de amor y venenos de olvido. El aire aún huele a azufre y pergamino viejo."
+        },
+        {
+          id: 'sombras-palau-reial',
+          title: "Sombras en la Plaça del Rei",
+          hints: [
+            "Termina tu ruta en la plaza que fue sede de la Inquisición, donde las sombras de los juzgados aún parecen suplicar clemencia.",
+            "Busca el lugar donde el Gran Salón del Tinell guarda secretos de reyes y verdugos.",
+            "Plaça del Rei."
+          ],
+          description: "Justicia y olvido.",
+          coords: [41.3842, 2.1774],
+          info: "Esta plaza es el corazón medieval de Barcelona. Aquí se encontraba el Tribunal de la Inquisición, y muchos de los condenados pasaron sus últimas horas bajo estos arcos góticos.",
+          imageUrl: "assets/images/misterios/plaza_rey_sombras.jpg",
+          theatricalInfo: "El corazón de piedra de la ciudad. Aquí la justicia era implacable. ¿Sentís ese frío repentino? Es el aliento de los que pasaron por aquí hacia el cadalso. Bienvenidos al final de la ruta espectral."
+        }
+      ]
+    },
+    'masoneria': {
+      title: 'Masonería en BCN',
+      duration: '2h 15min',
+      distance: '4.5 km',
+      description: 'Descifra los símbolos ocultos a plena vista en las fachadas y monumentos de Barcelona. Un viaje por la historia de los masones, sus ritos y su influencia en la ciudad.',
+      center: [41.3885, 2.1725],
+      zoom: 15,
+      stops: [
+        {
+          id: 'biblioteca-aruss',
+          title: "Biblioteca Arús: El Templo del Saber",
+          hints: [
+            "Busca una biblioteca pública cerca del Arco de Triunfo, donde una réplica de la Estatua de la Libertad sostiene la antorcha del conocimiento.",
+            "Encuentra el portal custodiado por el busto de su fundador, un eminente masón.",
+            "Passeig de Sant Joan, 26."
+          ],
+          description: "La joya masónica.",
+          coords: [41.3918, 2.1785],
+          info: "Fundada por Rossend Arús, la biblioteca es un centro de referencia sobre la masonería y el libre pensamiento. Su escalera principal y su sala de lectura están repletas de simbología masónica.",
+          imageUrl: "assets/images/misterios/biblioteca_arus.jpg",
+          theatricalInfo: "Entrad con respeto... Aquí el silencio es el guardián de la luz. Mirad bien a esa libertad: no es la de Nueva York, es la de la razón que ilumina al mundo. Los masones sabían que el saber es la única cadena que nos hace libres."
+        },
+        {
+          id: 'parque-ciutadella-simbolos',
+          title: "El Gran Arquitecto en la Ciutadella",
+          hints: [
+            "Busca en la Gran Cascada del parque, donde los elementos de la naturaleza se rinden ante el orden y la geometría.",
+            "Encuentra las escuadras y compases tallados en la piedra, casi invisibles para el profano.",
+            "Parc de la Ciutadella, Cascada Monumental."
+          ],
+          description: "Naturaleza y Geometría.",
+          coords: [41.3894, 2.1894],
+          info: "Muchos de los arquitectos y escultores que trabajaron en el parque eran masones. La cascada es una alegoría del triunfo de la luz sobre las tinieblas, con múltiples referencias a los elementos naturales.",
+          imageUrl: "assets/images/misterios/ciutadella_masones.jpg",
+          theatricalInfo: "¡Ved la cascada! No es solo agua y piedra... es una oda al Gran Arquitecto del Universo. Todo aquí tiene una medida, un ángulo perfecto. Los hermanos de la escuadra dejaron su firma en cada sillar."
+        },
+        {
+          id: 'casa-xifre-logia',
+          title: "Los Porxos d'en Xifré",
+          hints: [
+            "Busca un edificio con soportales cerca del puerto, decorado con medallones de grandes navegantes y símbolos de la prosperidad.",
+            "Encuentra las columnas que recuerdan a las de un antiguo templo.",
+            "Passeig d'Isabel II, Porxos d'en Xifré."
+          ],
+          description: "Prosperidad y Logia.",
+          coords: [41.3820, 2.1830],
+          info: "Josep Xifré, un indiano inmensamente rico y masón, mandó construir este edificio. Se dice que en sus sótanos se celebraban reuniones de logia, lejos de las miradas de la Inquisición.",
+          imageUrl: "assets/images/misterios/porxos_xifre.jpg",
+          theatricalInfo: "Aquí el comercio y el misterio se daban la mano. Xifré trajo oro de América y luz de las logias. Bajo estos arcos, los hermanos planeaban una Barcelona moderna, científica y libre."
+        },
+        {
+          id: 'pla-palau-masoneria',
+          title: "La Fuente del Genio Catalán",
+          hints: [
+            "Busca una fuente monumental rodeada de palmeras en Pla de Palau, dedicada al progreso y la ingeniería.",
+            "Encuentra la figura alada que sostiene una estrella, símbolo de la luz de la razón guiando el camino.",
+            "Pla de Palau."
+          ],
+          description: "El triunfo del progreso.",
+          coords: [41.3828, 2.1837],
+          info: "Esta fuente de 1851 es una oda al progreso técnico y científico. Su iconografía, con alegorías a la navegación, el comercio y la industria, refleja los valores de la burguesía ilustrada de la época, muy vinculada a las logias masónicas que impulsaron la modernización de Barcelona.",
+          imageUrl: "assets/images/misterios/font_geni_catala.jpg",
+          theatricalInfo: "¡Mirad esa figura alada! Representa al Genio de Barcelona, portando la llama del conocimiento. No es casualidad que esté aquí, frente a la antigua aduana: es un faro de razón para los que llegaban a una ciudad que soñaba con el futuro y el orden universal."
+        },
+        {
+          id: 'santa-maria-masoneria',
+          title: "Símbolos en Santa Maria del Mar",
+          hints: [
+            "Busca en el suelo de la basílica, cerca de las tumbas de los antiguos gremios de constructores.",
+            "Encuentra las marcas de cantero que parecen simples firmas, pero esconden geometría sagrada.",
+            "Plaça de Santa Maria, 1."
+          ],
+          description: "La marca de los constructores.",
+          coords: [41.3835, 2.1820],
+          info: "La basílica fue construida por el gremio de los 'bastaixos' y maestros de obra que utilizaban geometría sagrada. En sus piedras aún se pueden ver marcas de cantero que los masones operativos usaban como firma y símbolo de grado.",
+          imageUrl: "assets/images/misterios/santa_maria_mar_simbolos.jpg",
+          theatricalInfo: "Mirad al suelo, no solo al cielo. Cada piedra de esta catedral del pueblo fue puesta por manos que conocían el secreto del ángulo y la plomada. Estas marcas no son solo nombres, son el lenguaje olvidado de los constructores de catedrales."
+        },
+        {
+          id: 'catedral-masoneria',
+          title: "La Catedral: El Secreto de los Maestros",
+          hints: [
+            "Busca en el claustro de la Catedral, donde los símbolos de los antiguos gremios se mezclan con los relieves religiosos.",
+            "Encuentra la representación del Gran Arquitecto en las claves de bóveda más antiguas.",
+            "Pla de la Seu."
+          ],
+          description: "Geometría sagrada y gremios.",
+          coords: [41.3839, 2.1762],
+          info: "La Catedral de Barcelona es un libro de piedra. En su claustro y fachadas, los maestros de obra dejaron mensajes en clave: desde herramientas de construcción que hoy son símbolos masónicos hasta proporciones áureas que buscaban reflejar la armonía del universo.",
+          imageUrl: "assets/images/misterios/catedral_masoneria.jpg",
+          theatricalInfo: "¿Veis esas herramientas talladas en la piedra? Escuadras, niveles, plomadas... No son solo adornos. Son las herramientas con las que los hombres libres construyeron el mundo, piedra a piedra, bajo la mirada del Gran Arquitecto."
+        },
+        {
+          id: 'canonges-masoneria',
+          title: "Casa dels Canonges y el Pont del Bisbe",
+          hints: [
+            "Busca el puente neo-gótico que une la Casa dels Canonges con el Palau de la Generalitat.",
+            "Encuentra la calavera atravesada por una daga en la parte inferior del puente, un potente símbolo de 'memento mori'.",
+            "Carrer del Bisbe."
+          ],
+          description: "La advertencia del arquitecto.",
+          coords: [41.3831, 2.1765],
+          info: "Aunque el puente es de 1928, su arquitecto, Joan Rubió i Bellver, incluyó una calavera con una daga, un símbolo que muchos asocian con ritos de iniciación masónica y la advertencia de la brevedad de la vida y el peso de la responsabilidad.",
+          imageUrl: "assets/images/misterios/pont_bisbe_calavera.jpg",
+          theatricalInfo: "¡Alto ahí! Mirad bajo el puente... Una calavera y una daga. ¿Un castigo? ¿Una advertencia? Los masones sabían que para renacer a la luz, primero hay que morir a lo profano. Ese cráneo nos recuerda que todos somos iguales ante el final del camino."
+        },
+        {
+          id: 'ajuntament-masoner',
+          title: "Símbolos en la Plaça Sant Jaume",
+          hints: [
+            "Termina tu ruta frente al Ayuntamiento, donde la fachada esconde discretos recordatorios del ideal de igualdad.",
+            "Busca los bajorrelieves que exaltan las artes y las ciencias.",
+            "Plaça de Sant Jaume, fachada del Ajuntament."
+          ],
+          description: "El Ideal en la Piedra.",
+          coords: [41.3825, 2.1772],
+          info: "A pesar de la persecución durante siglos, el ideal masónico de 'Libertad, Igualdad, Fraternidad' influyó en muchos políticos barceloneses que dejaron su impronta en los edificios institucionales.",
+          imageUrl: "assets/images/misterios/ajuntament_simbolos.jpg",
+          theatricalInfo: "El final de vuestra iniciación. Los masones no buscaban el poder, sino la luz. Y aunque sus templos fueran secretos, sus sueños de libertad quedaron grabados para siempre en la piel de esta ciudad. ¡Pasad y ved!"
+        }
+      ]
+    },
+    'vampira-raval': {
+      title: 'La Vampira del Raval',
+      duration: '1h 30min',
+      distance: '2.8 km',
+      description: 'Sigue la huella real de Enriqueta Martí, la mujer que aterrorizó a la Barcelona de 1912. Un recorrido entre la crónica negra, la miseria de la época y el mito de la Vampira.',
+      center: [41.3810, 2.1680],
+      zoom: 16,
+      stops: [
+        {
+          id: 'vampira-casa-joaquin',
+          title: "Carrer de Joaquín Costa, 29",
+          hints: [
+            "Busca el portal donde la policía descubrió a dos niños desaparecidos en 1912, desencadenando el mayor escándalo de la época.",
+            "Encuentra la casa de Enriqueta Martí, donde se dice que fabricaba sus macabros ungüentos.",
+            "Carrer de Joaquín Costa, número 29 (antes calle Poniente)."
+          ],
+          description: "El escenario del crimen.",
+          coords: [41.3831, 2.1648],
+          info: "Aquí fue detenida Enriqueta Martí tras la denuncia de una vecina que vio a una niña asomada a la ventana con la cabeza rapada. En el registro se hallaron restos humanos y extrañas pócimas.",
+          imageUrl: "assets/images/misterios/vampira_casa_detalles.jpg",
+          theatricalInfo: "¡Shhh! Mirad esas ventanas. Hace un siglo, el barrio entero gritaba ante este portal. ¿Era Enriqueta un monstruo o solo una mujer enloquecida por la miseria? La prensa de la época ya había dictado sentencia antes del juicio."
+        },
+        {
+          id: 'vampira-el-pardo',
+          title: "Carrer de les Minetes (El Pardo)",
+          hints: [
+            "Busca un callejón hoy desaparecido cerca de la calle de la Cera, donde Enriqueta frecuentaba los bajos fondos.",
+            "Encuentra el lugar donde la 'Vampira' buscaba a sus víctimas entre los más desfavorecidos.",
+            "Zona cercana al Carrer de la Cera y Carrer de la Riereta."
+          ],
+          description: "Los bajos fondos del Raval.",
+          coords: [41.3785, 2.1660],
+          info: "Enriqueta Martí se movía por las zonas más pobres del Raval, utilizando el engaño y la necesidad de las familias para llevarse a los niños. El barrio era un laberinto de miseria donde desaparecer era fácil.",
+          imageUrl: "assets/images/misterios/raval_miseria.jpg",
+          theatricalInfo: "Aquí el hambre tiene cara de niño. Enriqueta lo sabía bien. Les prometía comida, un techo... y ellos la seguían sin saber que entraban en una pesadilla de la que no despertarían."
+        },
+        {
+          id: 'vampira-preso-vella',
+          title: "Antigua Cárcel de Mujeres",
+          hints: [
+            "Busca el lugar donde Enriqueta Martí pasó sus últimos días antes de morir en extrañas circunstancias.",
+            "Encuentra el sitio donde la justicia intentó encerrar al mito, pero solo encontró la muerte de la mujer.",
+            "Carrer de la Reina Amàlia, donde estuvo la Prisión de Reina Amàlia."
+          ],
+          description: "El final de Enriqueta.",
+          coords: [41.3765, 2.1675],
+          info: "Enriqueta Martí murió en la prisión de Reina Amàlia en 1913, oficialmente de cáncer, aunque el rumor popular decía que sus propias compañeras de celda la habían linchado por sus crímenes contra niños.",
+          imageUrl: "assets/images/misterios/prision_amalia.jpg",
+          theatricalInfo: "Entre estos muros se apagó su voz. Nunca llegó a ser juzgada. Barcelona quería sangre y la obtuvo en una celda fría. El mito de la Vampira nació el día en que Enriqueta dejó de respirar."
+        },
+        {
+          id: 'vampira-hospital-creu',
+          title: "Antiguo Hospital de la Santa Creu",
+          hints: [
+            "Termina tu ruta en el hospital donde se realizaban las autopsias de la época y donde el misterio médico se mezcló con la leyenda.",
+            "Busca el patio gótico donde los médicos forenses analizaron los restos hallados en la casa de la Vampira.",
+            "Carrer del Hospital, número 56."
+          ],
+          description: "La ciencia frente al mito.",
+          coords: [41.3810, 2.1705],
+          info: "En este histórico hospital se llevaron a cabo los análisis de los huesos y restos encontrados en los registros. La ciencia intentó determinar si los ungüentos de Enriqueta tenían realmente origen humano.",
+          imageUrl: "assets/images/misterios/hospital_autopsias.jpg",
+          theatricalInfo: "Aquí la luz de la razón intentó iluminar la oscuridad de la leyenda. Médicos y jueces examinaron cada resto bajo estos arcos. Pero para el pueblo, la verdad ya no importaba: la Vampira ya era eterna."
+        }
+      ]
+    },
+    'montjuic': {
+      title: 'Cementerio de Montjuïc',
+      duration: '2h 30min',
+      distance: '5.0 km',
+      description: 'Un museo al aire libre frente al mar. Recorre los panteones modernistas, descubre la historia de los personajes ilustres de Barcelona y rinde homenaje en el Fossar de la Pedrera.',
+      center: [41.3530, 2.1520],
+      zoom: 15,
+      stops: [
+        {
+          id: 'mausoleo-macia',
+          title: "Mausoleo de Francesc Macià",
+          hints: [
+            "Busca la tumba del 'Avi', el primer presidente de la Generalitat restaurada, en un monumento de líneas sobrias y potentes.",
+            "Encuentra el lugar donde el corazón de un presidente late simbólicamente por su tierra.",
+            "Sector de San Jaime, cerca de la entrada principal."
+          ],
+          description: "La memoria de un pueblo.",
+          coords: [41.3556, 2.1554],
+          info: "Francesc Macià, el 'Avi', descansa en este mausoleo diseñado por Manuel Brullet. Es un lugar de peregrinación política y sentimental cada 25 de diciembre, aniversario de su muerte.",
+          imageUrl: "assets/images/misterios/mausoleo_macia.jpg",
+          theatricalInfo: "Aquí reposa el hombre que soñó una nación. Las piedras son frías, pero el recuerdo es cálido. Mirad el horizonte: desde aquí, el Avi sigue vigilando la ciudad que tanto amó."
+        },
+        {
+          id: 'panteon-batllo',
+          title: "Panteón de la Familia Batlló",
+          hints: [
+            "Busca una obra maestra del modernismo funerario, con formas orgánicas y detalles en hierro forjado que parecen cobrar vida.",
+            "Encuentra el panteón diseñado por Josep Vilaseca, el arquitecto del Arco de Triunfo.",
+            "Sector de San José."
+          ],
+          description: "Elegancia en el adiós.",
+          coords: [41.3528, 2.1532],
+          info: "La familia Batlló, grandes industriales textiles, encargó este panteón que destaca por su riqueza ornamental y su integración con el paisaje de la montaña de Montjuïc.",
+          imageUrl: "assets/images/misterios/panteon_batllo.jpg",
+          theatricalInfo: "¿No es fascinante? Hasta en la muerte, la burguesía barcelonesa buscaba la belleza. Estas curvas, estas flores de piedra... es el Modernismo desafiando al paso del tiempo."
+        },
+        {
+          id: 'fossar-pedrera',
+          title: "Fossar de la Pedrera",
+          hints: [
+            "Busca una antigua cantera convertida en un espacio de memoria para las víctimas de la represión y la Guerra Civil.",
+            "Encuentra la tumba de Lluís Companys, rodeada de cipreses y silencio.",
+            "Extremo sur del cementerio."
+          ],
+          description: "Dignidad y silencio.",
+          coords: [41.3512, 2.1485],
+          info: "Este espacio alberga los restos de miles de personas ejecutadas durante la posguerra. En 1985 fue transformado en un memorial que incluye la tumba del presidente Lluís Companys.",
+          imageUrl: "assets/images/misterios/fossar_pedrera.jpg",
+          theatricalInfo: "Bajad la voz... el silencio aquí es sagrado. En esta cantera, la historia escribió sus páginas más tristes. Pero hoy, entre estos muros, la memoria florece con dignidad."
+        },
+        {
+          id: 'tumba-durruti',
+          title: "La Tumba de Durruti",
+          hints: [
+            "Busca una tumba sencilla pero siempre llena de flores frescas y pañuelos rojos y negros.",
+            "Encuentra el lugar donde descansa el líder anarquista junto a sus compañeros Ascaso y Ferrer i Guàrdia.",
+            "Vía de San Carlos."
+          ],
+          description: "El gigante del anarquismo.",
+          coords: [41.3545, 2.1542],
+          info: "Buenaventura Durruti, carismático líder de la CNT y la FAI, descansa aquí. Su entierro en noviembre de 1936 fue la mayor manifestación popular vista en Barcelona, con medio millón de personas despidiendo al 'héroe del pueblo'.",
+          imageUrl: "assets/images/misterios/tumba_durruti.jpg",
+          theatricalInfo: "¡Salud, compañeros! Aquí no hay mármoles caros ni ángeles llorones. Solo piedra y el recuerdo de un hombre que dijo que llevamos un mundo nuevo en nuestros corazones. Las flores que veis nunca faltan... el pueblo no olvida a los suyos."
+        },
+        {
+          id: 'joan-miro',
+          title: "La Tumba de Joan Miró",
+          hints: [
+            "Busca una tumba humilde, en un nicho sencillo, que esconde la grandeza de uno de los pintores más universales de Barcelona.",
+            "Encuentra el lugar donde el azul, el amarillo y el rojo de sus sueños se funden con el silencio eterno.",
+            "Sector de San Carlos."
+          ],
+          description: "El color del silencio.",
+          coords: [41.3540, 2.1535],
+          info: "A pesar de su fama mundial, Joan Miró eligió un entierro sencillo en un nicho familiar. Su legado artístico sigue vivo en la Fundación Miró y en las calles de la ciudad, desde el mosaico de La Rambla hasta el aeropuerto.",
+          imageUrl: "assets/images/misterios/tumba_miro.jpg",
+          theatricalInfo: "Aquí descansa el hombre que pintó estrellas y pájaros. No busquéis grandes estatuas; el alma de Miró está en los colores que dejó por todo el mundo. Un rincón humilde para un genio gigante."
+        },
+        {
+          id: 'isaac-albeniz',
+          title: "Isaac Albéniz: Notas del Adiós",
+          hints: [
+            "Busca el panteón de uno de los compositores que mejor supo captar el alma de España en el piano.",
+            "Encuentra el lugar donde la música parece flotar entre los cipreses, recordando las notas de la suite 'Iberia'.",
+            "Sector de San José."
+          ],
+          description: "Música eterna.",
+          coords: [41.3532, 2.1528],
+          info: "El gran compositor Isaac Albéniz descansa en este panteón. Sus obras, especialmente la suite 'Iberia', elevaron el piano español a la categoría de obra maestra universal.",
+          imageUrl: "assets/images/misterios/tumba_albeniz.jpg",
+          theatricalInfo: "¡Shhh! Si escucháis con atención, quizá oigáis una sonata lejana. Albéniz no murió, solo se mudó a un lugar donde todas las teclas son de marfil y el mar siempre está en calma."
+        },
+        {
+          id: 'mirador-mediterrani',
+          title: "El Mirador del Mediterrani",
+          hints: [
+            "Termina tu ruta en el punto más alto del cementerio, donde los panteones parecen asomarse al azul infinito del mar.",
+            "Busca el lugar donde la paz de los muertos se funde con la inmensidad del puerto de Barcelona.",
+            "Sector alto, cerca del camino de circunvalación."
+          ],
+          description: "Paz frente al mar.",
+          coords: [41.3505, 2.1515],
+          info: "Desde las zonas altas del cementerio de Montjuïc se obtienen unas vistas inigualables del puerto comercial y el mar Mediterráneo, ofreciendo un contraste único entre la quietud del camposanto y la actividad de la ciudad.",
+          imageUrl: "assets/images/misterios/mirador_cementerio.jpg",
+          theatricalInfo: "El final del viaje. Mirad el mar... es el mismo que vieron los romanos, los íberos y los que hoy descansan aquí. En Montjuïc, la muerte no es el final, es solo un cambio de paisaje."
+        }
+      ]
+    },
   };
 
   constructor() {

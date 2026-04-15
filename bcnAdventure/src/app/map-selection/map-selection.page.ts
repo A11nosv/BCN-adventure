@@ -59,44 +59,40 @@ export class MapSelectionPage implements OnInit {
         { id: 'rosa-foc', title: 'La Rosa de Fuego (1890 - 1909)', description: 'El auge del anarquismo barcelonés', icon: 'flag' },
         { id: 'setmana-tragica', title: 'Setmana Tràgica (1909)', description: 'Las revueltas populares de julio', icon: 'time' },
         { id: 'guerra-civil', title: 'Guerra Civil (1936 - 1939)', description: 'Refugios antiaéreos y bombardeos', icon: 'flag' },
-        { id: 'inquisicion', title: 'La Inquisición (1487 - 1820)', description: 'La sombra del Santo Oficio en Barcelona', icon: 'flag' }
+        { id: 'bcn-92', title: 'Barcelona \'92 (1992)', description: 'El gran cambio de la ciudad olímpica', icon: 'flag' }
       ]
     },
     'arquitectura': {
-      title: 'Arquitectura y Gaudí',
+      title: 'Barcelona Monumental',
       color: '#2980b9',
       maps: [
         { id: 'iglesias-conventos', title: 'Iglesias y Conventos (S. XII - XIV)', description: 'Joyas del románico y gótico catalán', icon: 'business' },
+        { id: 'parques-jardines', title: 'Parques y Jardines', description: 'Oasis urbanos y paisajismo histórico', icon: 'business' },
         { id: 'quadrat-or', title: 'El Quadrat d\'Or (1870 - 1900)', description: 'El corazón del Eixample modernista', icon: 'business' },
-        { id: 'sagrada-familia', title: 'Sagrada Família (1882 - hoy)', description: 'El templo expiatorio en construcción', icon: 'business' },
-        { id: 'park-guell', title: 'Park Güell (1900 - 1914)', description: 'Naturaleza y arquitectura', icon: 'business' },
-        { id: 'sant-pau', title: 'Hospital de Sant Pau (1902 - 1930)', description: 'La ciudad jardín de Domènech i Montaner', icon: 'business' },
-        { id: 'casa-batllo', title: 'Casa Batlló (1904 - 1906)', description: 'La fachada marítima de Gaudí', icon: 'business' },
+        { id: 'modernismo', title: 'Modernismo: Más allá de Gaudí', description: 'Palacios y hospitales de la burguesía', icon: 'business' },
+        { id: 'modernismo-desconocido', title: 'Modernismo Desconocido', description: 'Tesoros ocultos y fachadas sorprendentes', icon: 'business' },
+        { id: 'gaudi', title: 'Antoni Gaudí: El Genio (1883 - 1926)', description: 'Las obras maestras del arquitecto de Dios', icon: 'business' },
+        { id: 'gaudi-desconocido', title: 'Gaudí Desconocido', description: 'Obras tempranas y tesoros ocultos del genio', icon: 'business' },
         { id: 'racionalismo', title: 'Racionalismo BCN (1929 - 1936)', description: 'La vanguardia del grupo GATCPAC', icon: 'business' },
-        { id: 'parques-jardines', title: 'Parques y Jardines', description: 'Oasis urbanos y paisajismo histórico', icon: 'business' }
+        { id: 'mercados-historicos', title: 'Catedrales del Pueblo: Mercados Históricos', description: 'Joyas del hierro y la vida cotidiana', icon: 'business' }
       ]
     },
     'novelas': {
-      title: 'Rutas Literarias',
-      color: '#d35400',
+      title: 'BCN de Novela',
+      color: '#8e44ad',
       maps: [
-        { id: 'catedral-mar', title: 'La Catedral del Mar (S. XIV)', description: 'La construcción de Santa María del Mar', icon: 'book' },
-        { id: 'don-quijote', title: 'Don Quijote en BCN (1615)', description: 'El caballero de la triste figura en la playa', icon: 'book' },
-        { id: 'homenaje-cat', title: 'Homenaje a Cataluña (1936 - 1937)', description: 'La crónica periodística de George Orwell', icon: 'book' },
-        { id: 'joan-marse-cai', title: 'Si te dicen que caí (1940 - 1950)', description: 'La dura postguerra de Joan Marsé', icon: 'book' },
-        { id: 'nada', title: 'Nada (1940 - 1945)', description: 'La soledad urbana de Carmen Laforet', icon: 'book' },
-        { id: 'joan-marse-teresa', title: 'Últimas tardes con Teresa (1956)', description: 'Amor y clases sociales en el Guinardó', icon: 'book' },
-        { id: 'sombra-viento', title: 'La Sombra del Viento (1945 - 1966)', description: 'El Cementerio de los Libros Olvidados', icon: 'book' },
-        { id: 'rodoreda', title: 'Mercè Rodoreda: El universo de Colometa', description: 'La Barcelona de posguerra en el barrio de Gràcia', icon: 'book' },
-        { id: 'insolita-secreta', title: 'Barcelona Insólita y Secreta', description: 'Los misterios y curiosidades ocultas del Gótico', icon: 'book' }
+        { id: 'catedral-mar', title: 'La Catedral del Mar (S. XIV)', description: 'La Barcelona medieval de Arnau Estanyol', icon: 'book' },
+        { id: 'quijote', title: 'Don Quijote en Barcelona (1615)', description: 'El caballero de la triste figura frente al mar', icon: 'book' },
+        { id: 'hemingway', title: 'Ernest Hemingway: Crónica de Guerra', description: 'Tras los pasos del corresponsal en la BCN civil', icon: 'book' },
+        { id: 'joan-marse', title: 'Joan Marsé: La BCN de Pijoaparte', description: 'Amor y clases sociales entre el Carmel y el Guinardó', icon: 'book' },
+        { id: 'rodoreda', title: 'Mercè Rodoreda: El universo de Colometa', description: 'Escenarios de "La plaça del Diamant"', icon: 'book' },
+        { id: 'sombra-viento', title: 'La Sombra del Viento', description: 'El Cementerio de los Libros Olvidados', icon: 'book' }
       ]
     },
     'gastronomia': {
       title: 'Mercados y Tapas',
       color: '#c0392b',
       maps: [
-        { id: 'boqueria', title: 'Mercat de la Boqueria', description: 'Explosión de sabores', icon: 'restaurant' },
-        { id: 'sant-antoni', title: 'Mercat de Sant Antoni', description: 'Tradición y modernidad', icon: 'restaurant' },
         { id: 'born-tapas', title: 'El Born: Tapas y Vinos', description: 'Ruta gastronómica chic', icon: 'restaurant' },
         { id: 'gotic-tabernas', title: 'Gòtic: Tabernas Históricas', description: 'Sabores del pasado', icon: 'restaurant' },
         { id: 'gracia-cocina', title: 'Gràcia: Cocina Creativa', description: 'Barrio bohemio y gourmet', icon: 'restaurant' }
@@ -106,6 +102,7 @@ export class MapSelectionPage implements OnInit {
       title: 'Leyendas Urbanas',
       color: '#2c3e50',
       maps: [
+        { id: 'inquisicion', title: 'La Inquisición (1487 - 1820)', description: 'La sombra del Santo Oficio en Barcelona', icon: 'skull' },
         { id: 'crimenes-raval', title: 'Crímenes del Raval', description: 'Historias oscuras', icon: 'skull' },
         { id: 'fantasmas-gotic', title: 'Fantasmas del Gòtic', description: 'Presencias espectrales', icon: 'skull' },
         { id: 'masoneria', title: 'Masonería en BCN', description: 'Símbolos ocultos', icon: 'skull' },
