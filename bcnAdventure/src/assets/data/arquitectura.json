@@ -1,0 +1,1012 @@
+{
+  "iglesias-conventos": {
+    "title": "Iglesias y Conventos (S. XII - XIV)",
+    "duration": "3h 30min",
+    "distance": "5.8 km",
+    "description": "Un viaje espiritual por el tiempo. Descubre desde los monasterios románicos escondidos en el Raval hasta las majestuosas basílicas del gótico catalán.",
+    "center": [41.383, 2.175],
+    "zoom": 15,
+    "stops": [
+      {
+        "id": "sant-pau-camp-iglesia",
+        "title": "Sant Pau del Camp",
+        "hints": [
+          "Busca el monasterio románico más antiguo de la ciudad, un oasis de paz entre los muros del Raval.",
+          "Encuentra el claustro con arcos lobulados que parece un trozo de campo en medio de la ciudad vieja.",
+          "Dirígete al Carrer de Sant Pau, cerca de la Avenida Paral·lel."
+        ],
+        "description": "Joyas del románico barcelonés.",
+        "coords": [41.375, 2.1695],
+        "info": "Este antiguo monasterio benedictino es el ejemplo mejor conservado del románico en Barcelona, con un claustro único en Europa por sus arcos de influencia mudéjar.",
+        "imageUrl": "assets/images/arquitectura/sant_pau_camp.jpg",
+        "theatricalInfo": "Entrad en el silencio. Estos muros de piedra tosca han visto pasar siglos de oración mientras la ciudad crecía fuera de sus huertos. Es el latido más antiguo de Barcelona."
+      },
+      {
+        "id": "santa-maria-pi",
+        "title": "Basílica de Santa Maria del Pi",
+        "hints": [
+          "Busca el rosetón más grande de Barcelona, que domina una plaza donde antaño crecía un pino solitario.",
+          "Encuentra la iglesia de una sola nave inmensa, joya del gótico catalán más puro y austero.",
+          "Ve a la Plaza del Pi, en el corazón del barrio gótico."
+        ],
+        "description": "Gótico catalán puro.",
+        "coords": [41.3835, 2.1738],
+        "info": "Construida en el siglo XIV, destaca por su imponente rosetón (reconstruido tras la guerra) y su gran nave única de 16,5 metros de ancho.",
+        "imageUrl": "assets/images/arquitectura/santa_maria_pi.jpg",
+        "theatricalInfo": "¡Mirad hacia arriba! No hay columnas que estorben la vista. Es la elegancia de la piedra que se eleva buscando la luz a través de su gran ojo de cristal."
+      },
+      {
+        "id": "catedral-bcn",
+        "title": "Catedral de la Santa Creu i Santa Eulàlia",
+        "hints": [
+          "Busca el corazón de la diócesis, donde trece ocas blancas custodian el claustro en memoria de una joven mártir.",
+          "Encuentra la fachada neogótica que corona la colina sagrada de la ciudad amurallada.",
+          "Dirígete al Pla de la Seu, frente a la gran escalinata de la Catedral."
+        ],
+        "description": "Sede episcopal de Barcelona.",
+        "coords": [41.384, 2.1762],
+        "info": "Aunque la fachada es del siglo XIX, el grueso del edificio es gótico (siglos XIII-XV). En su cripta descansa Santa Eulalia, la patrona histórica de la ciudad.",
+        "imageUrl": "assets/images/arquitectura/catedral.jpg",
+        "theatricalInfo": "Bajo estas bóvedas late la fe de los siglos. Escuchad el graznido de las ocas; ellas son las guardianas del honor de nuestra pequeña mártir Eulàlia."
+      },
+      {
+        "id": "justo-pastor",
+        "title": "Basílica de los Santos Mártires Justo y Pastor",
+        "hints": [
+          "Busca una de las iglesias con más historia cristiana de la ciudad, donde dos niños mártires guardan la entrada al Barrio Gótico.",
+          "Encuentra la plaza con la fuente más antigua de Barcelona, justo frente a una basílica gótica de torre única.",
+          "Dirígete a la Plaza de Sant Just, muy cerca de la Plaza Sant Jaume."
+        ],
+        "description": "Una de las parroquias más antiguas.",
+        "coords": [41.3828, 2.1778],
+        "info": "Fundada en el siglo IV, es uno de los lugares de culto cristiano más antiguos de Barcelona. El edificio actual es gótico del siglo XIV y destaca por su austeridad y su impresionante retablo de la Pasión.",
+        "imageUrl": "assets/images/arquitectura/justo_pastor.jpg",
+        "theatricalInfo": "Entrad en el corazón del tiempo. Aquí los siglos se amontonan uno sobre otro, desde los primeros cristianos hasta hoy. Es el rincón más humilde y a la vez más sagrado de nuestra ciudad."
+      },
+      {
+        "id": "basilica-merce",
+        "title": "Basílica de Nuestra Señora de la Merced",
+        "hints": [
+          "Busca el templo de la co-patrona de Barcelona, cuya cúpula está coronada por una estatua de bronce que mira al mar.",
+          "Encuentra la iglesia barroca construida sobre un antiguo convento medieval de la orden de los mercedarios.",
+          "Dirígete a la Plaza de la Mercè, en el extremo sur del Barrio Gótico."
+        ],
+        "description": "Santuario de la patrona de la ciudad.",
+        "coords": [41.379, 2.1795],
+        "info": "Construida en el siglo XVIII sobre una iglesia gótica anterior, es el principal exponente del barroco en Barcelona. Alberga la imagen de la Virgen de la Merced, patrona de la diócesis y co-patrona de la ciudad.",
+        "imageUrl": "assets/images/arquitectura/merce.jpg",
+        "theatricalInfo": "¡Madre de los cautivos! Bajo esta cúpula de oro y esperanza, Barcelona reza a su protectora. Sentid el aroma a incienso y mar; aquí la fe se viste de gala para celebrar la libertad."
+      },
+      {
+        "id": "santa-anna",
+        "title": "Monasterio de Santa Anna",
+        "hints": [
+          "Busca un claustro secreto a pocos pasos del bullicio de Plaza Cataluña, donde el tiempo parece haberse detenido en el siglo XII.",
+          "Encuentra la iglesia que combina el románico tardío con el gótico inicial en un rincón escondido cerca del centro.",
+          "Entra por el Carrer de Santa Anna y busca el pasaje que conduce al monasterio."
+        ],
+        "description": "Transición románico-gótica.",
+        "coords": [41.386, 2.1715],
+        "info": "Antigua sede de la Orden del Santo Sepulcro en Barcelona, conserva un claustro de gran belleza y una tranquilidad inaudita en pleno centro comercial.",
+        "imageUrl": "assets/images/arquitectura/santa_anna.jpg",
+        "theatricalInfo": "Cruza el umbral y deja que el ruido de la ciudad se apague. Aquí, la piedra respira una paz que solo los antiguos caballeros del Sepulcro sabían guardar."
+      },
+      {
+        "id": "santa-maria-mar-iglesia",
+        "title": "Basílica de Santa Maria del Mar",
+        "hints": [
+          "Busca la 'Catedral del Mar', alzada con el sudor de los cargadores del puerto que trajeron las piedras desde Montjuïc.",
+          "Encuentra la iglesia más equilibrada y bella del gótico catalán, símbolo del orgullo del barrio de la Ribera.",
+          "Ve a la Plaza de Santa Maria, junto al Fossar de les Moreres."
+        ],
+        "description": "La joya del gótico catalán.",
+        "coords": [41.3835, 2.1815],
+        "info": "Construida en tiempo récord (54 años) en el siglo XIV, es el mejor ejemplo de gótico catalán por su simetría y la esbeltez de sus columnas.",
+        "imageUrl": "assets/images/arquitectura/santa_maria_mar.jpg",
+        "theatricalInfo": "Sentid el peso de la piedra... y la ligereza del alma. Esta iglesia no la hicieron los reyes, la hicimos nosotros, los hombres del mar, con nuestras propias manos."
+      },
+      {
+        "id": "capella-marcus",
+        "title": "Capilla de Marcús",
+        "hints": [
+          "Busca una de las capillas más pequeñas y antiguas de la ciudad, que servía de parada a los correos que salían de Barcelona.",
+          "Encuentra el pequeño edificio románico en la encrucijada de los antiguos caminos que iban hacia Francia.",
+          "Dirígete al Carrer de Carders, en su unión con el Carrer de Montcada."
+        ],
+        "description": "Hospitalidad medieval.",
+        "coords": [41.3855, 2.1818],
+        "info": "Fundada en el siglo XII por el burgués Bernat Marcús, formaba parte de un hospital y una posta de correos a caballo, de las primeras de Europa.",
+        "imageUrl": "assets/images/arquitectura/marcus.jpg",
+        "theatricalInfo": "Aquí se encomendaban los viajeros antes de cruzar las murallas. Pequeña, humilde y eterna, esta capilla ha visto partir a miles hacia caminos inciertos."
+      },
+      {
+        "id": "sant-andreu-palomar",
+        "title": "Parroquia de Sant Andreu de Palomar",
+        "hints": [
+          "Busca la gran cúpula que domina el antiguo pueblo que se unió a Barcelona, famosa por su altura y sus reconstrucciones.",
+          "Encuentra el templo neoclásico donde se firmó el documento de los Segadores en el siglo XVII.",
+          "Dirígete a la Plaza de Orfila, en el corazón del barrio de Sant Andreu."
+        ],
+        "description": "Símbolo de la identidad de Sant Andreu.",
+        "coords": [41.4355, 2.191],
+        "info": "Situada en el antiguo municipio de Sant Andreu de Palomar, esta iglesia destaca por su imponente cúpula, una de las más grandes de la ciudad. El edificio actual combina elementos neoclásicos y detalles modernistas en su fachada e interior.",
+        "imageUrl": "assets/images/arquitectura/sant_andreu.jpg",
+        "theatricalInfo": "Bajo esta cúpula late el orgullo de un pueblo que nunca olvidó sus raíces. Mirad hacia arriba: es el cielo de Sant Andreu capturado en piedra y luz para gloria de sus vecinos."
+      },
+      {
+        "id": "pedralbes-monasterio",
+        "title": "Real Monasterio de Santa María de Pedralbes",
+        "hints": [
+          "Busca el monasterio real fundado por la reina Elisenda, un tesoro del gótico catalán alejado del ruido del centro.",
+          "Encuentra el claustro gótico de tres pisos más grande y bello del mundo, donde las clarisas han vivido durante siglos.",
+          "Sube hasta el barrio de Pedralbes, al final de la Avenida que lleva su nombre."
+        ],
+        "description": "Joya del gótico catalán.",
+        "coords": [41.3955, 2.1125],
+        "info": "Fundado en 1327 por la reina Elisenda de Montcada, es uno de los mejores ejemplos del gótico catalán. Su claustro de tres plantas es uno de los más amplios y armoniosos del mundo, y el monasterio conserva tesoros artísticos y la tumba de su fundadora.",
+        "imageUrl": "assets/images/arquitectura/pedralbes.jpg",
+        "theatricalInfo": "La reina Elisenda quiso que este fuera su refugio y su descanso eterno. Caminad por estas galerías y sentiréis la paz de un tiempo en el que la piedra hablaba de eternidad y belleza absoluta."
+      }
+    ]
+  },
+  "parques-jardines": {
+    "title": "Parques y Jardines: Oasis de Barcelona",
+    "duration": "3h 00min",
+    "distance": "8.5 km",
+    "description": "Descubre el pulmón verde de Barcelona a través de sus jardines históricos, laberintos neoclásicos y oasis de biodiversidad en plena ciudad.",
+    "center": [41.388, 2.185],
+    "zoom": 13,
+    "stops": [
+      {
+        "id": "ciutadella-parc",
+        "title": "Parc de la Ciutadella: El Primer Oasis",
+        "hints": [
+          "Busca el lugar donde una fortaleza del terror se convirtió en el primer gran parque público de la ciudad.",
+          "Encuentra la gran cascada monumental donde un joven Gaudí dejó sus primeras huellas.",
+          "Dirígete al Parque de la Ciutadella, frente al edificio del Parlament."
+        ],
+        "description": "Jardín histórico y monumental.",
+        "coords": [41.3885, 2.1865],
+        "info": "Primer parque diseñado específicamente como tal en Barcelona, construido sobre los terrenos de la antigua Ciudadela militar tras la Exposición Universal de 1888.",
+        "imageUrl": "assets/images/parques/ciutadella.jpg",
+        "theatricalInfo": "¡Mirad estas aguas! Donde antes hubo muros de opresión, ahora hay fuentes que bailan. Barcelona por fin respira tras siglos de asfixia militar."
+      },
+      {
+        "id": "laberint-horta",
+        "title": "Laberint d'Horta: El Juego Neoclásico",
+        "hints": [
+          "¿Te atreves a perderte en los muros de cipreses del jardín más antiguo que se conserva en la ciudad?",
+          "Busca el rincón romántico donde los nobles jugaban al escondite entre estatuas de dioses griegos.",
+          "Ve al Parque del Laberinto de Horta, en el distrito de Horta-Guinardó."
+        ],
+        "description": "Jardín neoclásico y romántico.",
+        "coords": [41.4395, 2.1465],
+        "info": "Iniciado en 1792, es una joya del paisajismo que combina un laberinto neoclásico con un jardín romántico lleno de templos y grutas.",
+        "imageUrl": "assets/images/parques/laberinto.jpg",
+        "theatricalInfo": "El amor es un laberinto, viajero. No busques la salida con prisa; disfruta de las sombras de los cipreses y deja que el eco de las fuentes te susurre secretos de otros siglos."
+      },
+      {
+        "id": "pedralbes-jardins",
+        "title": "Jardins de Pedralbes: El Lujo Real",
+        "hints": [
+          "Busca los senderos de gravilla fina donde la realeza paseaba bajo la sombra de cedros centenarios.",
+          "Encuentra la fuente de Hércules, una obra oculta de Gaudí redescubierta hace pocos años.",
+          "Dirígete a los Jardines del Palacio de Pedralbes, en la Avenida Diagonal."
+        ],
+        "description": "Jardín de palacio señorial.",
+        "coords": [41.3875, 2.1185],
+        "info": "Antigua finca de la familia Güell cedida a la corona, destaca por su elegancia afrancesada y su colección de árboles exóticos.",
+        "imageUrl": "assets/images/parques/pedralbes.jpg",
+        "theatricalInfo": "¡Bienvenidos a la corte! Aquí el aire es más fresco y los problemas del mundo parecen quedar fuera de estas verjas de hierro forjado."
+      },
+      {
+        "id": "cervantes-roserar",
+        "title": "Parc de Cervantes: El Perfume de la Rosa",
+        "hints": [
+          "Busca el lugar donde miles de rosas compiten cada año por ser la más bella de Barcelona.",
+          "Encuentra la atalaya verde al final de la Diagonal donde el perfume se siente incluso antes de entrar.",
+          "Visita la Rosaleda del Parque de Cervantes."
+        ],
+        "description": "Colección botánica de rosas.",
+        "coords": [41.384, 2.107],
+        "info": "Especializado en rosales, alberga más de 10.000 ejemplares de unas 2.000 especies diferentes, ofreciendo un espectáculo visual y olfativo único.",
+        "imageUrl": "assets/images/parques/cervantes.jpg",
+        "theatricalInfo": "Inclinad la nariz y cerrad los ojos. Cada pétalo cuenta una historia de paciencia y cuidado. Es el triunfo de la belleza delicada sobre el cemento de la gran ciudad."
+      },
+      {
+        "id": "joan-brossa-jardins",
+        "title": "Jardins de Joan Brossa: El Eco de la Risa",
+        "hints": [
+          "Busca el lugar en la montaña donde antes volaban las vagonetas de una montaña rusa y ahora domina el silencio de los pinos.",
+          "Encuentra el mirador que rinde homenaje a un poeta visual entre las ruinas de un antiguo parque de atracciones.",
+          "Sube a los Jardines de Joan Brossa en Montjuïc."
+        ],
+        "description": "Parque paisajista recuperado.",
+        "coords": [41.3685, 2.1625],
+        "info": "Ubicados en el solar del antiguo Parque de Atracciones de Montjuïc, estos jardines combinan vegetación mediterránea con elementos lúdicos y poesía visual.",
+        "imageUrl": "assets/images/parques/brossa.jpg",
+        "theatricalInfo": "Si escucháis con atención, todavía se oyen los gritos de alegría de los niños de antaño. El tiempo lo devora todo, pero la naturaleza siempre reclama su lugar con una sonrisa verde."
+      },
+      {
+        "id": "palauet-albeniz",
+        "title": "Palauet Albéniz (Palacio Real de Montjuïc)",
+        "hints": [
+          "Busca la residencia oficial de la Familia Real en Barcelona, escondida entre los jardines de la montaña.",
+          "Encuentra un palacete rodeado de fuentes y estatuas que se construyó para la Exposición de 1929.",
+          "Dirígete a los Jardines de Joan Maragall, situados entre el Estadio Olímpico y el Museo Nacional (MNAC)."
+        ],
+        "description": "Residencia real y jardines de gala.",
+        "coords": [41.3665, 2.153],
+        "info": "El Palauet Albéniz es la residencia oficial de la Familia Real Española en sus estancias en Barcelona. Está rodeado por los Jardines de Joan Maragall, unos de los más elegantes y clásicos de la ciudad, con fuentes, esculturas de mármol y amplias avenidas de césped.",
+        "imageUrl": "assets/images/parques/albeniz.jpg",
+        "theatricalInfo": "¡Bienvenidos a la corte de Montjuïc! Aquí el aire huele a distinción y las fuentes cantan para los reyes. Un lugar donde la naturaleza se ordena con la elegancia de un baile de palacio."
+      }
+    ]
+  },
+  "gaudi": {
+    "title": "Antoni Gaudí: El Genio (1883 - 1926)",
+    "duration": "4h 00min",
+    "distance": "8.2 km",
+    "description": "Recorre las obras maestras del arquitecto que transformó Barcelona. Desde sus primeros encargos hasta su obra póstuma, descubre el simbolismo y la naturaleza en la arquitectura de Gaudí.",
+    "center": [41.395, 2.165],
+    "zoom": 13,
+    "stops": [
+      {
+        "id": "casa-vicens",
+        "title": "Casa Vicens",
+        "hints": [
+          "Busca el primer gran encargo de Gaudí, una explosión de azulejos verdes y blancos con influencias orientales.",
+          "Encuentra la casa que parece un oasis mudéjar en el corazón del barrio de Gràcia.",
+          "Dirígete al Carrer de les Carolines, en el barrio de Gràcia."
+        ],
+        "description": "La primera obra maestra.",
+        "coords": [41.4035, 2.1505],
+        "info": "Construida entre 1883 y 1885 como casa de veraneo, es la obra que marca el inicio del estilo único de Gaudí, combinando elementos hispano-árabes con el naciente modernismo.",
+        "imageUrl": "assets/images/arquitectura/vicens.jpg",
+        "theatricalInfo": "¡Bienvenidos a mi primer sueño de azulejo! Aquí las flores de caléndula no se marchitan nunca porque las he atrapado en el barro cocido."
+      },
+      {
+        "id": "palau-guell",
+        "title": "Palau Güell",
+        "hints": [
+          "Busca el palacio urbano que Gaudí construyó para su gran mecenas, con chimeneas mágicas que parecen árboles de colores.",
+          "Encuentra la fachada austera que esconde un interior lleno de lujo y techos que imitan el cielo estrellado.",
+          "Baja por las Ramblas y gira por el Carrer Nou de la Rambla."
+        ],
+        "description": "La residencia del mecenas.",
+        "coords": [41.3788, 2.1742],
+        "info": "Eusebi Güell encargó este palacio para ampliar su casa de las Ramblas. Destaca su cúpula central parabólica y la innovadora ventilación del sótano para las caballerizas.",
+        "imageUrl": "assets/images/arquitectura/palau_guell.jpg",
+        "theatricalInfo": "Entrad en la mansión de mi amigo Eusebi. Aquí el hierro se retuerce como ramas y las chimeneas bailan sobre el tejado para que los vecinos miren al cielo."
+      },
+      {
+        "id": "casa-batllo-gaudi",
+        "title": "Casa Batlló",
+        "hints": [
+          "Busca la casa de los huesos, con una fachada que brilla como las escamas de un pez bajo el sol.",
+          "Encuentra el edificio donde el tejado es el lomo de un dragón vencido por la espada de San Jorge.",
+          "Passeig de Gràcia, en plena Manzana de la Discordia."
+        ],
+        "description": "La leyenda de Sant Jordi en piedra.",
+        "coords": [41.3915, 2.1648],
+        "info": "Gaudí transformó un edificio convencional en esta obra de arte orgánica, donde cada detalle evoca el mundo marino y la leyenda de Sant Jordi.",
+        "imageUrl": "assets/images/arquitectura/batllo.jpg",
+        "theatricalInfo": "¿Oís el rugido? El dragón descansa sobre el tejado. He convertido la piedra en esqueleto y el cristal en mar para que Barcelona nunca olvide sus leyendas."
+      },
+      {
+        "id": "la-pedrera-gaudi",
+        "title": "Casa Milà (La Pedrera)",
+        "hints": [
+          "Busca la montaña de piedra ondulada que no tiene ni una sola línea recta en su fachada.",
+          "Encuentra el edificio cuya azotea está habitada por gigantes de piedra que guardan las chimeneas.",
+          "Cruce de Passeig de Gràcia con la calle Provença."
+        ],
+        "description": "La cantera de piedra de Gaudí.",
+        "coords": [41.3953, 2.1619],
+        "info": "Representa la etapa de plenitud naturalista de Gaudí. Es famosa por sus patios interiores de luz y su innovadora estructura de columnas sin muros de carga.",
+        "imageUrl": "assets/images/arquitectura/pedrera.jpg",
+        "theatricalInfo": "He traído la montaña de Montserrat al centro de la ciudad. Dicen que es una cantera... ¡y lo es! Una cantera de sueños donde la piedra fluye como el agua."
+      },
+      {
+        "id": "park-guell-gaudi",
+        "title": "Park Güell",
+        "hints": [
+          "Busca la salamandra de mosaico de colores que guarda la escalera de una ciudad jardín fallida.",
+          "Encuentra the bosque de columnas dóricas que sostienen una gran plaza con vistas a toda Barcelona.",
+          "Sube hasta el Carrer d'Olot, en la ladera del Monte Carmelo."
+        ],
+        "description": "La naturaleza hecha arquitectura.",
+        "coords": [41.4145, 2.1528],
+        "info": "Concebido como una urbanización de lujo integrada en la naturaleza, terminó siendo un parque público lleno de formas orgánicas y simbolismo masónico y religioso.",
+        "imageUrl": "assets/images/arquitectura/park_guell.jpg",
+        "theatricalInfo": "Aquí el cemento imita los nidos de los pájaros y el banco se retuerce como una serpiente de colores. Es mi regalo a la ciudad: un bosque de piedra donde la imaginación no tiene límites."
+      },
+      {
+        "id": "sagrada-familia-gaudi",
+        "title": "Sagrada Família",
+        "hints": [
+          "Busca la Biblia de piedra cuyas torres buscan el cielo como los dedos de un gigante.",
+          "Encuentra el templo donde las columnas parecen árboles y la luz del sol pinta el interior con los colores del arcoíris.",
+          "Dirígete al Carrer de Mallorca, entre las calles Marina y Sardenya."
+        ],
+        "description": "El templo expiatorio eterno.",
+        "coords": [41.4035, 2.1745],
+        "info": "La obra a la que Gaudí dedicó los últimos 40 años de su vida. Es una síntesis de todo su conocimiento arquitectónico y una expresión máxima de su fe religiosa.",
+        "imageUrl": "assets/images/arquitectura/sagrada_familia.jpg",
+        "theatricalInfo": "Mi cliente no tiene prisa. Las piedras subirán poco a poco hasta tocar las nubes. He puesto en este templo todo lo que sé de la vida, de la fe y de esta tierra catalana."
+      }
+    ]
+  },
+  "gaudi-desconocido": {
+    "title": "Gaudí Desconocido",
+    "duration": "3h 30min",
+    "distance": "9.5 km",
+    "description": "Descubre los tesoros menos conocidos de Antoni Gaudí. Desde sus primeros trabajos municipales hasta edificios residenciales y religiosos que a menudo pasan desapercibidos.",
+    "center": [41.39, 2.15],
+    "zoom": 13,
+    "stops": [
+      {
+        "id": "farolas-reial",
+        "title": "Farolas de la Plaza Real",
+        "hints": [
+          "Busca el primer encargo oficial del Ayuntamiento a un joven Gaudí recién graduado.",
+          "Encuentra las farolas de seis brazos coronadas por el casco de Mercurio y dos serpientes enroscadas.",
+          "Dirígete al centro de la Plaza Real, cerca de las Ramblas."
+        ],
+        "description": "Su primer trabajo público.",
+        "coords": [41.38, 2.1752],
+        "info": "Diseñadas en 1878, estas farolas muestran ya la atención al detalle y el uso del simbolismo (Mercurio como dios del comercio) que caracterizarían su obra futura.",
+        "imageUrl": "assets/images/arquitectura/farolas.jpg",
+        "theatricalInfo": "Aquí empezó todo. Con estas luces quise iluminar el camino de una Barcelona que despertaba al progreso. Hierro y mito fundidos en el corazón de la plaza."
+      },
+      {
+        "id": "cascada-ciutadella",
+        "title": "Cascada Monumental de la Ciutadella",
+        "hints": [
+          "Busca la gran fuente del parque donde un estudiante llamado Antoni ayudó a diseñar la gruta y los detalles hidráulicos.",
+          "Encuentra el conjunto escultórico con carros de caballos dorados y una gran concha de piedra.",
+          "Dentro del Parque de la Ciutadella."
+        ],
+        "description": "La huella del joven estudiante.",
+        "coords": [41.3892, 2.1895],
+        "info": "Gaudí colaboró como ayudante de Josep Fontserè en 1875. Se le atribuyen el diseño de la gruta bajo la cascada y algunos detalles de forja y jardinería.",
+        "imageUrl": "assets/images/arquitectura/cascada.jpg",
+        "theatricalInfo": "Aprendí del agua y de la fuerza de la piedra antes de volar solo. En esta fuente dejé mis primeros susurros de naturaleza."
+      },
+      {
+        "id": "colegio-teresiana",
+        "title": "Colegio de las Teresianas",
+        "hints": [
+          "Busca un edificio de ladrillo de una austeridad sorprendente, coronado por pináculos que terminan en cruces de cuatro brazos.",
+          "Encuentra the colegio religioso donde Gaudí tuvo que trabajar con un presupuesto muy ajustado, demostrando su genio con materiales humildes.",
+          "Dirígete al Carrer de Ganduxer, en la zona alta de la ciudad."
+        ],
+        "description": "Gaudismo austero y espiritual.",
+        "coords": [41.3995, 2.1345],
+        "info": "Construido entre 1888 y 1889, destaca por el uso extensivo del ladrillo y el arco parabólico, logrando una gran expresividad con materiales muy económicos.",
+        "imageUrl": "assets/images/arquitectura/teresinas.jpg",
+        "theatricalInfo": "La pobreza no está reñida con la belleza. Con ladrillo y fe, levanté un castillo para el espíritu donde la luz entra de forma humilde pero eterna."
+      },
+      {
+        "id": "torre-bellesguard",
+        "title": "Torre Bellesguard (Casa Figueras)",
+        "hints": [
+          "Busca el castillo neogótico construido sobre las ruinas del palacio del último rey de la dinastía catalana.",
+          "Encuentra la casa que parece una fortaleza medieval con una torre esbelta coronada por la bandera catalana.",
+          "Sube a los pies de Collserola, en el Carrer de Bellesguard."
+        ],
+        "description": "Homenaje a la historia de Cataluña.",
+        "coords": [41.4095, 2.1265],
+        "info": "Construida entre 1900 y 1909 sobre el antiguo palacio del rey Martí l'Humà. Gaudí diseñó una obra que fusiona el gótico con el modernismo, llena de referencias patrióticas.",
+        "imageUrl": "assets/images/arquitectura/bellesguard.jpg",
+        "theatricalInfo": "Aquí el pasado respira a través de la piedra. He devuelto la corona a este monte con un castillo que guarda la memoria de nuestros reyes bajo el cielo de Barcelona."
+      },
+      {
+        "id": "puerta-miralles",
+        "title": "Puerta de la Finca Miralles",
+        "hints": [
+          "Busca un muro ondulado que parece una ola de piedra, con una puerta de hierro que recuerda a la piel de un reptil.",
+          "Encuentra el resto de una finca desaparecida, donde hoy una estatua de Gaudí te da la bienvenida.",
+          "Passeig de Manuel Girona, en el barrio de Sarrià."
+        ],
+        "description": "La ondulación perfecta.",
+        "coords": [41.3905, 2.1225],
+        "info": "Es el único resto de la cerca de la finca Miralles (1901). Presenta un diseño orgánico único con una marquesina de fibrocemento y un muro lobulado de piedra caliza.",
+        "imageUrl": "assets/images/arquitectura/miralles.jpg",
+        "theatricalInfo": "La línea recta pertenece a los hombres, la curva a Dios. Ved cómo la pared se mueve como si estuviera viva, invitándoos a pasar a un mundo que ya no existe."
+      },
+      {
+        "id": "pabellones-guell",
+        "title": "Pabellones Güell",
+        "hints": [
+          "Busca la puerta de hierro más espectacular de Barcelona: un dragón articulado que guarda la entrada a una antigua finca real.",
+          "Encuentra el complejo con cúpulas de escamas y una torre con forma de linterna oriental.",
+          "Avenida de Pedralbes, cerca de la Ciudad Universitaria."
+        ],
+        "description": "El guardián de hierro.",
+        "coords": [41.3885, 2.1195],
+        "info": "Primer encargo importante para Eusebi Güell (1884). El dragón de la puerta representa al guardián del Jardín de las Hespérides de la mitología clásica.",
+        "imageUrl": "assets/images/arquitectura/pavellons.jpg",
+        "theatricalInfo": "¡Cuidado con Ladón! El dragón de hierro vigila la entrada a mi paraíso particular. El ladrillo y la fantasía se unen aquí para servir a mi gran mecenas."
+      },
+      {
+        "id": "fuente-hercules",
+        "title": "Fuente de Hércules",
+        "hints": [
+          "Busca una obra de Gaudí que estuvo 'perdida' y olvidada durante más de 60 años en un jardín real.",
+          "Encuentra the fuente de piedra con una cabeza de dragón de hierro que escupe agua sobre un busto del héroe griego.",
+          "Entra en los Jardines del Palacio Real de Pedralbes y busca entre la vegetación cerca del palacio."
+        ],
+        "description": "La obra olvidada de Gaudí.",
+        "coords": [41.3878, 2.1175],
+        "info": "Construida en 1884, esta fuente permaneció oculta por la maleza y olvidada hasta que fue redescubierta en 1984 durante unos trabajos de restauración de los jardines. Presenta un busto de Hércules sobre un pedestal con el escudo de Cataluña y un caño con forma de dragón chino.",
+        "imageUrl": "assets/images/arquitectura/fuente_hercules.jpg",
+        "theatricalInfo": "El tiempo y la hiedra intentaron devorar mi obra, pero el agua nunca dejó de correr. Aquí Hércules descansa bajo la mirada del dragón, en un rincón donde el silencio es el mejor guardián de la belleza."
+      }
+    ]
+  },
+  "modernismo-desconocido": {
+    "title": "Modernismo Desconocido",
+    "duration": "3h 00min",
+    "distance": "7.2 km",
+    "description": "Barcelona esconde joyas modernistas que escapan a las rutas habituales. Fachadas de colores vibrantes, edificios con dos caras y el modernismo más tardío te esperan en este recorrido por los tesoros ocultos de la ciudad.",
+    "center": [41.4, 2.155],
+    "zoom": 14,
+    "stops": [
+      {
+        "id": "4-gats",
+        "title": "Els 4 Gats (Casa Martí)",
+        "hints": [
+          "Busca la taberna donde los genios del modernismo se reunían para arreglar el mundo entre sombras y chimeneas.",
+          "Encuentra el edificio de estilo gótico nórdico diseñado por Puig i Cadafalch que fue el epicentro de la bohemia barcelonesa.",
+          "Dirígete al Carrer de Montsió, muy cerca de la Avenida del Portal de l'Àngel."
+        ],
+        "description": "Cuna de la bohemia modernista.",
+        "coords": [41.3858, 2.1738],
+        "info": "Inaugurada en 1897 en los bajos de la Casa Martí, esta taberna fue el punto de encuentro de artistas como Picasso, Casas y Rusiñol. Su arquitectura mezcla el gótico catalán con influencias del norte de Europa.",
+        "imageUrl": "assets/images/arquitectura/4gats.jpg",
+        "theatricalInfo": "¡Pasad y pedid una copa! Aquí Picasso dibujó sus primeros menús y la 'Idea' se mezclaba con el humo del tabaco. Es el rincón donde el arte aprendió a ser libre y rebelde."
+      },
+      {
+        "id": "hotel-espana",
+        "title": "Hotel España (Fonda España)",
+        "hints": [
+          "Busca el comedor más bello de Barcelona, donde las sirenas de piedra y los esgrafiados marinos te transportan al fondo del mar.",
+          "Encuentra la obra maestra interior de Domènech i Montaner escondida en una fonda del siglo XIX cerca del Liceu.",
+          "Dirígete al Carrer de Sant Pau, a pocos metros de las Ramblas."
+        ],
+        "description": "El Modernismo bajo techo.",
+        "coords": [41.3803, 2.173],
+        "info": "Reformado por Lluís Domènech i Montaner en 1903, su comedor 'Sirenas' es una joya de la decoración modernista con mosaicos, esgrafiados y una chimenea de alabastro de Eusebi Arnau.",
+        "imageUrl": "assets/images/arquitectura/hotelespana.jpg",
+        "theatricalInfo": "Entrad en este palacio de la gastronomía. Las sirenas os vigilan desde las paredes y el tiempo se detiene entre cristales y maderas nobles. Es el lujo que la burguesía guardaba para sus mejores banquetes."
+      },
+      {
+        "id": "casa-padua",
+        "title": "Casa Pàdua",
+        "hints": [
+          "Busca una de las fachadas más coloridas de Barcelona, con esgrafiados rojos y verdes que parecen sacados de un cuento.",
+          "Encuentra el edificio que destaca por sus tribunas de hierro y sus motivos florales en una calle estrecha de Sant Gervasi.",
+          "Dirígete al Carrer de Pàdua, número 75."
+        ],
+        "description": "La explosión del color.",
+        "coords": [41.4045, 2.1455],
+        "info": "Diseñada por Jeroni Granell i Manresa en 1903, es famosa por su vibrante policromía y sus esgrafiados florales, siendo uno de los ejemplos más singulares del modernismo residencial.",
+        "imageUrl": "assets/images/arquitectura/padua.jpg",
+        "theatricalInfo": "¡Mirad este rojo! He querido que la primavera viva siempre en estas paredes. En una ciudad de piedra gris, mi casa es un ramo de flores que nunca se marchita."
+      },
+      {
+        "id": "casa-sayrach",
+        "title": "Casa Sayrach",
+        "hints": [
+          "Busca el último gran edificio del modernismo barcelonés, con una fachada de líneas curvas que anuncian el final de una era.",
+          "Encuentra el portal cuyo vestíbulo blanco y orgánico parece el interior de una ballena o una cueva de hielo.",
+          "Cruce de la Avenida Diagonal con la calle Enric Granados."
+        ],
+        "description": "El canto del cisne del modernismo.",
+        "coords": [41.3945, 2.1545],
+        "info": "Construida en 1918 por Manuel Sayrach, esta obra muestra una clara influencia gaudiniana en sus formas orgánicas y es considerada una de las últimas manifestaciones del movimiento en la ciudad.",
+        "imageUrl": "assets/images/arquitectura/sayrach.jpg",
+        "theatricalInfo": "Entrad en mi cueva de luz blanca. Las curvas no terminan, se deslizan como el agua. Es mi adiós a un estilo que nos hizo soñar con formas imposibles."
+      },
+      {
+        "id": "casa-ramos",
+        "title": "Casa Ramos",
+        "hints": [
+          "Busca el edificio de esgrafiados amarillos que domina una de las plazas más animadas de Gràcia.",
+          "Encuentra the casa señorial que Almodóvar eligió para rodar algunas escenas de 'Todo sobre mi madre'.",
+          "Dirígete a la Plaza de Lesseps."
+        ],
+        "description": "El modernismo de plaza.",
+        "coords": [41.4075, 2.1505],
+        "info": "Obra de Jaume Torres i Grau (1906), destaca por su fachada tripartita y la riqueza de sus esgrafiados amarillentos, así como por sus impresionantes interiores que conservan todo el mobiliario original.",
+        "imageUrl": "assets/images/arquitectura/ramos.jpg",
+        "theatricalInfo": "Soy el guardián de la plaza. Mis tres cuerpos miran al sol de la mañana mientras los vecinos pasan bajo mis balcones de hierro forjado. Soy la elegancia que Gràcia merece."
+      },
+      {
+        "id": "el-pinar",
+        "title": "El Pinar (Casa Arnús)",
+        "hints": [
+          "Busca el castillo de cuento de hadas que vigila la ciudad desde las faldas del Tibidabo, rodeado de un bosque de pinos.",
+          "Encuentra the mansión de piedra con torres afiladas que parece transportada desde las leyendas centroeuropeas hasta Barcelona.",
+          "Sube por la Avenida del Tibidabo y busca el inicio de la calle Manuel Arnús."
+        ],
+        "description": "El castillo modernista de la zona alta.",
+        "coords": [41.4158, 2.1328],
+        "info": "Obra de Enric Sagnier (1903), este palacete destaca por su silueta fortificada y su integración en el entorno natural. Sus tejados de pizarra y su torre del homenaje le dan un aire romántico y legendario.",
+        "imageUrl": "assets/images/arquitectura/pinar.jpg",
+        "theatricalInfo": "Soy el guardián de la montaña. Desde mis torres de piedra, veo cómo Barcelona crece y cambia mientras yo permanezco inmutable entre los pinos. Soy el sueño de un castillo hecho realidad bajo el sol mediterráneo."
+      },
+      {
+        "id": "casa-planells",
+        "title": "Casa Planells",
+        "hints": [
+          "Busca el edificio construido en un solar tan pequeño y estrecho que parece imposible que alguien pueda vivir dentro.",
+          "Encuentra the obra maestra de Jujol, el colaborador de Gaudí, que destaca por sus curvas aerodinámicas en un chaflán imposible.",
+          "Cruce de la Avenida Diagonal con la calle Sicilia."
+        ],
+        "description": "El ingenio de Jujol.",
+        "coords": [41.4005, 2.1765],
+        "info": "Josep Maria Jujol logró en 1924 aprovechar un solar minúsculo para crear una obra de gran ligereza visual y soluciones espaciales ingeniosas, marcando la transición hacia el racionalismo.",
+        "imageUrl": "assets/images/arquitectura/planells.jpg",
+        "theatricalInfo": "¿Poca anchura? ¡Ningún problema para la imaginación! He doblado la esquina como si fuera papel para que el aire y la luz inunden cada rincón de este triángulo de piedra."
+      },
+      {
+        "id": "casa-altures",
+        "title": "Casa de les Altures",
+        "hints": [
+          "Busca un palacete de estilo neomudéjar que parece transportado desde Granada hasta las faldas de los bunkers del Guinardó.",
+          "Encuentra the edificio que fue la sede de la compañía de aguas, decorado con ladrillo visto y arcos de herradura.",
+          "Parque de las Aguas, en el distrito de Horta-Guinardó."
+        ],
+        "description": "Exotismo en el Guinardó.",
+        "coords": [41.4125, 2.1655],
+        "info": "Construida en 1890 por Enric Figueres para el director de la Sociedad General de Aguas de Barcelona, es un ejemplo único de modernismo de inspiración árabe (neomudéjar).",
+        "imageUrl": "assets/images/arquitectura/altures.jpg",
+        "theatricalInfo": "Buscad la sombra de mis arcos. He traído el aroma de la Alhambra a estas colinas para que el agua de Barcelona se sienta como en un palacio de sultanes."
+      },
+      {
+        "id": "casa-tosquella",
+        "title": "Casa Tosquella",
+        "hints": [
+          "Busca una villa de veraneo con un estilo ecléctico que mezcla el modernismo con toques arabescos y una torre singular.",
+          "Encuentra the casa que destaca por su jardín y sus decoraciones cerámicas en un rincón tranquilo de Sant Gervasi.",
+          "Cruce de la calle Ballester con la Ronda del General Mitre."
+        ],
+        "description": "Eclecticismo modernista.",
+        "coords": [41.4065, 2.1435],
+        "info": "Juan Rubio i Bellver reformó esta casa en 1906, convirtiéndola en una joya modernista con una rica decoración de forja, vidrieras y mosaicos que ha sobrevivido milagrosamente a la presión urbanística.",
+        "imageUrl": "assets/images/arquitectura/tosquella.jpg",
+        "theatricalInfo": "Soy una superviviente. Los coches pasan veloces por la Ronda, pero yo sigo aquí, guardando el silencio de mis vidrieras y el recuerdo de los veranos de principios de siglo."
+      }
+    ]
+  },
+  "racionalismo": {
+    "title": "Racionalismo BCN (1929 - 1936)",
+    "duration": "3h 00min",
+    "distance": "10.5 km",
+    "description": "Descubre la arquitectura del grupo GATCPAC. Una revolución de líneas puras, luz y funcionalidad que buscaba mejorar la vida de los ciudadanos a través del diseño moderno.",
+    "center": [41.4, 2.16],
+    "zoom": 13,
+    "stops": [
+      {
+        "id": "dispensari-antituberculos",
+        "title": "Dispensari Antituberculós",
+        "hints": [
+          "Busca un edificio que parece una máquina de curar, con grandes ventanales para que entre el sol y el aire puro en el Raval.",
+          "Encuentra the obra maestra de Sert y Torres Clavé que rompió con la ornamentación para centrarse en la higiene.",
+          "Passatge de Sant Bernat, en el corazón del Raval."
+        ],
+        "description": "Arquitectura al servicio de la salud.",
+        "coords": [41.3845, 2.1665],
+        "info": "Construido entre 1934 y 1938, es uno de los edificios más importantes del racionalismo europeo. Su diseño permitía la máxima ventilación y asoleo para combatir la tuberculosis.",
+        "imageUrl": "assets/images/arquitectura/dispensari.jpg",
+        "theatricalInfo": "¡Fuera el polvo y las sombras! Aquí la arquitectura es medicina. Líneas blancas, acero y cristal para que la luz del Mediterráneo cure los pulmones de la ciudad."
+      },
+      {
+        "id": "casa-sert-muntaner",
+        "title": "Edifici de Viviendas Carrer Muntaner",
+        "hints": [
+          "Busca un edificio de viviendas donde la fachada se retira para crear balcones profundos que parecen cajas de luz.",
+          "Encuentra the residencia que Josep Lluís Sert diseñó para demostrar que la elegancia está en la proporción y no en el adorno.",
+          "Carrer de Muntaner, número 342."
+        ],
+        "description": "El lujo de la razón.",
+        "coords": [41.3985, 2.1465],
+        "info": "Construido in 1931, Sert aplicó aquí las teorías de Le Corbusier, creando viviendas funcionales con dúplex y una innovadora estructura metálica vista.",
+        "imageUrl": "assets/images/arquitectura/casa_sert.jpg",
+        "theatricalInfo": "Vivir bien es vivir con orden. He quitado las molduras para que podáis ver la belleza de la estructura. Menos es más cuando el espacio fluye libremente."
+      },
+      {
+        "id": "casa-rodriguez-arias",
+        "title": "Casa Rodríguez Arias",
+        "hints": [
+          "Busca un edificio en una gran avenida que destaca por su simetría perfecta y sus ventanas horizontales corridas.",
+          "Encuentra una de las primeras obras del GATCPAC que trajo la estética naval a la arquitectura urbana.",
+          "Via Augusta, número 61."
+        ],
+        "description": "La estética de la máquina.",
+        "coords": [41.4005, 2.1515],
+        "info": "Obra de Germán Rodríguez Arias (1931), es un ejemplo canónico de racionalismo, con una fachada plana, ausencia total de decoración y un uso audaz de las ventanas en banda.",
+        "imageUrl": "assets/images/arquitectura/arias.jpg",
+        "theatricalInfo": "¿Un barco en la ciudad? Mirad mis ventanas horizontales; parece que estemos navegando hacia el futuro. La razón es nuestro timón."
+      },
+      {
+        "id": "edifici-astoria",
+        "title": "Edifici Astòria",
+        "hints": [
+          "Busca un edificio que albergaba un cine y cuya fachada curva parece la proa de un transatlántico moderno.",
+          "Encuentra the obra de Germán Rodríguez Arias que combinó ocio y vivienda bajo las premisas de la vanguardia.",
+          "Carrer de París, número 193."
+        ],
+        "description": "Ocio y modernidad.",
+        "coords": [41.3935, 2.1535],
+        "info": "Construido en 1934, destaca por su gran marquesina y la integración de un cine en la planta baja, siendo un icono de la vida cosmopolita de la Barcelona de los años 30.",
+        "imageUrl": "assets/images/arquitectura/astoria.jpg",
+        "theatricalInfo": "¡Bienvenidos al espectáculo de la modernidad! Bajo este techo, el cine y la vida se unen. Líneas curvas para una ciudad que ya no quiere mirar atrás."
+      },
+      {
+        "id": "casa-bloc-racionalisme",
+        "title": "Casa Bloc",
+        "hints": [
+          "Busca el gran edificio en forma de 'S' diseñado para que todos los obreros tuvieran luz, aire y un jardín común.",
+          "Encuentra the experimento de vivienda social más ambicioso de la República, un bloque que quería dignificar la vida del trabajador.",
+          "Passeig de Torras i Bages, en el barrio de Sant Andreu."
+        ],
+        "description": "Vivienda social revolucionaria.",
+        "coords": [41.4395, 2.1915],
+        "info": "Obra de Sert, Torres Clavé y Subirana (1932-1936). Rompió con el modelo de manzana cerrada del Eixample para crear un espacio abierto y saludable para las clases trabajadoras.",
+        "imageUrl": "assets/images/arquitectura/casa_bloc.jpg",
+        "theatricalInfo": "Esta no es una casa, es un derecho. Aquí no hay patios oscuros ni habitaciones sin aire. Hemos construido un monumento a la dignidad del obrero bajo el sol de Barcelona."
+      },
+      {
+        "id": "pavello-republica",
+        "title": "Pavelló de la República",
+        "hints": [
+          "Busca la reconstrucción del edificio que representó a España en la Exposición de París de 1937, donde se expuso el Guernica por primera vez.",
+          "Encuentra the pabellón de cristal y acero que hoy guarda el Archivo Histórico de la ciudad en un entorno universitario.",
+          "Avenida del Cardenal Vidal i Barraquer, en el Valle de Hebrón."
+        ],
+        "description": "Símbolo de la libertad.",
+        "coords": [41.4285, 2.1485],
+        "info": "Aunque es una reconstrucción de 1992, respeta fielmente el diseño original de Sert y Lacasa. Fue el grito de libertad de una República que defendía la cultura frente a las bombas.",
+        "imageUrl": "assets/images/arquitectura/pavello.jpg",
+        "theatricalInfo": "Aquí la arquitectura es un manifiesto. Cristal para la transparencia, acero para la fuerza. Es el último refugio de un sueño que se negaba a morir."
+      }
+    ]
+  },
+  "miradores": {
+    "title": "Barcelona desde el Cielo",
+    "duration": "4h 00min",
+    "distance": "15.5 km",
+    "description": "Descubre Barcelona a vista de pájaro. Un recorrido por las atalayas más espectaculares, desde monumentos históricos hasta torres de vanguardia, para admirar el diseño perfecto de la ciudad.",
+    "center": [41.39, 2.17],
+    "zoom": 13,
+    "stops": [
+      {
+        "id": "mirador-colom",
+        "title": "Mirador de Colom (La Atalaya del Mar)",
+        "hints": [
+          "Busca al hombre de bronce que señala el horizonte al final de las Ramblas.",
+          "Encuentra the estrecho ascensor que te sube al interior de una corona real frente al puerto.",
+          "Plaza del Portal de la Pau, s/n."
+        ],
+        "description": "Vistas del puerto y las Ramblas.",
+        "coords": [41.3758, 2.1778],
+        "info": "Inaugurado in 1888 para la Exposición Universal, este monumento de 60 metros ofrece una vista única del frente marítimo y el trazado medieval de la ciudad.",
+        "imageUrl": "assets/images/arquitectura/colom_mirador.jpg",
+        "theatricalInfo": "¡Tierra a la vista! Desde esta corona de hierro, el Mediterráneo parece un plato de plata y las Ramblas el río de vida que alimenta a Barcelona. Mirad cómo los barcos parecen de juguete desde aquí arriba."
+      },
+      {
+        "id": "unlimited-barcelona",
+        "title": "Unlimited Barcelona (Torre Urquinaona)",
+        "hints": [
+          "Busca the rascacielos racionalista que domina la plaza donde se une el Eixample con el Gótico.",
+          "Encuentra the planta 20 donde las ventanas ofrecen una vista de 360 grados del plano de Cerdà.",
+          "Plaça d'Urquinaona, 6."
+        ],
+        "description": "El corazón del urbanismo de Cerdà.",
+        "coords": [41.3891, 2.1725],
+        "info": "Ubicado in la Torre Urquinaona, este mirador permite observar la cuadrícula perfecta del Eixample y cómo las calles se pierden in el infinito hasta las montañas.",
+        "imageUrl": "assets/images/arquitectura/urquinaona_mirador.jpg",
+        "theatricalInfo": "¡Mirad el orden de la razón! Cerdà trazó estas líneas con tiralíneas y sueños de igualdad. Desde aquí, Barcelona es un tablero de ajedrez gigante donde cada chaflán cuenta una historia de luz y aire."
+      },
+      {
+        "id": "mirador-torre-glories",
+        "title": "Mirador torre Glòries (La Ciudad Nube)",
+        "hints": [
+          "Busca the gran 'bala' de cristal y colores que ilumina las noches de la plaza de las Glorias.",
+          "Encuentra the cúpula donde una escultura de cables te permite caminar entre las nubes.",
+          "Avinguda Diagonal, 211."
+        ],
+        "description": "Arquitectura de vanguardia y arte inmersivo.",
+        "coords": [41.4035, 2.1894],
+        "info": "Diseñada por Jean Nouvel, la torre es un icono de la Barcelona moderna. Su mirador incluye la instalación 'Cloud Cities Barcelona', una experiencia artística a 125 metros de altura.",
+        "imageUrl": "assets/images/arquitectura/glories_mirador.jpg",
+        "theatricalInfo": "Bienvenidos al futuro. Aquí el cristal es agua y la luz es color. No solo miramos la ciudad, formamos parte de ella. Entre estos cables y reflejos, Barcelona parece una constelación que acaba de nacer."
+      },
+      {
+        "id": "bunkers-carmel-mirador",
+        "title": "Bunkers del Carmel (La Atalaya Rebelde)",
+        "hints": [
+          "Busca las ruinas de una batería antiaérea in la cima del Turó de la Rovira.",
+          "Encuentra the mirador natural más querido por los jóvenes, donde el sol se pone tras la Sagrada Familia.",
+          "Carrer de Marià Labèrnia, s/n."
+        ],
+        "description": "Historia y vistas panorámicas totales.",
+        "coords": [41.419, 2.162],
+        "info": "Aunque se llaman bunkers, eran baterías de cañones de la Guerra Civil. Ofrecen la vista más completa y gratuita de toda la llanura de Barcelona, desde el Besòs hasta el Llobregat.",
+        "imageUrl": "assets/images/arquitectura/bunkers_mirador.jpg",
+        "theatricalInfo": "¡Aquí la ciudad se rinde a tus pies! Sin ascensores, sin cristales... solo tú y Barcelona respirando al unísono. Ved cómo la Sagrada Familia emerge como un gigante entre las casitas del Eixample. Es la libertad in estado puro."
+      },
+      {
+        "id": "temple-tibidabo-mirador",
+        "title": "Sagrat Cor del Tibidabo (El Techo de BCN)",
+        "hints": [
+          "Sube a la cima de la montaña mágica, hasta los pies del Cristo abrazador.",
+          "Encuentra las terrazas del templo neogótico que son el punto más alto habitable de la ciudad.",
+          "Plaza del Tibidabo, s/n."
+        ],
+        "description": "Arquitectura religiosa in las alturas.",
+        "coords": [41.422, 2.119],
+        "info": "Las terrazas superiores del Templo Expiatorio del Sagrado Corazón permiten contemplar la ciudad y, in días claros, hasta la isla de Mallorca o los Pirineos.",
+        "imageUrl": "assets/images/arquitectura/tibidabo_temple.jpg",
+        "theatricalInfo": "Estamos in el cielo de Barcelona. El viento aquí arriba habla con las nubes. Mirad hacia abajo: toda la gloria y la miseria de los hombres queda pequeña ante la inmensidad del mar y la montaña."
+      },
+      {
+        "id": "columpio-horta",
+        "title": "El Columpio de Horta (El Balancín Secreto)",
+        "hints": [
+          "Busca el rincón 'clandestino' donde un columpio colgado de un pino se asoma al abismo de la ciudad.",
+          "Encuentra el punto situado justo por encima del Tanatorio de la Ronda de Dalt, in la falda de Collserola.",
+          "Sube por los senderos que parten del Mirador de Mundet hasta encontrar el árbol de las vistas infinitas."
+        ],
+        "description": "Vistas panorámicas y rincón instagrameable.",
+        "coords": [41.4385, 2.1585],
+        "info": "Se ha convertido in un icono viral de Barcelona. Ofrece una perspectiva diferente de la ciudad, alejada de los circuitos turísticos y con un aire de libertad absoluta.",
+        "imageUrl": "assets/images/arquitectura/columpio_horta.jpg",
+        "theatricalInfo": "¡A volar! Aquí el balanceo te lleva directo al cielo de Barcelona. Siente el viento in la cara mientras dejas atrás el ruido de la Ronda de Dalt. Es el lugar donde los adultos vuelven a ser niños por un instante."
+      },
+      {
+        "id": "mirador-alcalde",
+        "title": "Mirador de l'Alcalde (La Terraza sobre el Puerto)",
+        "hints": [
+          "Busca the terraza de varios niveles con un suelo de mosaico hecho de piedras y botellas de cristal.",
+          "Encuentra el mirador que domina el puerto comercial justo debajo del castillo de Montjuïc.",
+          "Dirígete a la Carretera de Montjuïc, cerca de la estación del teleférico."
+        ],
+        "description": "Jardines con vistas panorámicas al mar.",
+        "coords": [41.3658, 2.1705],
+        "info": "Diseñado in 1969 por Joan Josep Tharrats, destaca por su original pavimento cerámico y su cascada. Es uno de los mejores balcones al puerto de Barcelona.",
+        "imageUrl": "assets/images/arquitectura/alcalde_mirador.jpg",
+        "theatricalInfo": "¡Sentid la brisa! Aquí Montjuïc se asoma al abismo con elegancia. El puerto late a nuestros pies como un corazón de acero, mientras el Mediterráneo nos cuenta historias de barcos que vienen de muy lejos."
+      }
+    ]
+  },
+  "mercados-historicos": {
+    "title": "Catedrales del Pueblo: Mercados Históricos",
+    "duration": "2h 45min",
+    "distance": "5.5 km",
+    "description": "Barcelona se explica a través de sus mercados. Descubre la arquitectura del hierro y la vida palpitante en estos templos del comercio popular que definen el carácter de cada barrio.",
+    "center": [41.385, 2.175],
+    "zoom": 14,
+    "stops": [
+      {
+        "id": "mercat-boqueria-arq",
+        "title": "Mercat de Sant Josep (La Boqueria)",
+        "hints": [
+          "Busca el mercado más famoso del mundo, nacido donde antaño se alzaba un convento quemado.",
+          "Encuentra the gran arco de entrada modernista de hierro y vidrios de colores que da la bienvenida desde las Ramblas.",
+          "La Rambla, número 91."
+        ],
+        "description": "El icono mundial de Barcelona.",
+        "coords": [41.3817, 2.1715],
+        "info": "Inaugurado en 1840 sobre el antiguo convento de San José. Su cubierta de hierro actual data de 1914 y es el corazón gastronómico de la ciudad.",
+        "imageUrl": "assets/images/arquitectura/boqueria.jpg",
+        "theatricalInfo": "¡Pasad, pasad! Aquí el hambre no existe. Bajo este techo de hierro, la tierra y el mar se dan la mano cada mañana. Es el teatro de la vida en su estado más puro."
+      },
+      {
+        "id": "mercat-sant-antoni-arq",
+        "title": "Mercat de Sant Antoni",
+        "hints": [
+          "Busca el mercado con planta en forma de cruz griega que ocupa una manzana entera del Eixample.",
+          "Encuentra the joya del hierro diseñada por Antoni Rovira i Trias que esconde un baluarte de la antigua muralla en su subsuelo.",
+          "Carrer del Comte d'Urgell, número 1."
+        ],
+        "description": "Arquitectura del hierro en estado puro.",
+        "coords": [41.3785, 2.1625],
+        "info": "Construido en 1882, fue el primer mercado fuera de las murallas. Su estructura de hierro es de las más impresionantes de Europa por su geometría y dimensiones.",
+        "imageUrl": "assets/images/arquitectura/sant_antoni.jpg",
+        "theatricalInfo": "Mirad la simetría... el orden de la razón aplicado al mercado. Aquí el hierro se vuelve ligero para dejar que el barrio respire entre hortalizas y libros viejos."
+      },
+      {
+        "id": "mercat-concepcio-arq",
+        "title": "Mercat de la Concepció",
+        "hints": [
+          "Busca el mercado de las flores, un edificio elegante de ladrillo y hierro en el corazón del Eixample 'derecho'.",
+          "Encuentra the templo del comercio que destaca por sus grandes ventanales y su aire señorial.",
+          "Carrer d'Aragó, número 311."
+        ],
+        "description": "Elegancia en el Eixample.",
+        "coords": [41.3945, 2.1685],
+        "info": "Inaugurado en 1888, destaca por su gran nave central y el uso decorativo del ladrillo visto, integrándose perfectamente en la trama urbana de Cerdà.",
+        "imageUrl": "assets/images/arquitectura/concepcio.jpg",
+        "theatricalInfo": "Huele a flores frescas... Este mercado es el jardín del Eixample. Un lugar donde la burguesía y el pueblo se encuentran bajo el cristal para celebrar la abundancia de la ciudad."
+      },
+      {
+        "id": "mercat-lleytad-arq",
+        "title": "Mercat de la Llibertat",
+        "hints": [
+          "Busca un mercado modernista en una pequeña plaza de Gràcia, decorado con escudos y motivos vegetales de hierro.",
+          "Encuentra the obra de Miquel Pasqual i Tintorer que es el alma del antiguo pueblo de Gràcia.",
+          "Plaça de la Llibertat, en Gràcia."
+        ],
+        "description": "Modernismo de barrio.",
+        "coords": [41.3995, 2.1545],
+        "info": "Construido en 1888 y reformado en estilo modernista en 1893. Destaca por su rica ornamentación de forja y su escala humana, muy ligada a la vida del barrio.",
+        "imageUrl": "assets/images/arquitectura/llibertat.jpg",
+        "theatricalInfo": "¡Gràcia es libre y su mercado también! Pequeño pero orgulloso, como nuestro pueblo. Aquí los detalles de hierro cuentan historias de libertad y trabajo."
+      },
+      {
+        "id": "mercat-galvany-arq",
+        "title": "Mercat de Galvany",
+        "hints": [
+          "Busca el mercado que parece una catedral de ladrillo, con vidrieras artísticas que iluminan el comercio de lujo.",
+          "Encuentra the edificio monumental en la zona alta que destaca por su torre del reloj y su elegancia clásica.",
+          "Carrer de Santaló, número 65."
+        ],
+        "description": "La catedral del comercio.",
+        "coords": [41.3965, 2.1445],
+        "info": "Inaugurado in 1927, es uno de los mercados más bellos estéticamente. Su interior diáfano y sus grandes vidrieras lo convierten en un espacio casi sagrado dedicado al producto de calidad.",
+        "imageUrl": "assets/images/arquitectura/galvany.jpg",
+        "theatricalInfo": "La luz entra aquí como en un templo. No venimos solo a comprar, venimos a admirar la obra bien hecha. Es el triunfo de la forma sobre la función, la catedral de los sabores."
+      },
+      {
+        "id": "mercat-santa-caterina-arq",
+        "title": "Mercat de Santa Caterina",
+        "hints": [
+          "Busca el tejado ondulado de colores que parece un mar de cerámica flotando sobre el barrio de la Ribera.",
+          "Encuentra the mercado que renació con una arquitectura rompedora sobre los restos de un antiguo monasterio.",
+          "Avinguda de Francesc Cambó, número 16."
+        ],
+        "description": "Tradición y vanguardia.",
+        "coords": [41.3862, 2.1785],
+        "info": "Originalmente de 1848, fue remodelado en 2005 por Enric Miralles y Benedetta Tagliabue. Su cubierta de mosaico hexagonal es un homenaje a la paleta de colores de las frutas y verduras.",
+        "imageUrl": "assets/images/arquitectura/caterina.jpg",
+        "theatricalInfo": "¡Mirad qué olas! El color fluye sobre nosotros como si la huerta hubiera inundado el tejado. Aquí el pasado de las piedras del convecnto baila con el futuro de la arquitectura más libre."
+      }
+    ]
+  },
+  "quadrat-or": {
+    "title": "El Quadrat d'Or (1870 - 1900)",
+    "duration": "2h 30min",
+    "distance": "3.5 km",
+    "description": "Explora el corazón del Eixample, donde la burguesía barcelonesa compitió por alzar los edificios más espectaculares. Un museo al aire libre de arquitectura modernista.",
+    "center": [41.392, 2.165],
+    "zoom": 16,
+    "stops": [
+      {
+        "id": "casa-lleo-morera",
+        "title": "Casa Lleó i Morera",
+        "hints": [
+          "Busca el primer edificio de la 'Manzana de la Discordia', donde la piedra parece encaje de flores.",
+          "Encuentra la obra de Domènech i Montaner que rinde homenaje a los apellidos de sus dueños con leones y moreras.",
+          "Passeig de Gràcia, número 35."
+        ],
+        "description": "La elegancia floral.",
+        "coords": [41.3912, 2.1645],
+        "info": "Considerada una de las obras más completas del modernismo, integrando escultura, mosaico, cerámica y vidrieras.",
+        "imageUrl": "assets/images/arquitectura/lleomorera.jpg",
+        "theatricalInfo": "¡Mirad qué delicadeza! He convertido el nombre de una familia en un jardín de piedra para que Barcelona sepa que la belleza no tiene límites."
+      },
+      {
+        "id": "casa-amatller",
+        "title": "Casa Amatller",
+        "hints": [
+          "Busca la casa vecina de Gaudí que parece un palacio gótico del norte de Europa con un tejado escalonado.",
+          "Encuentra the residencia del famoso chocolatero que Puig i Cadafalch diseñó con una fachada llena de símbolos medievales.",
+          "Passeig de Gràcia, número 41."
+        ],
+        "description": "Gótico industrial.",
+        "coords": [41.3915, 2.1642],
+        "info": "Propiedad del industrial chocolatero Antoni Amatller, mezcla el estilo gótico civil catalán con influencias de las casas flamencas.",
+        "imageUrl": "assets/images/arquitectura/amatller.jpg",
+        "theatricalInfo": "Mi casa huele a chocolate y a viejas historias de caballeros. He traído el norte al Mediterráneo para demostrar que Barcelona es una ciudad de mundo."
+      },
+      {
+        "id": "casa-males-discorida",
+        "title": "Manzana de la Discordia",
+        "hints": [
+          "Busca el tramo de calle donde tres grandes arquitectos compitieron por ser el más original de Barcelona.",
+          "Encuentra the lugar donde Gaudí, Puig i Cadafalch y Domènech i Montaner se retan con sus mejores edificios.",
+          "Passeig de Gràcia, entre las calles Consell de Cent y Aragó."
+        ],
+        "description": "El epicentro del modernismo.",
+        "coords": [41.3914, 2.1646],
+        "info": "Se llama así por la rivalidad profesional entre los arquitectos que diseñaron las tres casas principales de este tramo: Lleó i Morera, Amatller y Batlló.",
+        "imageUrl": "assets/images/arquitectura/discordia.jpg",
+        "theatricalInfo": "¿Cuál es más bella? ¡Es imposible decidir! Barcelona es la única ciudad donde el conflicto genera tanta armonía visual."
+      },
+      {
+        "id": "casa-fuster-final",
+        "title": "Casa Fuster",
+        "hints": [
+          "Finaliza tu ruta en el edificio más caro y elegante de la ciudad, al final del Passeig de Gràcia.",
+          "Busca the palacio de mármol blanco que hoy es un hotel de lujo, obra tardía de Domènech i Montaner.",
+          "Passeig de Gràcia, número 132."
+        ],
+        "description": "El Modernismo de mármol.",
+        "coords": [41.3978, 2.1585],
+        "info": "Construida in 1908, fue un regalo del señor Fuster a su esposa. Destaca por el uso de mármol blanco de Carrara y su estilo modernista más contenido y noble.",
+        "imageUrl": "assets/images/arquitectura/fuster.jpg",
+        "theatricalInfo": "Soy el broche de oro del paseo. Blanco, noble y eterno. Aquí el Modernismo se viste de gala para despedir una época dorada de Barcelona."
+      }
+    ]
+  },
+  "modernismo": {
+    "title": "Modernismo: Más allá de Gaudí",
+    "duration": "3h 00min",
+    "distance": "5.2 km",
+    "description": "Descubre los palacios, hospitales y colegios que la burguesía encargó a los grandes arquitectos de la época. Un recorrido por la cara más social y monumental del Modernismo.",
+    "center": [41.405, 2.17],
+    "zoom": 14,
+    "stops": [
+      {
+        "id": "hospital-sant-pau",
+        "title": "Recinto Modernista de Sant Pau",
+        "hints": [
+          "Busca el hospital más bello del mundo, una ciudad dentro de la ciudad hecha de ladrillo rojo y azulejos.",
+          "Encuentra the obra maestra de Domènech i Montaner diseñada para curar a través de la belleza y el aire puro.",
+          "Carrer de Sant Antoni Maria Claret, número 167."
+        ],
+        "description": "Arquitectura para la salud.",
+        "coords": [41.4125, 2.1745],
+        "info": "Declarado Patrimonio de la Humanidad por la UNESCO, este antiguo hospital es el conjunto modernista más grande de Europa.",
+        "imageUrl": "assets/images/arquitectura/santpau.jpg",
+        "theatricalInfo": "Aquí el dolor se alivia con el color de las flores y la luz que entra por los ventanales. He construido un paraíso para los enfermos porque la salud también necesita esperanza."
+      },
+      {
+        "id": "palau-musica-modernisme",
+        "title": "Palau de la Música Catalana",
+        "hints": [
+          "Busca una caja de música de cristal y piedra en el barrio de la Ribera.",
+          "Encuentra the auditorio cuya claraboya parece una gota de sol cayendo del techo.",
+          "Carrer de Sant Pere Més Alt, número 7."
+        ],
+        "description": "El templo de la música.",
+        "coords": [41.3875, 2.1753],
+        "info": "Obra de Domènech i Montaner, es una explosión de luz y color única en el mundo, sede del Orfeó Català.",
+        "imageUrl": "assets/images/arquitectura/palaumusica.jpg",
+        "theatricalInfo": "¡Escuchad el silencio antes del concierto! He roto los muros para que la luz sea la música que acompañe a los cantores. Es el alma de un pueblo que canta."
+      },
+      {
+        "id": "casa-comalat",
+        "title": "Casa Comalat",
+        "hints": [
+          "Busca un edificio con dos caras: una señorial hacia la Diagonal y otra orgánica y colorida hacia la calle Còrsega.",
+          "Encuentra the obra de Salvador Valeri que parece inspirada directamente por los sueños de Gaudí.",
+          "Avinguda Diagonal, número 442."
+        ],
+        "description": "La dualidad modernista.",
+        "coords": [41.3965, 2.1595],
+        "info": "Destaca por su espectacular fachada posterior, llena de curvas y una policromía vibrante que recuerda el estilo naturalista extremo.",
+        "imageUrl": "assets/images/arquitectura/comalat.jpg",
+        "theatricalInfo": "Miradme por delante y parezco un noble burgués; miradme por detrás y veréis mi alma salvaje y ondulada. Soy el Modernismo que no se conforma con una sola forma."
+      },
+      {
+        "id": "palau-baro-quadras",
+        "title": "Palau del Baró de Quadras",
+        "hints": [
+          "Busca un palacio que combina una fachada neogótica con un interior que parece sacado de 'Las mil y una noches'.",
+          "Encuentra the obra de Puig i Cadafalch que esconde una de las escaleras más bellas de Barcelona.",
+          "Avinguda Diagonal, número 416."
+        ],
+        "description": "Lujo ecléctico.",
+        "coords": [41.3958, 2.1615],
+        "info": "Puig i Cadafalch reformó este edificio creando un contraste fascinante entre la sobriedad exterior y la explosión decorativa interior.",
+        "imageUrl": "assets/images/arquitectura/quadras.jpg",
+        "theatricalInfo": "Entrad in mi palacio. He tallado la piedra como si fuera seda y he traído el aroma de Oriente a la Diagonal. Es el lujo que Barcelona merece."
+      }
+    ]
+  }
+}

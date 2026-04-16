@@ -36,3 +36,28 @@
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
 @import 'leaflet/dist/leaflet.css';
+
+/* Estilos Globales de Accesibilidad */
+:root {
+  --app-font-size-multiplier: 1;
+  --app-font-family: inherit;
+  --app-line-height: 1.5;
+  --app-text-align: left;
+}
+
+body {
+  font-family: var(--app-font-family) !important;
+  line-height: var(--app-line-height) !important;
+  text-align: var(--app-text-align) !important;
+}
+
+/* Aplicar el multiplicador de fuente a elementos comunes */
+p, span, div, ion-label, ion-item, ion-card-content, h1, h2, h3, h4, h5, h6, ion-title, ion-button {
+  font-size: calc(100% * var(--app-font-size-multiplier)) !important;
+}
+
+/* Ajustes específicos para el mapa */
+.map-container {
+  height: 100%;
+  width: 100%;
+}

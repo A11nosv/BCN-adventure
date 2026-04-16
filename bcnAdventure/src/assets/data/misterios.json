@@ -1,0 +1,618 @@
+{
+  "inquisicion": {
+    "title": "La Inquisición: La Sombra del Santo Oficio",
+    "duration": "2h 00min",
+    "distance": "3.5 km",
+    "description": "Descubre los rincones más oscuros de la Barcelona inquisitorial. Desde el Palacio del Lloctinent hasta las plazas de los Autos de Fe, recorre la historia de la censura y el miedo en la ciudad.",
+    "center": [41.384, 2.177],
+    "zoom": 16,
+    "stops": [
+      {
+        "id": "palau-lloctinent",
+        "title": "Palau del Lloctinent: Sede del Santo Oficio",
+        "hints": [
+          "Busca el edificio renacentista junto a la catedral que fue la sede principal del Tribunal de la Inquisición en Barcelona.",
+          "Encuentra el patio con artesonado de madera donde los inquisidores dictaban sus decretos.",
+          "Dirígete al Palau del Lloctinent en la Plaça del Rei."
+        ],
+        "description": "Centro de mando inquisitorial.",
+        "coords": [41.384, 2.177],
+        "info": "A partir del siglo XVI, este edificio albergó el Tribunal del Santo Oficio, convirtiéndose en el símbolo del control religioso y social.",
+        "imageUrl": "assets/images/historia/lloctinent.jpg",
+        "theatricalInfo": "Bajo este techo de madera noble se decide el destino de las almas. El silencio de estos muros guarda los secretos de miles de delaciones. Que tu fe sea firme, pues aquí los ojos del Santo Oficio nunca descansan."
+      },
+      {
+        "id": "placa-del-rei-auto",
+        "title": "Plaça del Rei: El Escenario del Juicio",
+        "hints": [
+          "Ve a la gran plaza real donde se celebraban las ceremonias públicas de condena, conocidas como Autos de Fe.",
+          "Busca el lugar donde los 'reconciliados' vestían el sambenito antes de conocer su castigo frente a la nobleza.",
+          "Dirígete al centro de la Plaça del Rei."
+        ],
+        "description": "Lugar de los Autos de Fe.",
+        "coords": [41.3842, 2.1775],
+        "info": "La Plaza del Rey era el escenario perfecto para los Autos de Fe públicos, diseñados para impresionar a la población y mostrar el poder del tribunal.",
+        "imageUrl": "assets/images/historia/placa_rei.jpg",
+        "theatricalInfo": "¡Mirad el tablado! Hoy el sol no brilla para todos. Entre cánticos y fuego, se lee la sentencia de los que osaron dudar. Es un teatro de penitencia donde el miedo es el principal protagonista."
+      },
+      {
+        "id": "el-call-inquisicio",
+        "title": "Carrer de Marlet: El Destino de los Conversos",
+        "hints": [
+          "Adéntrate en el antiguo barrio judío, allí donde la sospecha sobre los falsos conversos era más intensa.",
+          "Busca la calle donde las piedras hebreas son testigos de la persecución de aquellos que practicaban su fe en la sombra.",
+          "Encuentra la lápida medieval en el Carrer de Marlet."
+        ],
+        "description": "Persecución de los conversos.",
+        "coords": [41.3825, 2.1755],
+        "info": "La Inquisición centró gran parte de sus esfuerzos iniciales en vigilar a los judíos conversos para asegurar que no regresaran a sus antiguas prácticas.",
+        "imageUrl": "assets/images/historia/call.jpg",
+        "theatricalInfo": "Huele a miedo en estas calles estrechas. Un candil encendido el viernes, un plato de carne evitado... cualquier gesto es una prueba. En el Call, hasta las sombras parecen delatarte."
+      },
+      {
+        "id": "carceres-secretes",
+        "title": "Cárceles de la Inquisición",
+        "hints": [
+          "Busca el lugar cerca de la puerta de San Ivo donde los prisioneros esperaban su juicio en celdas aisladas del mundo exterior.",
+          "Encuentra el rincón sombrío junto a los muros de la catedral donde el tiempo se detenía para los acusados.",
+          "Ve a la Plaça de Sant Iu, junto a la entrada del Museo Marès."
+        ],
+        "description": "Lugar de detención y tortura.",
+        "coords": [41.3838, 2.1765],
+        "info": "Las cárceles secretas eran famosas por su dureza. A diferencia de las cárceles civiles, aquí los presos estaban incomunicados hasta su juicio final.",
+        "imageUrl": "assets/images/historia/carceles.jpg",
+        "theatricalInfo": "El frío de estas celdas entra en los huesos. Aquí no hay abogados, solo tu conciencia y el inquisidor que espera tu confesión. El silencio es tan denso que puedes oír el latido de tu propio arrepentimiento."
+      },
+      {
+        "id": "escudo-inquisicion",
+        "title": "El Escudo del Santo Oficio: Espada y Olivo",
+        "hints": [
+          "Busca el emblema de piedra que vigilaba la entrada a los calabozos, donde los símbolos de la justicia y la misericordia se retuercen bajo una cruz.",
+          "Encuentra la fachada junto al patio del museo de las esculturas, donde una espada y una rama de olivo flanquean el escudo de la inquisición.",
+          "Dirígete a la Plaza de Sant Iu, frente a la pared exterior del Museo Frederic Marès."
+        ],
+        "description": "Simbología del control religioso.",
+        "coords": [41.3839, 2.1763],
+        "info": "Este escudo representa la ideología de la Inquisición: la espada para los pecadores impenitentes y la rama de olivo para los que se reconcilian. Es uno de los pocos emblemas que se conservan 'in situ' en la ciudad.",
+        "imageUrl": "assets/images/historia/escudo.jpg",
+        "theatricalInfo": "¡Bajad la mirada! Este escudo no es un adorno, es una advertencia. La espada corta la carne del herético mientras el olivo ofrece una paz que a menudo llega demasiado tarde. El Santo Oficio no olvida, y su marca en la piedra es eterna."
+      },
+      {
+        "id": "placa-sant-jaume-conflicte",
+        "title": "Plaça de Sant Jaume: El Conflicto de Poderes",
+        "hints": [
+          "Acude al centro del poder civil donde los inquisidores a menudo chocaban con las instituciones catalanas.",
+          "Busca el lugar donde la Inquisición intentó imponer su autoridad incluso sobre los diputados de la Generalitat.",
+          "Plaça Sant Jaume, entre el Ayuntamiento y el Palau de la Generalitat."
+        ],
+        "description": "Lucha entre poder eclesiástico y civil.",
+        "coords": [41.3828, 2.177],
+        "info": "La Inquisición no siempre fue bien recibida por las autoridades locales, provocando constantes conflictos jurisdiccionales durante los siglos XVI y XVII.",
+        "imageUrl": "assets/images/historia/sant_jaume.jpg",
+        "theatricalInfo": "Dos palacios, dos poderes... y una cruz verde que lo vigila todo. Incluso los más poderosos tiemblan cuando el Santo Oficio llama a su puerta. En esta plaza, la fe y la ley libran su batalla más sorda."
+      }
+    ]
+  },
+  "crimenes-raval": {
+    "title": "Crímenes del Raval",
+    "duration": "1h 45min",
+    "distance": "3.2 km",
+    "description": "Sumérgete en la cara más oscura de Barcelona. Un recorrido por los callejones del Raval tras las huellas de asesinos, leyendas negras y misterios sin resolver.",
+    "center": [41.38, 2.17],
+    "zoom": 15,
+    "stops": [
+      {
+        "id": "vampira-raval",
+        "title": "La Casa de Enriqueta Martí",
+        "hints": [
+          "Busca el número 29 de la calle que antes se llamaba Poniente, donde la leyenda de la secuestradora más famosa cobró vida.",
+          "Encuentra the portal donde los niños desaparecían para alimentar el mito de la Vampira.",
+          "Dirígete al Carrer de Joaquín Costa, número 29."
+        ],
+        "description": "El hogar del horror.",
+        "coords": [41.3831, 2.1648],
+        "info": "Enriqueta Martí, conocida como la Vampira del Raval, fue detenida aquí in 1912. Se decía que fabricaba ungüentos mágicos con restos humanos, aunque la realidad histórica es un reflejo de la miseria y la injusticia social de la época.",
+        "imageUrl": "assets/images/misterios/vampira_casa.jpg",
+        "theatricalInfo": "¡Shhh! No levantéis la voz... En este portal, la sombra de Enriqueta aún parece acechar. ¿Fue una asesina o una víctima del miedo de una ciudad entera? La verdad se esconde tras esas ventanas viejas."
+      },
+      {
+        "id": "asesinato-segui",
+        "title": "El Crimen de la Cadena",
+        "hints": [
+          "Busca la esquina donde el plomo de los pistoleros de la patronal segó la vida del 'Noi del Sucre'.",
+          "Encuentra the lugar donde la lucha obrera se tiñó de sangre en una emboscada traicionera.",
+          "Cruce de Carrer de la Cadena con Sant Rafael."
+        ],
+        "description": "Pistolerismo y traición.",
+        "coords": [41.3789, 2.1691],
+        "info": "Salvador Seguí, líder anarcosindicalista, fue asesinado en esta esquina in 1923 por pistoleros del Sindicato Libre. Un crimen político que marcó el fin de una era de esperanza para el movimiento obrero.",
+        "imageUrl": "assets/images/misterios/asesinato_segui.jpg",
+        "theatricalInfo": "¡Pum! Dos disparos y el mundo cambió. Aquí cayó el gigante, el hombre que soñó con ocho horas de sol y justicia. Los ecos de las balas aún resuenan en estos callejones estrechos."
+      },
+      {
+        "id": "crimen-calle-cera",
+        "title": "Misterio en la Calle de la Cera",
+        "hints": [
+          "Busca la calle cuna de la rumba catalana, donde un crimen pasional sacudió a la comunidad gitana en el siglo XIX.",
+          "Encuentra the rincón donde el honor y la navaja se encontraron bajo la luz de la luna.",
+          "Carrer de la Cera."
+        ],
+        "description": "Honor y rumba.",
+        "coords": [41.3782, 2.1655],
+        "info": "La calle de la Cera ha sido escenario de múltiples leyendas urbanas y crímenes de barrio que, con el tiempo, se han fundido con la rica historia de la rumba catalana y la vida vecinal del Raval.",
+        "imageUrl": "assets/images/misterios/calle_cera.jpg",
+        "theatricalInfo": "Aquí las guitarras lloran y las navajas brillan. En el Raval, la pasión siempre ha sido un arma de doble filo. ¿Oís ese ritmo? Es el latido de un barrio que nunca olvida a sus muertos."
+      },
+      {
+        "id": "monasterio-leyendas",
+        "title": "Sant Pau del Camp (Final del Misterio)",
+        "hints": [
+          "Termina tu ruta en el monasterio románico más antiguo, donde los monjes guardan secretos de siglos de oscuridad.",
+          "Busca the lugar donde las sombras de los antiguos cementerios parecen cobrar vida entre los arcos de piedra.",
+          "Carrer de Sant Pau, 101."
+        ],
+        "description": "Paz y sombras.",
+        "coords": [41.3755, 2.1695],
+        "info": "Este monasterio del siglo IX es un oasis de paz que ha sobrevivido a incendios, revueltas y crímenes. Su claustro es uno de los lugares más enigmáticos y bellos de toda Barcelona.",
+        "imageUrl": "assets/images/misterios/sant_pau_camp.jpg",
+        "theatricalInfo": "El final del camino. Aquí la piedra calla lo que los hombres gritan. El Raval es un laberinto de crímenes y santos, y en este monasterio, todos encuentran su descanso eterno... o casi todos."
+      }
+    ]
+  },
+  "fantasmas-gotic": {
+    "title": "Fantasmas del Gòtic",
+    "duration": "1h 30min",
+    "distance": "2.5 km",
+    "description": "Descubre las almas en pena que vagan por el laberinto de piedra del Barrio Gótico. Historias de fantasmas, exorcismos y apariciones que desafían la razón.",
+    "center": [41.3835, 2.1765],
+    "zoom": 16,
+    "stops": [
+      {
+        "id": "campanero-catedral",
+        "title": "El Fantasma del Campanero",
+        "hints": [
+          "Busca la gran catedral gótica, donde se dice que un antiguo campanero aún hace sonar las campanas en las noches de tormenta.",
+          "Encuentra las gárgolas que vigilan el templo desde las alturas.",
+          "Pla de la Seu, frente a la Catedral."
+        ],
+        "description": "Vigilante eterno.",
+        "coords": [41.3839, 2.1762],
+        "info": "Cuenta la leyenda que un campanero que amaba su oficio más que a su vida sigue subiendo a la torre de la Catedral para avisar de los peligros que acechan a la ciudad.",
+        "imageUrl": "assets/images/misterios/catedral_fantasmas.jpg",
+        "theatricalInfo": "¿Oís eso? No es el viento... es el repique fantasma. Dicen que si miras hacia la torre de San Ivo a medianoche, verás una luz tenue subiendo las escaleras de caracol."
+      },
+      {
+        "id": "voces-ninos-neri",
+        "title": "Las Voces de San Felipe Neri",
+        "hints": [
+          "Busca la plaza más silenciosa del Gótico, donde las paredes aún conservan las cicatrices de una tragedia aérea.",
+          "Encuentra the fuente central donde, según dicen, se escuchan risas de niños que ya no están.",
+          "Plaza de San Felipe Neri."
+        ],
+        "description": "Eco de la tragedia.",
+        "coords": [41.3831, 2.1751],
+        "info": "En 1938, un bombardeo durante la Guerra Civil acabó con la vida de 42 personas, la mayoría niños que se refugiaban en la iglesia. Las marcas en la fachada son un recordatorio mudo del horror.",
+        "imageUrl": "assets/images/misterios/ninos_neri.jpg",
+        "theatricalInfo": "Aquí el silencio pesa. Las piedras hablan de aquel día en que el cielo se desplomó. Muchos juran que, al caer la tarde, se oyen juegos de niños en los rincones de la plaza..."
+      },
+      {
+        "id": "hechiceros-estruc",
+        "title": "Carrer d'Estruc: Calle de Brujos",
+        "hints": [
+          "Busca una calle pequeña cerca de la Plaza Cataluña que antaño fue el centro de la alquimia y la astrología.",
+          "Encuentra the placa que recuerda al famoso astrólogo Estruc.",
+          "Carrer d'Estruc."
+        ],
+        "description": "Magia y sombras.",
+        "coords": [41.3862, 2.1725],
+        "info": "Esta calle era conocida en la Edad Media por albergar a brujos y alquimistas. El nombre proviene de Astruc Sacanera, un influyente judío experto en artes ocultas.",
+        "imageUrl": "assets/images/misterios/calle_estruc.jpg",
+        "theatricalInfo": "¡Cuidado donde pisáis! En esta calle, las sombras tienen memoria. Aquí se fabricaban filtros de amor y venenos de olvido. El aire aún huele a azufre y pergamino viejo."
+      },
+      {
+        "id": "sombras-palau-reial",
+        "title": "Sombras en la Plaça del Rei",
+        "hints": [
+          "Termina tu ruta en la plaza que fue sede de la Inquisición, donde las sombras de los juzgados aún parecen suplicar clemencia.",
+          "Busca the lugar donde el Gran Salón del Tinell guarda secretos de reyes y verdugos.",
+          "Plaça del Rei."
+        ],
+        "description": "Justicia y olvido.",
+        "coords": [41.3842, 2.1774],
+        "info": "Esta plaza es el corazón medieval de Barcelona. Aquí se encontraba el Tribunal de la Inquisición, y muchos de los condenados pasaron sus últimas horas bajo estos arcos góticos.",
+        "imageUrl": "assets/images/misterios/plaza_rey_sombras.jpg",
+        "theatricalInfo": "El corazón de piedra de la ciudad. Aquí la justicia era implacable. ¿Sentís ese frío repentino? Es el aliento de los que pasaron por aquí hacia el cadalso. Bienvenidos al final de la ruta espectral."
+      }
+    ]
+  },
+  "masoneria": {
+    "title": "Masonería en BCN",
+    "duration": "2h 15min",
+    "distance": "4.5 km",
+    "description": "Descifra los símbolos ocultos a plena vista en las fachadas y monumentos de Barcelona. Un viaje por la historia de los masones, sus ritos y su influencia en la ciudad.",
+    "center": [41.3885, 2.1725],
+    "zoom": 15,
+    "stops": [
+      {
+        "id": "biblioteca-aruss",
+        "title": "Biblioteca Arús: El Templo del Saber",
+        "hints": [
+          "Busca una biblioteca pública cerca del Arco de Triunfo, donde una réplica de la Estatua de la Libertad sostiene la antorcha del conocimiento.",
+          "Encuentra the portal custodiado por el busto de su fundador, un eminente masón.",
+          "Passeig de Sant Joan, 26."
+        ],
+        "description": "La joya masónica.",
+        "coords": [41.3918, 2.1785],
+        "info": "Fundada por Rossend Arús, la biblioteca es un centro de referencia sobre la masonería y el libre pensamiento. Su escalera principal y su sala de lectura están repletas de simbología masónica.",
+        "imageUrl": "assets/images/misterios/biblioteca_arus.jpg",
+        "theatricalInfo": "Entrad con respeto... Aquí el silencio es el guardián de la luz. Mirad bien a esa libertad: no es la de Nueva York, es la de la razón que ilumina al mundo. Los masones sabían que el saber es la única cadena que nos hace libres."
+      },
+      {
+        "id": "parque-ciutadella-simbolos",
+        "title": "El Gran Arquitecto en la Ciutadella",
+        "hints": [
+          "Busca en la Gran Cascada del parque, donde los elementos de la naturaleza se rinden ante el orden y la geometría.",
+          "Encuentra las escuadras y compases tallados en la piedra, casi invisibles para el profano.",
+          "Parc de la Ciutadella, Cascada Monumental."
+        ],
+        "description": "Naturaleza y Geometría.",
+        "coords": [41.3894, 2.1894],
+        "info": "Muchos de los arquitectos y escultores que trabajaron en el parque eran masones. La cascada es una alegoría del triunfo de la luz sobre las tinieblas, con múltiples referencias a los elementos naturales.",
+        "imageUrl": "assets/images/misterios/ciutadella_masones.jpg",
+        "theatricalInfo": "¡Ved la cascada! No es solo agua y piedra... es una oda al Gran Arquitecto del Universo. Todo aquí tiene una medida, un ángulo perfecto. Los hermanos de la escuadra dejaron su firma en cada sillar."
+      },
+      {
+        "id": "casa-xifre-logia",
+        "title": "Los Porxos d'en Xifré",
+        "hints": [
+          "Busca un edificio con soportales cerca del puerto, decorado con medallones de grandes navegantes y símbolos de la prosperidad.",
+          "Encuentra las columnas que recuerdan a las de un antiguo templo.",
+          "Passeig d'Isabel II, Porxos d'en Xifré."
+        ],
+        "description": "Prosperidad y Logia.",
+        "coords": [41.382, 2.183],
+        "info": "Josep Xifré, un indiano inmensamente rico y masón, mandó construir este edificio. Se dice que in sus sótanos se celebraban reuniones de logia, lejos de las miradas de la Inquisición.",
+        "imageUrl": "assets/images/misterios/porxos_xifre.jpg",
+        "theatricalInfo": "Aquí el comercio y el misterio se daban la mano. Xifré trajo oro de América y luz de las logias. Bajo estos arcos, los hermanos planeaban una Barcelona moderna, científica y libre."
+      },
+      {
+        "id": "pla-palau-masoneria",
+        "title": "La Fuente del Genio Catalán",
+        "hints": [
+          "Busca una fuente monumental rodeada de palmeras in Pla de Palau, dedicada al progreso y la ingeniería.",
+          "Encuentra the figura alada que sostiene una estrella, símbolo de la luz de la razón guiando el camino.",
+          "Pla de Palau."
+        ],
+        "description": "El triunfo del progreso.",
+        "coords": [41.3828, 2.1837],
+        "info": "Esta fuente de 1851 es una oda al progreso técnico y científico. Su iconografía, con alegorías a la navegación, el comercio y la industria, refleja los valores de la burguesía ilustrada de la época, muy vinculada a las logias masónicas que impulsaron la modernización de Barcelona.",
+        "imageUrl": "assets/images/misterios/font_geni_catala.jpg",
+        "theatricalInfo": "¡Mirad esa figura alada! Representa al Genio de Barcelona, portando la llama del conocimiento. No es casualidad que esté aquí, frente a la antigua aduana: es un faro de razón para los que llegaban a una ciudad que soñaba con el futuro y el orden universal."
+      },
+      {
+        "id": "santa-maria-masoneria",
+        "title": "Símbolos in Santa Maria del Mar",
+        "hints": [
+          "Busca in el suelo de la basílica, cerca de las tumbas de los antiguos gremios de constructores.",
+          "Encuentra las marcas de cantero que parecen simples firmas, pero esconden geometría sagrada.",
+          "Plaça de Santa Maria, 1."
+        ],
+        "description": "La marca de los constructores.",
+        "coords": [41.3835, 2.182],
+        "info": "La basílica fue construida por el gremio de los 'bastaixos' y maestros de obra que utilizaban geometría sagrada. En sus piedras aún se pueden ver marcas de cantero que los masones operativos usaban como firma y símbolo de grado.",
+        "imageUrl": "assets/images/misterios/santa_maria_mar_simbolos.jpg",
+        "theatricalInfo": "Mirad al suelo, no solo al cielo. Cada piedra de esta catedral del pueblo fue puesta por manos que conocían el secreto del ángulo y la plomada. Estas marcas no son solo nombres, son el lenguaje olvidado de los constructores de catedrales."
+      },
+      {
+        "id": "catedral-masoneria",
+        "title": "La Catedral: El Secreto de los Maestros",
+        "hints": [
+          "Busca in el claustro de la Catedral, donde los símbolos de los antiguos gremios se mezclan con los relieves religiosos.",
+          "Encuentra the representación del Gran Arquitecto in las claves de bóveda más antiguas.",
+          "Pla de la Seu."
+        ],
+        "description": "Geometría sagrada y gremios.",
+        "coords": [41.3839, 2.1762],
+        "info": "La Catedral de Barcelona es un libro de piedra. En su claustro y fachadas, los maestros de obra dejaron mensajes in clave: desde herramientas de construcción que hoy son símbolos masónicos hasta proporciones áureas que buscaban reflejar la armonía del universo.",
+        "imageUrl": "assets/images/misterios/catedral_masoneria.jpg",
+        "theatricalInfo": "¿Veis esas herramientas talladas in la piedra? Escuadras, niveles, plomadas... No son solo adornos. Son las herramientas con las que los hombres libres construyeron el mundo, piedra a piedra, bajo la mirada del Gran Arquitecto."
+      },
+      {
+        "id": "canonges-masoneria",
+        "title": "Casa dels Canonges y el Pont del Bisbe",
+        "hints": [
+          "Busca el puente neo-gótico que une la Casa dels Canonges con el Palau de la Generalitat.",
+          "Encuentra the calavera atravesada por una daga in la parte inferior del puente, un potente símbolo de 'memento mori'.",
+          "Carrer del Bisbe."
+        ],
+        "description": "La advertencia del arquitecto.",
+        "coords": [41.3831, 2.1765],
+        "info": "Aunque el puente es de 1928, su arquitecto, Joan Rubió i Bellver, incluyó una calavera con una daga, un símbolo que muchos asocian con ritos de iniciación masónica y la advertencia de la brevedad de la vida y el peso de la responsabilidad.",
+        "imageUrl": "assets/images/misterios/pont_bisbe_calavera.jpg",
+        "theatricalInfo": "¡Alto ahí! Mirad bajo el puente... Una calavera y una daga. ¿Un castigo? ¿Una advertencia? Los masones sabían que para renacer a la luz, primero hay que morir a lo profano. Ese cráneo nos recuerda que todos somos iguales ante el final del camino."
+      },
+      {
+        "id": "ajuntament-masoner",
+        "title": "Símbolos in la Plaça Sant Jaume",
+        "hints": [
+          "Termina tu ruta frente al Ayuntamiento, donde la fachada esconde discretos recordatorios del ideal de igualdad.",
+          "Busca los bajorrelieves que exaltan las artes y las ciencias.",
+          "Plaça de Sant Jaume, fachada del Ajuntament."
+        ],
+        "description": "El Ideal in la Piedra.",
+        "coords": [41.3825, 2.1772],
+        "info": "A pesar de la persecución durante siglos, el ideal masónico de 'Libertad, Igualdad, Fraternidad' influyó in muchos políticos barceloneses que dejaron su impronta in los edificios institucionales.",
+        "imageUrl": "assets/images/misterios/ajuntament_simbolos.jpg",
+        "theatricalInfo": "El final de vuestra iniciación. Los masones no buscaban el poder, sino la luz. Y aunque sus templos fueran secretos, sus sueños de libertad quedaron grabados para siempre in la piel de esta ciudad. ¡Pasad y ved!"
+      }
+    ]
+  },
+  "vampira-raval": {
+    "title": "La Vampira del Raval",
+    "duration": "1h 30min",
+    "distance": "2.8 km",
+    "description": "Sigue la huella real de Enriqueta Martí, la mujer que aterrorizó a la Barcelona de 1912. Un recorrido entre la crónica negra, la miseria de la época y el mito de la Vampira.",
+    "center": [41.381, 2.168],
+    "zoom": 16,
+    "stops": [
+      {
+        "id": "vampira-casa-joaquin",
+        "title": "Carrer de Joaquín Costa, 29",
+        "hints": [
+          "Busca el portal donde la policía descubrió a dos niños desaparecidos in 1912, desencadenando el mayor escándalo de la época.",
+          "Encuentra the casa de Enriqueta Martí, donde se dice que fabricaba sus macabros ungüentos.",
+          "Carrer de Joaquín Costa, número 29 (antes calle Poniente)."
+        ],
+        "description": "El escenario del crimen.",
+        "coords": [41.3831, 2.1648],
+        "info": "Aquí fue detenida Enriqueta Martí tras la denuncia de una vecina que vio a una niña asomada a la ventana con la cabeza rapada. En el registro se hallaron restos humanos y extrañas pócimas.",
+        "imageUrl": "assets/images/misterios/vampira_casa_detalles.jpg",
+        "theatricalInfo": "¡Shhh! Mirad esas ventanas. Hace un siglo, el barrio entero gritaba ante este portal. ¿Era Enriqueta un monstruo o solo una mujer enloquecida por la miseria? La prensa de la época ya había dictado sentencia antes del juicio."
+      },
+      {
+        "id": "vampira-el-pardo",
+        "title": "Carrer de les Minetes (El Pardo)",
+        "hints": [
+          "Busca un callejón hoy desaparecido cerca de la calle de la Cera, donde Enriqueta frecuentaba los bajos fondos.",
+          "Encuentra the lugar donde la 'Vampira' buscaba a sus víctimas entre los más desfavorecidos.",
+          "Zona cercana al Carrer de la Cera y Carrer de la Riereta."
+        ],
+        "description": "Los bajos fondos del Raval.",
+        "coords": [41.3785, 2.166],
+        "info": "Enriqueta Martí se movía por las zonas más pobres del Raval, utilizando el engaño y la necesidad de las familias para llevarse a los niños. El barrio era un laberinto de miseria donde desaparecer era fácil.",
+        "imageUrl": "assets/images/misterios/raval_miseria.jpg",
+        "theatricalInfo": "Aquí el hambre tiene cara de niño. Enriqueta lo sabía bien. Les prometía comida, un techo... y ellos la seguían sin saber que entraban in una pesadilla de la que no despertarían."
+      },
+      {
+        "id": "vampira-preso-vella",
+        "title": "Antigua Cárcel de Mujeres",
+        "hints": [
+          "Busca the lugar donde Enriqueta Martí pasó sus últimos días antes de morir in extrañas circunstancias.",
+          "Encuentra the sitio donde la justicia intentó encerrar al mito, pero solo encontró la muerte de la mujer.",
+          "Carrer de la Reina Amàlia, donde estuvo la Prisión de Reina Amàlia."
+        ],
+        "description": "El final de Enriqueta.",
+        "coords": [41.3765, 2.1675],
+        "info": "Enriqueta Martí murió in la prisión de Reina Amàlia in 1913, oficialmente de cáncer, aunque el rumor popular decía que sus propias compañeras de celda la habían linchado por sus crímenes contra niños.",
+        "imageUrl": "assets/images/misterios/prision_amalia.jpg",
+        "theatricalInfo": "Entre estos muros se apagó su voz. Nunca llegó a ser juzgada. Barcelona quería sangre y la obtuvo in una celda fría. El mito de la Vampira nació el día in que Enriqueta dejó de respirar."
+      },
+      {
+        "id": "vampira-hospital-creu",
+        "title": "Antiguo Hospital de la Santa Creu",
+        "hints": [
+          "Termina tu ruta in el hospital donde se realizaban las autopsias de la época y donde el misterio médico se mezcló con la leyenda.",
+          "Busca the patio gótico donde los médicos forenses analizaron los restos hallados in la casa de la Vampira.",
+          "Carrer del Hospital, número 56."
+        ],
+        "description": "La ciencia frente al mito.",
+        "coords": [41.381, 2.1705],
+        "info": "En este histórico hospital se llevaron a cabo los análisis de los huesos y restos encontrados in los registros. La ciencia intentó determinar si los ungüentos de Enriqueta tenían realmente origen humano.",
+        "imageUrl": "assets/images/misterios/hospital_autopsias.jpg",
+        "theatricalInfo": "Aquí la luz de la razón intentó iluminar la oscuridad de la leyenda. Médicos y jueces examinaron cada resto bajo estos arcos. Pero para el pueblo, la verdad ya no importaba: la Vampira ya era eterna."
+      }
+    ]
+  },
+  "montjuic": {
+    "title": "Cementerio de Montjuïc",
+    "duration": "2h 30min",
+    "distance": "5.0 km",
+    "description": "Un museo al aire libre frente al mar. Recorre los panteones modernistas, descubre la historia de los personajes ilustres de Barcelona y rinde homenaje in el Fossar de la Pedrera.",
+    "center": [41.353, 2.152],
+    "zoom": 15,
+    "stops": [
+      {
+        "id": "mausoleo-macia",
+        "title": "Mausoleo de Francesc Macià",
+        "hints": [
+          "Busca la tumba del 'Avi', el primer presidente de la Generalitat restaurada, in un monumento de líneas sobrias y potentes.",
+          "Encuentra the lugar donde el corazón de un presidente late simbólicamente por su tierra.",
+          "Sector de San Jaime, cerca de la entrada principal."
+        ],
+        "description": "La memoria de un pueblo.",
+        "coords": [41.3556, 2.1554],
+        "info": "Francesc Macià, el 'Avi', descansa in este mausoleo diseñado por Manuel Brullet. Es un lugar de peregrinación política y sentimental cada 25 de diciembre, aniversario de su muerte.",
+        "imageUrl": "assets/images/misterios/mausoleo_macia.jpg",
+        "theatricalInfo": "Aquí reposa el hombre que soñó una nación. Las piedras son frías, pero el recuerdo es cálido. Mirad el horizonte: desde aquí, el Avi sigue vigilando la ciudad que tanto amó."
+      },
+      {
+        "id": "panteon-batllo",
+        "title": "Panteón de la Familia Batlló",
+        "hints": [
+          "Busca una obra maestra del modernismo funerario, con formas orgánicas y detalles in hierro forjado que parecen cobrar vida.",
+          "Encuentra the panteón diseñado por Josep Vilaseca, el arquitecto del Arco de Triunfo.",
+          "Sector de San José."
+        ],
+        "description": "Elegancia in el adiós.",
+        "coords": [41.3528, 2.1532],
+        "info": "La familia Batlló, grandes industriales textiles, encargó este panteón que destaca por su riqueza ornamental y su integración con el paisaje de la montaña de Montjuïc.",
+        "imageUrl": "assets/images/misterios/panteon_batllo.jpg",
+        "theatricalInfo": "¿No es fascinante? Hasta in la muerte, la burguesía barcelonesa buscaba la belleza. Estas curvas, estas flores de piedra... es el Modernismo desafiando al paso del tiempo."
+      },
+      {
+        "id": "fossar-pedrera",
+        "title": "Fossar de la Pedrera",
+        "hints": [
+          "Busca una antigua cantera convertida in un espacio de memoria para las víctimas de la represión y la Guerra Civil.",
+          "Encuentra the tumba de Lluís Companys, rodeada de cipreses y silencio.",
+          "Extremo sur del cementerio."
+        ],
+        "description": "Dignidad y silencio.",
+        "coords": [41.3512, 2.1485],
+        "info": "Este espacio alberga los restos de miles de personas ejecutadas durante la posguerra. En 1985 fue transformado in un memorial que incluye la tumba del presidente Lluís Companys.",
+        "imageUrl": "assets/images/misterios/fossar_pedrera.jpg",
+        "theatricalInfo": "Bajad la voz... el silencio aquí es sagrado. En esta cantera, la historia escribió sus páginas más tristes. Pero hoy, entre estos muros, la memoria florece con dignidad."
+      },
+      {
+        "id": "tumba-durruti",
+        "title": "La Tumba de Durruti",
+        "hints": [
+          "Busca una tumba sencilla pero siempre llena de flores frescas y pañuelos rojos y negros.",
+          "Encuentra the lugar donde descansa el líder anarquista junto a sus compañeros Ascaso y Ferrer i Guàrdia.",
+          "Vía de San Carlos."
+        ],
+        "description": "El gigante del anarquismo.",
+        "coords": [41.3545, 2.1542],
+        "info": "Buenaventura Durruti, carismático líder de la CNT y la FAI, descansa aquí. Su entierro in noviembre de 1936 fue la mayor manifestación popular vista in Barcelona, con medio millón de personas despidiendo al 'héroe del pueblo'.",
+        "imageUrl": "assets/images/misterios/tumba_durruti.jpg",
+        "theatricalInfo": "¡Salud, compañeros! Aquí no hay mármoles caros ni ángeles llorones. Solo piedra y el recuerdo de un hombre que dijo que llevamos un mundo nuevo in nuestros corazones. Las flores que veis nunca faltan... el pueblo no olvida a los suyos."
+      },
+      {
+        "id": "joan-miro",
+        "title": "La Tumba de Joan Miró",
+        "hints": [
+          "Busca una tumba humilde, in un nicho sencillo, que esconde la grandeza de uno de los pintores más universales de Barcelona.",
+          "Encuentra the lugar donde el azul, el amarillo y el rojo de sus sueños se funden con el silencio eterno.",
+          "Sector de San Carlos."
+        ],
+        "description": "El color del silencio.",
+        "coords": [41.354, 2.1535],
+        "info": "A pesar de su fama mundial, Joan Miró eligió un entierro sencillo in un nicho familiar. Su legado artístico sigue vivo in la Fundación Miró y in las calles de la ciudad, desde el mosaico de La Rambla hasta el aeropuerto.",
+        "imageUrl": "assets/images/misterios/tumba_miro.jpg",
+        "theatricalInfo": "Aquí descansa el hombre que pintó estrellas y pájaros. No busquéis grandes estatuas; el alma de Miró está in los colores que dejó por todo el mundo. Un rincón humilde para un genio gigante."
+      },
+      {
+        "id": "isaac-albeniz",
+        "title": "Isaac Albéniz: Notas del Adiós",
+        "hints": [
+          "Busca el panteón de uno de los compositores que mejor supo captar el alma de España in el piano.",
+          "Encuentra the lugar donde la música parece flotar entre los cipreses, recordando las notas de la suite 'Iberia'.",
+          "Sector de San José."
+        ],
+        "description": "Música eterna.",
+        "coords": [41.3532, 2.1528],
+        "info": "El gran compositor Isaac Albéniz descansa in este panteón. Sus obras, especialmente la suite 'Iberia', elevaron el piano español a la categoría de obra maestra universal.",
+        "imageUrl": "assets/images/misterios/tumba_albeniz.jpg",
+        "theatricalInfo": "¡Shhh! Si escucháis con atención, quizá oigáis una sonata lejana. Albéniz no murió, solo se mudó a un lugar donde todas las teclas son de marfil y el mar siempre está en calma."
+      },
+      {
+        "id": "mirador-mediterrani",
+        "title": "El Mirador del Mediterrani",
+        "hints": [
+          "Termina tu ruta in el punto más alto del cementerio, donde los panteones parecen asomarse al azul infinito del mar.",
+          "Busca the lugar donde la paz de los muertos se funde con la inmensidad del puerto de Barcelona.",
+          "Sector alto, cerca del camino de circunvalación."
+        ],
+        "description": "Paz frente al mar.",
+        "coords": [41.3505, 2.1515],
+        "info": "Desde las zonas altas del cementerio de Montjuïc se obtienen unas vistas inigualables del puerto comercial y el mar Mediterráneo, ofreciendo un contraste único entre la quietud del camposanto y la actividad de la ciudad.",
+        "imageUrl": "assets/images/misterios/mirador_cementerio.jpg",
+        "theatricalInfo": "El final del viaje. Mirad el mar... es el mismo que vieron los romanos, los íberos y los que hoy descansan aquí. En Montjuïc, la muerte no es el final, es solo un cambio de paisaje."
+      }
+    ]
+  },
+  "insolita-secreta": {
+    "title": "Barcelona Insólita y Secreta",
+    "duration": "2h 00min",
+    "distance": "3.2 km",
+    "description": "Un recorrido por los detalles más curiosos, leyendas urbanas y rincones olvidados del Barrio Gótico y la Ribera. Mira donde nadie mira y descubre la otra Barcelona.",
+    "center": [41.383, 2.176],
+    "zoom": 16,
+    "stops": [
+      {
+        "id": "calavera-bisbe",
+        "title": "La Calavera del Carrer del Bisbe",
+        "hints": [
+          "Busca el puente más fotografiado de la ciudad, pero no mires su arquitectura, mira bajo su arco.",
+          "Encuentra the calavera atravesada por una daga. Dicen que si alguien la retira, la ciudad se hundirá.",
+          "Dirígete al Puente del Obispo (Carrer del Bisbe)."
+        ],
+        "description": "Misterio del puente neogótico.",
+        "coords": [41.3833, 2.1764],
+        "info": "Aunque el puente parece medieval, fue construido in 1928. El arquitecto Joan Rubió escondió una calavera auténtica con una daga, cuya leyenda dice que Barcelona caerá si alguien la extrae.",
+        "imageUrl": "assets/images/insolita/calavera.jpg",
+        "theatricalInfo": "¡No la toques! La daga guarda el equilibrio de nuestras murallas. Dicen que el arquitecto la puso allí como una maldición silenciosa contra los que criticaron su obra."
+      },
+      {
+        "id": "buzon-tortugas",
+        "title": "El Buzón de las Tortugas",
+        "hints": [
+          "Busca the casa de un alto cargo eclesiástico que tiene una ventana al mundo de la justicia.",
+          "Encuentra the buzón modernista donde las tortugas y las golondrinas libran una batalla simbólica.",
+          "Ve a la Casa de l'Ardiaca, frente a la Catedral."
+        ],
+        "description": "Simbología de Lluís Domènech i Montaner.",
+        "coords": [41.3838, 2.1758],
+        "info": "Diseñado por Domènech i Montaner, el buzón muestra tres golondrinas (la justicia debería ser rápida) y una tortuga (la realidad burocrática es lenta).",
+        "imageUrl": "assets/images/insolita/buzon.jpg",
+        "theatricalInfo": "La justicia vuela in mis sueños, pero camina con caparazón in los papeles. Este buzón es la queja silenciosa de un artista contra la lentitud de los hombres."
+      },
+      {
+        "id": "cana-barcelona",
+        "title": "La Cana: La Medida de la Ciudad",
+        "hints": [
+          "Busca una marca in la piedra de la catedral que servía para evitar engaños in el mercado medieval.",
+          "Encuentra the ranura de 1,55 metros que era la ley para todos los mercaderes de telas.",
+          "Dirígete a la pared exterior de la Catedral, cerca de la Pia Almoina."
+        ],
+        "description": "Estándar de medida medieval.",
+        "coords": [41.3842, 2.1762],
+        "info": "La 'Cana de Barcelona' era la unidad de medida oficial. Los mercaderes debían comprobar sus varas de medir contra esta marca grabada in la piedra del templo.",
+        "imageUrl": "assets/images/insolita/cana.jpg",
+        "theatricalInfo": "¡Ni un dedo más, ni un dedo menos! Aquí se mide la verdad del comercio. Si tu tela no encaja in esta hendidura, mejor que recojas tus bártulos antes de que llegue el alguacil."
+      },
+      {
+        "id": "columnas-ocultas",
+        "title": "El Templo dentro de un Piso",
+        "hints": [
+          "Busca un portal normal in una calle estrecha donde los gigantes de Roma siguen in pie.",
+          "Encuentra las cuatro columnas de 9 metros de altura que han sobrevivido 2.000 años dentro de una comunidad de vecinos.",
+          "Entra in el Carrer del Paradís número 10."
+        ],
+        "description": "Columnas del Templo de Augusto.",
+        "coords": [41.3835, 2.1772],
+        "info": "Estas columnas del siglo I a.C. permanecieron ocultas durante siglos integradas in edificios de viviendas, hasta que fueron redescubiertas y restauradas.",
+        "imageUrl": "assets/images/insolita/columnas.jpg",
+        "theatricalInfo": "Entrad in silencio... Pisáis el patio de unos vecinos, pero también el santuario de un Emperador. Roma nunca se fue, solo se escondió tras los tendederos y las cocinas."
+      },
+      {
+        "id": "calle-moscas",
+        "title": "Carrer de les Mosques: El Estrecho",
+        "hints": [
+          "Busca la calle más estrecha de Barcelona, tan pequeña que casi podrías tocar ambas paredes con los brazos abiertos.",
+          "Su nombre recuerda a los insectos que acudían atraídos por los antiguos puestos de salazón.",
+          "Busca esta callejuela in el barrio del Born, cerca de Santa Maria del Mar."
+        ],
+        "description": "La calle más estrecha.",
+        "coords": [41.3838, 2.1828],
+        "info": "Con apenas poco más de un metro de ancho, era una vía de servicio para el mercado donde se acumulaban desperdicios, de ahí su nombre 'Calle de las Moscas'.",
+        "imageUrl": "assets/images/insolita/moscas.jpg",
+        "theatricalInfo": "¡Encoged la barriga! En esta calle el aire se detiene y los secretos se susurran de pared a pared sin esfuerzo. Es el hilo que une las casas de la Ribera."
+      },
+      {
+        "id": "fuente-caras",
+        "title": "Las Caras de la Fuente de las Tres Gracias",
+        "hints": [
+          "Observa de cerca a las damas que bailan in la fuente de la gran plaza real.",
+          "Busca el detalle que las diferencia: una de ellas tiene una mirada que no es como las demás.",
+          "Examina la fuente central de la Plaza Reial."
+        ],
+        "description": "Curiosidad escultórica.",
+        "coords": [41.38, 2.175],
+        "info": "Cuenta la leyenda que una de las Tres Gracias tiene el rostro de la hija del escultor, que murió joven, dándole una expresión más melancólica y realista.",
+        "imageUrl": "assets/images/insolita/gracias.jpg",
+        "theatricalInfo": "¿La ves? Entre el bronce y el agua, hay una tristeza que no pertenece a los dioses. Es el amor de un padre convertido in metal para que su hija nunca deje de bailar in Barcelona."
+      }
+    ]
+  }
+}

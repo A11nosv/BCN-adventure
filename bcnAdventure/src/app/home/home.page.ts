@@ -1,11 +1,12 @@
-import { Component, inject } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonGrid, IonRow, IonCol, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonIcon, IonButton, IonButtons, IonMenuButton } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { library, business, book, fastFood, skull, videocam, map, settingsOutline } from 'ionicons/icons';
+import { library, business, book, fastFood, skull, videocam, map, settingsOutline, restaurant } from 'ionicons/icons';
+import { DataService } from '../services/data.service';
 
-interface Theme {
+interface ThemeDisplay {
   id: string;
   title: string;
   subtitle: string;
@@ -19,60 +20,30 @@ interface Theme {
   styleUrls: ['home.page.scss'],
   standalone: true,
   imports: [CommonModule, IonHeader, IonToolbar, IonTitle, IonContent, IonGrid, IonRow, IonCol, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonIcon, IonButton, IonButtons, RouterModule, IonMenuButton],
-  })
-export class HomePage {
+})
+export class HomePage implements OnInit {
   private router = inject(Router);
+  private dataService = inject(DataService);
 
-  themes: Theme[] = [
-    {
-      id: 'historia',
-      title: 'Historia',
-      subtitle: 'Caminos de Historia',
-      icon: 'library',
-      color: '#8e44ad'
-    },
-    {
-      id: 'arquitectura',
-      title: 'Barcelona Monumental',
-      subtitle: 'Genios, Formas y Piedras',
-      icon: 'business',
-      color: '#2980b9'
-    },
-    {
-      id: 'novelas',
-      title: 'BCN de Novela',
-      subtitle: 'Historias entre Páginas',
-      icon: 'book',
-      color: '#8e44ad'
-    },
-    {
-      id: 'gastronomia',
-      title: 'Gastronomía',
-      subtitle: 'Mercados y Tapas',
-      icon: 'fast-food',
-      color: '#c0392b'
-    },
-    {
-      id: 'misterios',
-      title: 'Misterios',
-      subtitle: 'Leyendas Urbanas',
-      icon: 'skull',
-      color: '#2c3e50'
-    },
-    {
-      id: 'cine',
-      title: 'Cine y Series',
-      subtitle: 'BCN de Película',
-      icon: 'videocam',
-      color: '#27ae60'
-    }
-  ];
+  themes: ThemeDisplay[] = [];
 
   constructor() {
-    addIcons({ library, business, book, 'fast-food': fastFood, skull, videocam, map, settingsOutline });
+    addIcons({ library, business, book, 'fast-food': fastFood, skull, videocam, map, settingsOutline, restaurant });
   }
 
-  selectTheme(theme: Theme) {
+  ngOnInit() {
+    this.dataService.getThemes().subscribe(themesData => {
+      this.themes = Object.keys(themesData).map(key => ({
+        id: key,
+        title: themesData[key].title,
+        subtitle: themesData[key].subtitle,
+        icon: themesData[key].icon,
+        color: themesData[key].color
+      }));
+    });
+  }
+
+  selectTheme(theme: ThemeDisplay) {
     this.router.navigate(['/map-selection', theme.id]);
   }
 }

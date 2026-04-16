@@ -1,0 +1,214 @@
+{
+  "born-tapas": {
+    "title": "El Born: Tapas y Vinos",
+    "duration": "2h 30min",
+    "distance": "2.5 km",
+    "description": "Disfruta de la mejor gastronomía en el barrio más chic de Barcelona. Un recorrido por bodegas históricas y locales vanguardistas en el laberinto medieval del Born.",
+    "center": [41.384, 2.182],
+    "zoom": 16,
+    "stops": [
+      {
+        "id": "santa-maria-mar-tapas",
+        "title": "Plaça de Santa Maria (Aperitivo)",
+        "hints": [
+          "Comienza tu ruta frente a la basílica más bella del gótico catalán, donde las terrazas invitan al primer brindis.",
+          "Busca la plaza donde los cargadores de mar descansaban y hoy los locales disfrutan del vermut.",
+          "Dirígete a la fachada principal de Santa Maria del Mar."
+        ],
+        "description": "El inicio gastronómico.",
+        "coords": [41.3835, 2.1815],
+        "info": "La plaza de Santa Maria es el corazón del Born y un lugar ideal para empezar una ruta de tapas rodeado de historia y arquitectura.",
+        "imageUrl": "assets/images/gastronomia/born_vermut.jpg",
+        "theatricalInfo": "¡Salud! Bajo la mirada de la Virgen, empezamos nuestro viaje de sabores. Que el vermut abra el apetito y la brisa del Born nos guíe."
+      },
+      {
+        "id": "carrer-montcada-vinos",
+        "title": "Bodegas del Carrer de Montcada",
+        "hints": [
+          "Busca la calle de los palacios donde el vino se sirve en copas de cristal entre muros de piedra del siglo XIV.",
+          "Encuentra los rincones donde el arte del Museo Picasso se mezcla con el aroma de las mejores barricas.",
+          "Camina por el Carrer de Montcada."
+        ],
+        "description": "Vinos entre palacios.",
+        "coords": [41.3845, 2.181],
+        "info": "Esta calle alberga algunas de las tabernas y vinotecas más exclusivas, situadas en los bajos de antiguos palacios medievales.",
+        "imageUrl": "assets/images/gastronomia/montcada_vino.jpg",
+        "theatricalInfo": "Sentid el peso de la historia in cada trago. Aquí el vino sabe a tiempo y a nobleza. Un brindis por los que alzaron estos muros."
+      },
+      {
+        "id": "mercat-santa-caterina-tapas",
+        "title": "Mercat de Santa Caterina (Tapas de Mercado)",
+        "hints": [
+          "Busca el mercado del tejado de colores donde el producto fresco se convierte en miniatura culinaria.",
+          "Encuentra las barras de cocina donde los chefs del barrio compran y cocinan en el mismo lugar.",
+          "Avinguda de Francesc Cambó, frente al mercado."
+        ],
+        "description": "Del mercado al plato.",
+        "coords": [41.3862, 2.1785],
+        "info": "Famoso por su arquitectura vanguardista, el mercado de Santa Caterina ofrece una oferta gastronómica de primer nivel con productos de proximidad.",
+        "imageUrl": "assets/images/gastronomia/caterina_tapas.jpg",
+        "theatricalInfo": "¡Mirad qué colores! La huerta de Barcelona está aquí mismo. Probad una tapa de temporada y entenderéis por qué nuestra cocina es única en el mundo."
+      },
+      {
+        "id": "passeig-born-copas",
+        "title": "Passeig del Born (El epicentro nocturno)",
+        "hints": [
+          "Finaliza tu ruta en la antigua zona de justas medievales, hoy llena de bares de diseño y coctelerías chic.",
+          "Busca el paseo que une el antiguo mercado con la iglesia, donde la noche siempre es joven.",
+          "Passeig del Born."
+        ],
+        "description": "Copas y diseño.",
+        "coords": [41.3845, 2.1835],
+        "info": "El Paseo del Born es el lugar por excelencia para terminar la jornada con una buena copa en un ambiente cosmopolita y vibrante.",
+        "imageUrl": "assets/images/gastronomia/passeig_born.jpg",
+        "theatricalInfo": "La noche cae sobre el Born y las luces se encienden. Aquí la historia sale de fiesta. Un último brindis por Barcelona y sus secretos mejor guardados."
+      }
+    ]
+  },
+  "gotic-tabernas": {
+    "title": "Gòtic: Tabernas Históricas",
+    "duration": "2h 15min",
+    "distance": "3.2 km",
+    "description": "Viaja al pasado a través de los locales con más solera de Barcelona. Desde la taberna más antigua fundada en el siglo XVIII hasta los rincones favoritos de artistas y bohemios.",
+    "center": [41.382, 2.175],
+    "zoom": 16,
+    "stops": [
+      {
+        "id": "can-culleretes",
+        "title": "Can Culleretes (1786)",
+        "hints": [
+          "Busca el restaurante más antiguo de Barcelona y el segundo de España, escondido en una calle estrecha cerca de las Ramblas.",
+          "Encuentra el lugar donde las 'culleretes' (cucharitas) dieron nombre a un templo de la cocina tradicional catalana.",
+          "Dirígete al Carrer d'en Quintana, número 5."
+        ],
+        "description": "La decana de Barcelona.",
+        "coords": [41.3815, 2.1745],
+        "info": "Fundada en 1786, es famosa por sus platos de caza, canelones y postres de crema. Sus paredes están llenas de fotos de personajes ilustres que han pasado por sus mesas.",
+        "imageUrl": "assets/images/gastronomia/culleretes.jpg",
+        "theatricalInfo": "¡Bienvenidos a la historia viva! Aquí el aroma a guiso no ha cambiado en dos siglos. Tomad asiento donde se sentaron reyes y poetas para celebrar que Barcelona sabe cocinar como nadie."
+      },
+      {
+        "id": "bar-la-plata",
+        "title": "Bar La Plata (1945)",
+        "hints": [
+          "Busca el bar de esquina que solo sirve cuatro tapas desde hace décadas y siempre está lleno de gente sonriente.",
+          "Encuentra el rincón favorito de Bono de U2 donde los boquerones fritos son la ley.",
+          "Dirígete al cruce de las calles de la Mercè y de la Plata."
+        ],
+        "description": "La perfección de la sencillez.",
+        "coords": [41.381, 2.1795],
+        "info": "Inaugurado en 1945, este bar es un icono del Barrio Gótico. Su menú se reduce a cuatro opciones (pescaíto, ensalada de tomate, butifarra y boquerones), pero su calidad es legendaria.",
+        "imageUrl": "assets/images/gastronomia/laplata.jpg",
+        "theatricalInfo": "¡Una de boquerones! Aquí no necesitamos cartas largas. La Plata es el sabor de la Barcelona auténtica, la que se encuentra en una servilleta de papel y un vaso de vino del Priorat."
+      },
+      {
+        "id": "los-caracoles",
+        "title": "Restaurante Los Caracoles (1835)",
+        "hints": [
+          "Busca el restaurante con los pollos asándose al fuego en la misma calle y una chimenea que nunca se apaga.",
+          "Encuentra el local con entrada por la cocina donde el mármol y la madera cuentan historias de siglos.",
+          "Carrer dels Escudellers, número 14."
+        ],
+        "description": "Fuego y tradición.",
+        "coords": [41.3795, 2.1765],
+        "info": "Originalmente una taberna de vinos, se hizo mundialmente famoso por sus caracoles y su pollo asado. Ha mantenido su decoración original y su ambiente bohemio desde el siglo XIX.",
+        "imageUrl": "assets/images/gastronomia/caracoles.jpg",
+        "theatricalInfo": "Entrad por la cocina, no tengáis miedo. Sentid el calor de las brasas que llevan encendidas desde tiempos de vuestros bisabuelos. Aquí Barcelona se come a fuego lento."
+      },
+      {
+        "id": "bar-del-pi",
+        "title": "Bar Del Pi",
+        "hints": [
+          "Busca la taberna frente a la iglesia del pino, refugio de estudiantes, artistas y políticos durante la transición.",
+          "Encuentra la terraza con mejores vistas a la fachada gótica donde el tiempo parece detenerse.",
+          "Plaça de Sant Josep Oriol, junto a la Plaza del Pi."
+        ],
+        "description": "Epicentro de la cultura popular.",
+        "coords": [41.3835, 2.1735],
+        "info": "Punto de encuentro vital en la vida social del Gótico. Ha sido testigo de tertulias políticas, encuentros artísticos y es un lugar privilegiado para observar el pulso del barrio.",
+        "imageUrl": "assets/images/gastronomia/bardelpi.jpg",
+        "theatricalInfo": "Sentaos bajo los árboles. En esta plaza se ha arreglado el mundo mil veces. Pedid una caña y dejad que las campanas de Santa Maria del Pi os cuenten los secretos de la ciudad vieja."
+      },
+      {
+        "id": "cafe-opera",
+        "title": "Café de l'Òpera (1929)",
+        "hints": [
+          "Finaliza tu ruta en el café modernista frente al Liceu, donde los espejos guardan los reflejos de todas las óperas representadas.",
+          "Encuentra el rincón elegante de las Ramblas que conserva su decoración original de principios del siglo XX.",
+          "La Rambla, número 74."
+        ],
+        "description": "Elegancia modernista en las Ramblas.",
+        "coords": [41.3812, 2.1735],
+        "info": "Situado en un edificio del siglo XVIII, se convirtió en café modernista en 1929. Es el último café histórico de las Ramblas, manteniendo su atmósfera de tertulia y distinción.",
+        "imageUrl": "assets/images/gastronomia/cafeopera.jpg",
+        "theatricalInfo": "Mirad estos espejos... han visto pasar a Caruso y a Dalí. Aquí las Ramblas se vuelven silenciosas y elegantes. Un chocolate con churros para terminar nuestro viaje por la memoria de Barcelona."
+      }
+    ]
+  },
+  "gracia-cocina": {
+    "title": "Gràcia: Cocina Creativa",
+    "duration": "2h 15min",
+    "distance": "2.8 km",
+    "description": "Explora el barrio más bohemio a través de sus sabores más innovadores. Un recorrido por la cocina de autor, la fusión internacional y los dulces artesanales que hacen de Gràcia el paraíso de los foodies.",
+    "center": [41.403, 2.155],
+    "zoom": 16,
+    "stops": [
+      {
+        "id": "virreina-creative",
+        "title": "Plaça de la Virreina (Aperitivo Bohemio)",
+        "hints": [
+          "Busca la plaza presidida por una iglesia donde las terrazas ofrecen platillos que mezclan la tradición con toques de autor.",
+          "Encuentra el rincón donde la vida de barrio se encuentra con la creatividad culinaria a la sombra de los árboles.",
+          "Dirígete a la Plaza de la Virreina, en el corazón de Gràcia."
+        ],
+        "description": "Tradición renovada.",
+        "coords": [41.4035, 2.1575],
+        "info": "Gràcia es famosa por sus plazas, y la de la Virreina es un punto clave donde pequeños locales experimentan con tapas creativas y productos de proximidad.",
+        "imageUrl": "assets/images/gastronomia/virreina_tapas.jpg",
+        "theatricalInfo": "Sentaos y dejad que la calma os inspire. Aquí, una simple aceituna se convierte en arte si se acompaña de una buena idea y un sol de tarde."
+      },
+      {
+        "id": "llibertat-creative",
+        "title": "Mercat de la Llibertat (Gourmet de Barrio)",
+        "hints": [
+          "Busca el mercado modernista donde los chefs no solo compran, sino que reinventan el concepto de 'puesto de mercado'.",
+          "Encuentra las barras donde se sirven ostras, platillos de mar y creaciones de temporada en un ambiente de hierro y cristal.",
+          "Ve al Mercat de la Llibertat, cerca de Via Augusta."
+        ],
+        "description": "Alta cocina en el mercado.",
+        "coords": [41.3995, 2.1545],
+        "info": "Muchos de los puestos de este histórico mercado han evolucionado para ofrecer degustaciones gourmet de alta calidad, fusionando la frescura del producto con técnicas modernas.",
+        "imageUrl": "assets/images/gastronomia/llibertat_gourmet.jpg",
+        "theatricalInfo": "¡Mirad qué brillo! El pescado de la mañana se viste de gala en estas barras. En Gràcia, el mercado es el lienzo y el producto es la pintura."
+      },
+      {
+        "id": "torrijos-fusion",
+        "title": "Carrer de Torrijos (El Eje Gastronómico)",
+        "hints": [
+          "Camina por la calle de los cines y las librerías donde el aroma de Japón, México y el Mediterráneo se funden en cada portal.",
+          "Busca la vía donde los restaurantes de fusión internacional compiten por ofrecer el bocado más sorprendente de la ciudad.",
+          "Recorre el Carrer de Torrijos."
+        ],
+        "description": "Viaje de sabores sin salir del barrio.",
+        "coords": [41.4045, 2.1585],
+        "info": "Esta calle es el epicentro de la nueva restauración en Gràcia, albergando desde locales de ramen de autor hasta tabernas de tapas progresivas.",
+        "imageUrl": "assets/images/gastronomia/torrijos_fusion.jpg",
+        "theatricalInfo": "Un paso por aquí es un viaje por el mundo. Cerramos los ojos y estamos en Kioto, los abrimos y seguimos en el corazón de Barcelona. ¡Qué maravilla es la mezcla!"
+      },
+      {
+        "id": "revolucio-dulce",
+        "title": "Plaça de la Revolució (El Toque Final)",
+        "hints": [
+          "Termina tu ruta en la plaza dedicada a la libertad, donde los helados artesanales y los postres de diseño son los protagonistas.",
+          "Busca el lugar donde la ciencia del frío y la pastelería creativa te ofrecen un final dulce e inolvidable.",
+          "Dirígete a la Plaza de la Revolució de Septiembre de 1868."
+        ],
+        "description": "Vanguardia dulce.",
+        "coords": [41.4025, 2.1565],
+        "info": "Famosa por sus heladerías de autor y cafeterías de especialidad, esta plaza ofrece el cierre perfecto para una ruta gastronómica moderna.",
+        "imageUrl": "assets/images/gastronomia/revolucio_dulce.jpg",
+        "theatricalInfo": "Un último bocado para recordar que la vida en Barcelona es dulce. La creatividad no tiene límites, ni siquiera cuando se trata de un simple helado. ¡A vuestra salud!"
+      }
+    ]
+  }
+}

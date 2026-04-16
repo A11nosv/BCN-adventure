@@ -1,0 +1,416 @@
+{
+  "almodovar": {
+    "title": "Todo sobre mi madre",
+    "duration": "3h 00min",
+    "distance": "6.2 km",
+    "description": "Sigue los pasos de Manuela en su regreso a Barcelona. Una ruta por los sentimientos, el drama y la estética inconfundible de Almodóvar, recorriendo desde los callejones del Born hasta las vistas infinitas de Montjuïc.",
+    "center": [41.388, 2.17],
+    "zoom": 14,
+    "stops": [
+      {
+        "id": "carrer-caputxes",
+        "title": "Carrer de les Caputxes (La llegada)",
+        "hints": [
+          "Busca el estrecho pasadizo de piedra cerca de Santa Maria del Mar por donde Manuela camina al llegar a la ciudad.",
+          "Encuentra el arco medieval que enmarca una de las primeras escenas nocturnas de la película.",
+          "Dirígete al Carrer de les Caputxes, justo detrás de la basílica del Born."
+        ],
+        "description": "El umbral de la Barcelona antigua.",
+        "coords": [41.3838, 2.1819],
+        "info": "Este rincón medieval representa la entrada de Manuela en el laberinto de su pasado. Almodóvar utilizó la luz tenue de estas farolas para crear una atmósfera de misterio y nostalgia.",
+        "imageUrl": "assets/images/cine/caputxes.jpg",
+        "theatricalInfo": "¡Barcelona! Ha cambiado tanto... o quizá la que ha cambiado soy yo. Bajo estos arcos, el aire todavía huele a los secretos que dejé atrás hace dieciocho años."
+      },
+      {
+        "id": "teatre-tivoli",
+        "title": "Teatre Tívoli (Huma Rojo)",
+        "hints": [
+          "Busca el gran teatro de la calle Casp donde el terciopelo rojo y las luces anuncian la función de Huma Rojo.",
+          "Encuentra el portal donde Manuela espera bajo la lluvia para conseguir un autógrafo.",
+          "Carrer de Casp, número 8."
+        ],
+        "description": "El escenario de 'Un tranvía llamado deseo'.",
+        "coords": [41.3892, 2.1697],
+        "info": "In el Tívoli es donde se desarrolla la trama teatral de la película. Es un edificio monumental que refleja perfectamente el glamour y la decadencia de la vida artística.",
+        "imageUrl": "assets/images/cine/tivoli.jpg",
+        "theatricalInfo": "¡Silencio in el gallinero! Huma Rojo está a punto de salir. En este escenario, las mentiras parecen verdades y el drama de la vida se vuelve arte bajo los focos."
+      },
+      {
+        "id": "casa-ramos-almodovar",
+        "title": "Casa Ramos (El piso de la hermana Rosa)",
+        "hints": [
+          "Busca el edificio modernista de fachada amarillenta que domina la Plaza de Lesseps.",
+          "Encuentra the portal de hierro forjado donde Penélope Cruz (Rosa) vivía con su madre.",
+          "Plaça de Lesseps, Casa Ramos."
+        ],
+        "description": "Arquitectura modernista y drama familiar.",
+        "coords": [41.4075, 2.1505],
+        "info": "La Casa Ramos es uno de los edificios más singulares de Gràcia. Sus patios y balcones sirvieron para retratar la opresiva y a la vez bella vida de la familia de Rosa.",
+        "imageUrl": "assets/images/cine/casa_ramos.jpg",
+        "theatricalInfo": "¡Rosa! No te asomes al balcón, que tu madre vigila. En estas habitaciones de techos altos, la bondad y el prejuicio viven pared con pared."
+      },
+      {
+        "id": "hospital-del-mar-almodovar",
+        "title": "Hospital del Mar (Coordinación de trasplantes)",
+        "hints": [
+          "Busca el hospital que se asoma directamente a la arena de la playa de la Barceloneta.",
+          "Encuentra the lugar donde Manuela vuelve a trabajar con la vida y la muerte frente al mar.",
+          "Passeig Marítim de la Barceloneta, 25."
+        ],
+        "description": "Ciencia y humanidad frente al Mediterráneo.",
+        "coords": [41.3835, 2.1935],
+        "info": "Este hospital real fue el escenario para las escenas de coordinación de trasplantes, un tema central in la película que Almodóvar trató con gran sensibilidad.",
+        "imageUrl": "assets/images/cine/hospital_mar.jpg",
+        "theatricalInfo": "El mar lo cura todo... o al menos te ayuda a respirar cuando el corazón te pesa. Aquí, entre batas blancas y olor a salitre, aprendemos que dar vida es la única forma de no morir del todo."
+      },
+      {
+        "id": "cementerio-montjuic-almodovar",
+        "title": "Cementerio de Montjuïc (Final de la historia)",
+        "hints": [
+          "Finaliza tu ruta in los panteones que miran al puerto industrial desde la falda de la montaña.",
+          "Encuentra the rincón de cipreses donde se cierra el círculo de Manuela y su hijo.",
+          "Cementerio de Montjuïc, sector de San José."
+        ],
+        "description": "El balcón al azul infinito.",
+        "coords": [41.353, 2.152],
+        "info": "El cementerio de Montjuïc es uno de los más bellos de Europa. La escena final, con las vistas del puerto y el mar, es un icono del cine contemporáneo.",
+        "imageUrl": "assets/images/cine/cementerio_montjuic.jpg",
+        "theatricalInfo": "Aquí termina el viaje. Frente al mar, donde Barcelona se vuelve silencio. No llores, cariño... las personas solo mueren cuando las olvidamos, y yo te llevaré siempre in cada plano de mi vida."
+      }
+    ]
+  },
+  "vicky-cristina": {
+    "title": "Vicky Cristina Barcelona",
+    "duration": "3h 30min",
+    "distance": "10.5 km",
+    "description": "Vive el verano eterno de Woody Allen. Una ruta romántica y sofisticada por los rincones más bellos y artísticos de Barcelona que enamoraron a Vicky y Cristina.",
+    "center": [41.39, 2.16],
+    "zoom": 13,
+    "stops": [
+      {
+        "id": "els-4-gats-woody",
+        "title": "Els 4 Gats (El primer encuentro)",
+        "hints": [
+          "Busca la mítica taberna modernista in una calle estrecha cerca del Portal de l'Àngel.",
+          "Encuentra the lugar donde Juan Antonio (Javier Bardem) invita a las protagonistas a viajar a Oviedo.",
+          "Carrer de Montsió, 3."
+        ],
+        "description": "Cuna del arte y la bohemia.",
+        "coords": [41.3858, 2.1738],
+        "info": "Este restaurante fue el centro de la vida intelectual de Barcelona a finales del XIX. Allen lo eligió para representar la atmósfera artística y seductora de la ciudad.",
+        "imageUrl": "assets/images/cine/4gats_woody.jpg",
+        "theatricalInfo": "¡Qué luz! En este rincón, entre cuadros y sombras, el destino de Vicky y Cristina cambió con una sola invitación. Es el sabor de la Barcelona que nunca duerme y siempre sueña."
+      },
+      {
+        "id": "santa-maria-mar-woody",
+        "title": "Santa Maria del Mar (Silencio gótico)",
+        "hints": [
+          "Busca la basílica más pura del gótico catalán in el barrio del Born.",
+          "Encuentra the templo donde Vicky se deja cautivar por la luz que atraviesa los altos ventanales.",
+          "Plaça de Santa Maria."
+        ],
+        "description": "Belleza espiritual y arquitectónica.",
+        "coords": [41.3838, 2.1815],
+        "info": "Woody Allen retrata la iglesia con una mirada turística pero profundamente admirativa, destacando la esbeltez de sus columnas y su atmósfera de paz.",
+        "imageUrl": "assets/images/cine/santa_maria_woody.jpg",
+        "theatricalInfo": "Mirad hacia arriba. Las piedras parecen flotar. Woody filmó este silencio para recordarnos que Barcelona no es solo bullicio, sino también una oración escrita in piedra."
+      },
+      {
+        "id": "park-guell-woody",
+        "title": "Park Güell (Paseo entre mosaicos)",
+        "hints": [
+          "Busca la famosa salamandra de 'trencadís' que preside la entrada del parque.",
+          "Encuentra the banco ondulado donde los personajes conversan rodeados de colores imposibles.",
+          "Entrada principal del Park Güell."
+        ],
+        "description": "El paraíso orgánico de Gaudí.",
+        "coords": [41.4145, 2.1528],
+        "info": "El parque es un escenario recurrente in la película, simbolizando la cara más alegre, creativa y única de la arquitectura barcelonesa.",
+        "imageUrl": "assets/images/cine/park_guell_woody.jpg",
+        "theatricalInfo": "¡Es un estallido de color! Aquí la arquitectura no imita a la naturaleza, se funde con ella. Allen quiso que el mundo viera este parque como el patio de recreo de los genios."
+      },
+      {
+        "id": "fundacio-miro-woody",
+        "title": "Fundació Joan Miró (Arte y Vanguardia)",
+        "hints": [
+          "Busca el edificio blanco de líneas puras in la montaña de Montjuïc.",
+          "Encuentra the museo donde los protagonistas admiran el universo de colores de Joan Miró.",
+          "Parc de Montjuïc, s/n."
+        ],
+        "description": "Luz y color in la montaña mágica.",
+        "coords": [41.3686, 2.1601],
+        "info": "Diseñado por Josep Lluís Sert, el edificio es in sí mismo una obra de arte. En la película, sirve para mostrar la sofisticación cultural de las protagonistas.",
+        "imageUrl": "assets/images/cine/miro_woody.jpg",
+        "theatricalInfo": "¿Veis ese azul? Es el azul de Miró, el azul del Mediterráneo. En estas salas, la cámara de Allen encontró el equilibrio perfecto entre la razón y la imaginación."
+      },
+      {
+        "id": "tibidabo-woody",
+        "title": "Tibidabo (Vistas de un amor de verano)",
+        "hints": [
+          "Finaliza tu ruta in la cima de la montaña más alta de la ciudad.",
+          "Busca el parque de atracciones retro donde la ciudad entera queda a tus pies.",
+          "Plaza del Tibidabo, 3-4."
+        ],
+        "description": "El balcón nostálgico de Barcelona.",
+        "coords": [41.422, 2.119],
+        "info": "El avión rojo del Tibidabo y las vistas panorámicas son el escenario de uno de los momentos más idílicos y turísticos de la película.",
+        "imageUrl": "assets/images/cine/tibidabo_woody.jpg",
+        "theatricalInfo": "¡Estamos tocando el cielo! Desde aquí, Barcelona parece un mapa trazado para el romance. El viento de la montaña se lleva las dudas y solo queda el brillo de las luces abajo."
+      }
+    ]
+  },
+  "el-perfume": {
+    "title": "El Perfume: El Camino del Olfato",
+    "duration": "3h 30min",
+    "distance": "8.5 km",
+    "description": "Viaja al siglo XVIII. Descubre cómo Barcelona se transformó in el París y la Grasse de Jean-Baptiste Grenouille in una ruta que recorre rincones góticos sombríos y jardines laberínticos.",
+    "center": [41.385, 2.175],
+    "zoom": 14,
+    "stops": [
+      {
+        "id": "placa-sant-felip-neri-perfume",
+        "title": "Plaça de Sant Felip Neri (París, 1738)",
+        "hints": [
+          "Busca la plaza más silenciosa del Barrio Gótico, con una fuente central y paredes heridas.",
+          "Encuentra the rincón que se llenó de arena y desperdicios para simular el mercado de París donde nació Grenouille.",
+          "Plaza de Sant Felip Neri."
+        ],
+        "description": "El despertar del genio y el primer crimen.",
+        "coords": [41.3831, 2.1751],
+        "info": "Esta plaza fue uno de los escenarios principales para recrear las calles de París. Aquí es donde Grenouille descubre el aroma de la chica de las ciruelas y comete su primer asesinato accidental.",
+        "imageUrl": "assets/images/cine/neri_perfume.jpg",
+        "theatricalInfo": "¿Lo hueles? Entre el aroma a humedad y piedra vieja, flota una nota dulce... ciruelas y juventud. Aquí, in esta sombra, comprendí que mi destino no era solo oler el mundo, sino atrapar su alma."
+      },
+      {
+        "id": "placa-del-rei-perfume",
+        "title": "Plaça del Rei (Las calles de Grasse)",
+        "hints": [
+          "Busca la plaza real rodeada de palacios góticos donde el tiempo parece haberse detenido.",
+          "Encuentra the lugar donde Grenouille recorre las calles de Grasse in busca de las esencias más puras.",
+          "Plaça del Rei."
+        ],
+        "description": "El laberinto de piedra medieval.",
+        "coords": [41.3842, 2.1775],
+        "info": "La arquitectura monumental de la Plaça del Rei y los túneles del MUHBA sirvieron para representar la ciudad de Grasse. Su estado de conservación permitió rodar sin apenas decorados adicionales.",
+        "imageUrl": "assets/images/cine/placa_rei_perfume.jpg",
+        "theatricalInfo": "Grasse... la ciudad de los mil pétalos. Cada portal esconde un jardín, cada ventana un secreto destilado. Mis pies conocen estas piedras, pero mi nariz conoce lo que hay tras ellas."
+      },
+      {
+        "id": "carrer-bisbe-perfume",
+        "title": "Carrer del Bisbe (La obsesión nocturna)",
+        "hints": [
+          "Busca el puente neogótico que une dos edificios bajo el cielo de la calle más famosa del Gótico.",
+          "Encuentra the paso por donde Grenouille sigue el rastro de sus víctimas in la oscuridad.",
+          "Carrer del Bisbe."
+        ],
+        "description": "Atmósfera de misterio y persecución.",
+        "coords": [41.3833, 2.1764],
+        "info": "Esta calle, con su icónico puente y sus sombras alargadas, fue perfecta para capturar las escenas nocturnas de persecución y la atmósfera de suspense de la novela de Süskind.",
+        "imageUrl": "assets/images/cine/bisbe_perfume.jpg",
+        "theatricalInfo": "La noche no tiene ojos, pero tiene rastro. El aire frío transporta el miedo, y el miedo tiene un olor metálico que me guía por este laberinto de piedra."
+      },
+      {
+        "id": "laberint-horta-perfume",
+        "title": "Laberint d'Horta (El Jardín de los Richis)",
+        "hints": [
+          "Busca el jardín más antiguo de Barcelona, con un laberinto de cipreses y estatuas de dioses.",
+          "Encuentra the lugar donde se celebra la gran fiesta in Grasse y Grenouille acecha a Laura.",
+          "Parque del Laberinto de Horta."
+        ],
+        "description": "El lujo y la naturaleza controlada.",
+        "coords": [41.4395, 2.1465],
+        "info": "El laberinto neoclásico representó los jardines de la mansión de la familia Richis in Grasse. Es aquí donde Grenouille demuestra su capacidad para moverse in la naturaleza sin ser detectado.",
+        "imageUrl": "assets/images/cine/laberinto_perfume.jpg",
+        "theatricalInfo": "El verde esconde, el perfume delata. En este juego de espejos de hojas y sombras, Laura cree estar a salvo. No sabe que para mí, el laberinto es una línea recta trazada por su aroma."
+      },
+      {
+        "id": "poble-espanyol-perfume",
+        "title": "Plaza Mayor del Poble Espanyol (El Clímax)",
+        "hints": [
+          "Finaliza tu viaje in la gran plaza porticada de un recinto que emula un pueblo español.",
+          "Busca el escenario de la ejecución final, donde el perfume absoluto rinde a la multitud.",
+          "Poble Espanyol, Plaza Mayor."
+        ],
+        "description": "El triunfo del perfume absoluto.",
+        "coords": [41.3685, 2.1475],
+        "info": "La Plaza Mayor del Poble Espanyol fue el escenario del grandioso final de la película. Miles de extras participaron in la escena donde la multitud cae rendida ante el poder del perfume creado por Grenouille.",
+        "imageUrl": "assets/images/cine/poble_espanyol_perfume.jpg",
+        "theatricalInfo": "¡Miradlos! El odio se ha convertido in adoración. Un solo frasco, una sola gota... y el mundo entero está a mis pies. He creado el amor in un laboratorio de muerte. Soy el ángel de vuestros deseos."
+      }
+    ]
+  },
+  "casa-papel": {
+    "title": "La Casa de Papel: Resistencia in BCN",
+    "duration": "3h 00min",
+    "distance": "7.5 km",
+    "description": "¡Empieza el atraco! Únete a la Resistencia in una ruta por los rincones de Barcelona que sirvieron de escenario para el rodaje y aquellos que esconden el espíritu estratégico del Profesor.",
+    "center": [41.38, 2.17],
+    "zoom": 13,
+    "stops": [
+      {
+        "id": "poble-espanyol-papel",
+        "title": "Poble Espanyol (Operación Florencia)",
+        "hints": [
+          "Busca el recinto que reúne lo mejor de la arquitectura española in un solo lugar.",
+          "Encuentra the plaza porticada donde se rodaron las escenas del reencuentro de la banda in la tercera temporada.",
+          "Avinguda Francesc Ferrer i Guàrdia, 13."
+        ],
+        "description": "Escenario real de rodaje.",
+        "coords": [41.3685, 2.1475],
+        "info": "La Plaza Mayor del Poble Espanyol se transformó in un set de rodaje para simular localizaciones exteriores durante los planes del Profesor. Es el corazón de la logística de la banda in Barcelona.",
+        "imageUrl": "assets/images/cine/poble_espanyol_papel.jpg",
+        "theatricalInfo": "¡Bella Ciao! Mirad estas arcadas. Aquí se respiró la tensión de un plan perfecto. Recordad: in este juego no hay rehenes, solo aliados de la Resistencia."
+      },
+      {
+        "id": "biblioteca-arus-papel",
+        "title": "Biblioteca Arús (El refugio del Profesor)",
+        "hints": [
+          "Busca una biblioteca secreta custodiada por una Estatua de la Libertad in el Passeig de Sant Joan.",
+          "Encuentra the lugar donde los libros y el misterio se unen para trazar el plan más ambicioso de la historia.",
+          "Passeig de Sant Joan, 26."
+        ],
+        "description": "Atmósfera de estrategia e intelecto.",
+        "coords": [41.3918, 2.1785],
+        "info": "Aunque no fue rodaje directo, este templo del saber masónico encaja perfectamente con el despacho del Profesor. Sus estanterías infinitas guardan el conocimiento necesario para burlar cualquier sistema.",
+        "imageUrl": "assets/images/cine/biblioteca_arus_papel.jpg",
+        "theatricalInfo": "El conocimiento es nuestra mejor arma. El Profesor pasó noches in vela entre estos volúmenes analizando cada fallo del sistema. Sed discretos, los mapas están ocultos entre las páginas de historia."
+      },
+      {
+        "id": "canaletes-papel",
+        "title": "Fuente de Canaletes (El apoyo del pueblo)",
+        "hints": [
+          "Busca la fuente más famosa de las Ramblas, donde el pueblo celebra sus victorias.",
+          "Encuentra the lugar donde los manifestantes con máscaras de Dalí mostraron su apoyo incondicional a la banda.",
+          "La Rambla, 133."
+        ],
+        "description": "Símbolo de la victoria popular.",
+        "coords": [41.3855, 2.1701],
+        "info": "Canaletes representa el clamor popular. In la serie, Barcelona se convierte in uno de los epicentros de las protestas a favor de los atracadores, con miles de máscaras llenando las calles.",
+        "imageUrl": "assets/images/cine/canaletes_papel.jpg",
+        "theatricalInfo": "¡Escuchad el ruido! El pueblo está con nosotros. Canaletes no solo es para el fútbol; hoy es el altar de los que ya no quieren ser siervos. ¡Poneos la máscara!"
+      },
+      {
+        "id": "port-bcn-papel",
+        "title": "Puerto de Barcelona (Logística y Escape)",
+        "hints": [
+          "Busca el World Trade Center y las terminales de carga que miran al mar.",
+          "Encuentra the lugar donde los contenedores esconden secretos y las lanchas esperan la señal de salida.",
+          "Moll de Barcelona, s/n."
+        ],
+        "description": "Infraestructura del golpe.",
+        "coords": [41.3735, 2.1815],
+        "info": "El puerto es vital para la huida internacional. Almodóvar ya lo usó in sus dramas, pero para la banda de Tokio y Denver, es el laberinto de hierro necesario para desaparecer del mapa.",
+        "imageUrl": "assets/images/cine/puerto_papel.jpg",
+        "theatricalInfo": "El salitre limpia el rastro de la pólvora. Si llegamos a los muelles a tiempo, el mundo será nuestro patio de recreo. No miréis atrás, el horizonte no tiene fronteras."
+      },
+      {
+        "id": "bunkers-carmel-papel",
+        "title": "Bunkers del Carmel (Centro de Mando)",
+        "hints": [
+          "Finaliza la misión in el punto con las mejores vistas tácticas de 360 grados de Barcelona.",
+          "Busca las antiguas baterías antiaéreas donde el Profesor podría vigilar cada movimiento de la policía.",
+          "Turó de la Rovira."
+        ],
+        "description": "Vigilancia estratégica.",
+        "coords": [41.419, 2.162],
+        "info": "Desde esta atalaya, la ciudad parece un tablero de ajedrez. Es el rincón perfecto para coordinar un golpe maestro mientras las luces de Barcelona brillan bajo tus pies.",
+        "imageUrl": "assets/images/cine/bunkers_papel.jpg",
+        "theatricalInfo": "¡Misión cumplida! Desde aquí arriba, los blindados parecen hormigas. Tenemos el oro, tenemos el apoyo y tenemos la vista más bella del mundo. Somos la Resistencia."
+      }
+    ]
+  },
+  "bcn-set": {
+    "title": "BCN Film Set: El Plató del Mundo",
+    "duration": "4h 00min",
+    "distance": "12.5 km",
+    "description": "Barcelona es la estrella de Hollywood in Europa. Recorre los escenarios de grandes producciones internacionales como 'The Machinist', 'The Gunman' y 'Uncharted'. ¡Luces, cámara y acción!",
+    "center": [41.39, 2.17],
+    "zoom": 13,
+    "stops": [
+      {
+        "id": "arc-triomf-set",
+        "title": "Arc de Triomf (La Gran Apertura)",
+        "hints": [
+          "Busca el gran arco de ladrillo rojo que servía de entrada a la Exposición de 1888.",
+          "Encuentra the escenario utilizado in infinidad de spots y películas para presentar Barcelona al mundo.",
+          "Passeig de Lluís Companys."
+        ],
+        "description": "El icono de bienvenida cinematográfica.",
+        "coords": [41.3910, 2.1806],
+        "info": "Su luz y amplitud lo convierten in uno de los lugares favoritos para rodajes publicitarios y escenas de transición in el cine internacional.",
+        "imageUrl": "assets/images/cine/arc_triomf_set.jpg",
+        "theatricalInfo": "¡Silencio in el set! Este arco es nuestro arco del triunfo particular. Por aquí han pasado desde espías hasta superhéroes. Es la puerta de entrada a la magia del cine in Barcelona."
+      },
+      {
+        "id": "estacion-franca-set",
+        "title": "Estació de França (The Gunman / The Machinist)",
+        "hints": [
+          "Busca la estación de tren más elegante de la ciudad, con sus grandes naves de hierro.",
+          "Encuentra the escenario donde Sean Penn huye in 'The Gunman' y Christian Bale pierde la noción del tiempo in 'The Machinist'.",
+          "Avinguda del Marquès de l'Argentera, s/n."
+        ],
+        "description": "Elegancia ferroviaria y suspense.",
+        "coords": [41.3838, 2.1865],
+        "info": "Su atmósfera clásica la hace perfecta para thrillers. Aquí se rodaron escenas clave de 'The Gunman' y sirvió de escenario recurrente para la estética industrial de 'The Machinist'.",
+        "imageUrl": "assets/images/cine/estacion_franca_set.jpg",
+        "theatricalInfo": "El vapor de los trenes y las sombras del acero... Aquí el suspense se sirve in frío. Es el lugar ideal para un encuentro secreto o una huida desesperada in el último vagón."
+      },
+      {
+        "id": "via-laietana-set",
+        "title": "Via Laietana (Acción al límite)",
+        "hints": [
+          "Busca la gran avenida que conecta el Eixample con el mar.",
+          "Encuentra the lugar de la espectacular persecución in moto de Sean Penn in 'The Gunman'.",
+          "Via Laietana (Zona Correos)."
+        ],
+        "description": "El eje de la acción urbana.",
+        "coords": [41.382, 2.181],
+        "info": "Via Laietana es una de las arterias más rodadas de la ciudad por su parecido con calles de grandes ciudades americanas, ideal para escenas de persecución y tiroteos.",
+        "imageUrl": "assets/images/cine/laietana_set.jpg",
+        "theatricalInfo": "¡Cuidado con el tráfico! Imagina las cámaras montadas in grúas y los especialistas derrapando in estas esquinas. En la Via Laietana, Barcelona se viste de Nueva York para el cine de acción."
+      },
+      {
+        "id": "placa-catalunya-set",
+        "title": "Plaça de Catalunya (La paranoia de Trevor Reznik)",
+        "hints": [
+          "Busca el centro neurálgico de la ciudad, lleno de palomas y fuentes.",
+          "Encuentra the lugar donde un irreconocible Christian Bale deambula in 'The Machinist'.",
+          "Plaça de Catalunya."
+        ],
+        "description": "El corazón del thriller psicológico.",
+        "coords": [41.3871, 2.1700],
+        "info": "Alrededor de esta plaza y de las estaciones de metro cercanas se rodaron muchas de las escenas de 'The Machinist', aprovechando la luz cruda y la arquitectura masiva de la zona.",
+        "imageUrl": "assets/images/cine/catalunya_set.jpg",
+        "theatricalInfo": "¿Quién me sigue? En esta plaza, el ruido se vuelve ensordecedor cuando no puedes dormir. Christian Bale caminó por estas piedras convertido in una sombra de sí mismo."
+      },
+      {
+        "id": "macba-set",
+        "title": "MACBA (Vanguardia y Skaters)",
+        "hints": [
+          "Busca el gran edificio blanco de cristal in el corazón del Raval.",
+          "Encuentra the plaza de los skaters que aparece in 'The Gunman' y cientos de vídeos de cultura urbana.",
+          "Plaça dels Àngels, 1."
+        ],
+        "description": "El set de la modernidad urbana.",
+        "coords": [41.3831, 2.1668],
+        "info": "El museo de arte contemporáneo es un icono visual inconfundible. Su plaza es el set perfecto para retratar la Barcelona más joven, moderna y cosmopolita.",
+        "imageUrl": "assets/images/cine/macba_set.jpg",
+        "theatricalInfo": "Mirad el reflejo in el cristal. Aquí la cámara ama las líneas rectas y el movimiento de las tablas de skate. Es el pulso de la Barcelona que marca tendencia in cada fotograma."
+      },
+      {
+        "id": "tibidabo-uncharted",
+        "title": "Tibidabo (La Caza del Tesoro)",
+        "hints": [
+          "Finaliza tu ruta in el punto más alto, in el parque de atracciones vintage.",
+          "Encuentra the lugar donde Tom Holland (Nathan Drake) busca pistas in 'Uncharted'.",
+          "Plaza del Tibidabo, 3-4."
+        ],
+        "description": "Aventura y vistas de vértigo.",
+        "coords": [41.422, 2.119],
+        "info": "Las icónicas vistas desde el Tibidabo y su iglesia neogótica fueron protagonistas in la adaptación del videojuego Uncharted, situando a Barcelona in el mapa de la gran aventura.",
+        "imageUrl": "assets/images/cine/tibidabo_set.jpg",
+        "theatricalInfo": "¡Lo hemos encontrado! Desde este mirador, Nathan Drake vio el mapa de su próxima aventura. Barcelona no es solo una ciudad, es el tesoro que todos los directores quieren filmar."
+      }
+    ]
+  }
+}
