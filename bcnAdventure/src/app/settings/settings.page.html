@@ -10,12 +10,6 @@
 <ion-content class="ion-padding">
   <ion-list lines="inset" aria-label="Ajustes de la aplicación">
     <ion-item>
-      <ion-icon slot="start" name="moon-outline" color="primary" aria-hidden="true"></ion-icon>
-      <ion-label>Modo Oscuro</ion-label>
-      <ion-toggle slot="end" [checked]="settings.darkMode" (ionChange)="updateSetting('darkMode', $event.detail.checked)" aria-label="Activar o desactivar modo oscuro"></ion-toggle>
-    </ion-item>
-
-    <ion-item>
       <ion-icon slot="start" name="notifications-outline" color="success" aria-hidden="true"></ion-icon>
       <ion-label>Notificaciones de proximidad</ion-label>
       <ion-toggle slot="end" [checked]="settings.proximityNotifications" (ionChange)="updateSetting('proximityNotifications', $event.detail.checked)" aria-label="Activar o desactivar notificaciones de proximidad"></ion-toggle>
@@ -41,6 +35,7 @@
       <ion-icon slot="start" name="color-palette-outline" color="danger" aria-hidden="true"></ion-icon>
       <ion-label>Tema de color</ion-label>
       <ion-select slot="end" [value]="settings.colorTheme" interface="popover" (ionChange)="updateSetting('colorTheme', $event.detail.value)" aria-label="Seleccionar tema visual">
+        <ion-select-option value="system">Sistema</ion-select-option>
         <ion-select-option value="blue">Clásico</ion-select-option>
         <ion-select-option value="gold">Dorado</ion-select-option>
         <ion-select-option value="dark">Nocturno</ion-select-option>

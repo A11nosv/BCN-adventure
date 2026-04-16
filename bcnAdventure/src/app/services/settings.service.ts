@@ -25,7 +25,7 @@ export class SettingsService {
     proximityNotifications: true,
     showDistance: true,
     language: 'es',
-    colorTheme: 'blue',
+    colorTheme: 'system',
     fontSizeMultiplier: 1,
     fontFamily: 'system',
     lineHeight: 1.5,

@@ -45,15 +45,88 @@
   --app-text-align: left;
 }
 
+/* TEMAS DE COLOR */
+
+/* Tema Sistema: Sigue la preferencia del dispositivo */
+body.theme-system {
+  /* Por defecto Ionic ya maneja light/dark con @media (prefers-color-scheme: dark) */
+}
+
+/* Tema Clásico (Azul) */
+body.theme-blue {
+  --ion-color-primary: #3880ff;
+  --ion-color-primary-rgb: 56, 128, 255;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #3171e0;
+  --ion-color-primary-tint: #4c8dff;
+}
+
+/* Tema Dorado */
+body.theme-gold {
+  --ion-color-primary: #d4af37;
+  --ion-color-primary-rgb: 212, 175, 55;
+  --ion-color-primary-contrast: #000000;
+  --ion-color-primary-contrast-rgb: 0, 0, 0;
+  --ion-color-primary-shade: #bb9a31;
+  --ion-color-primary-tint: #d8b74b;
+  
+  --ion-background-color: #f5f0e1; /* Fondo página ligeramente más oscuro */
+  --ion-background-color-rgb: 245, 240, 225;
+  
+  --ion-text-color: #3e2723;
+  --ion-text-color-rgb: 62, 39, 35;
+
+  --ion-item-background: #fdfaf1; /* Tarjetas más claras */
+  --ion-card-background: #fdfaf1;
+  --ion-item-color: #3e2723;
+  
+  --ion-card-color: #3e2723;
+
+  --ion-toolbar-background: #e6dec3;
+  --ion-toolbar-color: #3e2723;
+
+  /* Forzamos colores para componentes específicos */
+  ion-label, p, span, h1, h2, h3, h4, h5, h6 {
+    color: #3e2723 !important;
+  }
+}
+
+/* Tema Nocturno (Fuerza Modo Oscuro) */
+body.theme-dark {
+  --ion-color-primary: #af8eb5;
+  --ion-color-primary-rgb: 175, 142, 181;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #9a7d9f;
+  --ion-color-primary-tint: #b799bc;
+
+  --ion-background-color: #000000; /* Fondo página negro puro */
+  --ion-background-color-rgb: 0, 0, 0;
+  --ion-text-color: #ffffff;
+  --ion-text-color-rgb: 255, 255, 255;
+  
+  --ion-item-background: #1c1c1e; /* Tarjetas gris oscuro */
+  --ion-card-background: #1c1c1e;
+  
+  --ion-toolbar-background: #121212;
+}
+
 body {
   font-family: var(--app-font-family) !important;
   line-height: var(--app-line-height) !important;
   text-align: var(--app-text-align) !important;
 }
 
-/* Aplicar el multiplicador de fuente a elementos comunes */
-p, span, div, ion-label, ion-item, ion-card-content, h1, h2, h3, h4, h5, h6, ion-title, ion-button {
+/* Aplicar la alineación y el multiplicador de fuente a elementos comunes y componentes de Ionic */
+p, span, div, ion-label, ion-item, ion-card-content, ion-card-header, ion-card-title, ion-card-subtitle, h1, h2, h3, h4, h5, h6, ion-title, ion-button {
   font-size: calc(100% * var(--app-font-size-multiplier)) !important;
+  text-align: var(--app-text-align) !important;
+}
+
+/* Forzar alineación en los ítems de lista que suelen tener flex-start por defecto */
+ion-item {
+  --text-align: var(--app-text-align);
 }
 
 /* Ajustes específicos para el mapa */

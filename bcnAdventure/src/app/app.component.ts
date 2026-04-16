@@ -56,23 +56,28 @@ export class AppComponent implements OnInit {
   private applySettings(settings: any) {
     const root = document.documentElement;
     
-    // Modo oscuro (Ionic maneja esto con la clase .ion-palette-dark en v8)
-    if (settings.darkMode) {
-      document.body.classList.add('ion-palette-dark');
-    } else {
-      document.body.classList.remove('ion-palette-dark');
-    }
+    // Aplicar Tema de Color
+    document.body.classList.remove('theme-blue', 'theme-gold', 'theme-dark', 'theme-system');
+    document.body.classList.add(`theme-${settings.colorTheme}`);
 
     // Accesibilidad
+    const fontMap: Record<string, string> = {
+      'system': 'var(--ion-default-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif)',
+      'sans-serif': 'sans-serif',
+      'serif': 'serif',
+      'monospace': 'monospace'
+    };
+
+    const selectedFont = fontMap[settings.fontFamily] || fontMap['system'];
+
     root.style.setProperty('--app-font-size-multiplier', settings.fontSizeMultiplier.toString());
-    root.style.setProperty('--app-font-family', settings.fontFamily === 'system' ? 'var(--ion-default-font)' : settings.fontFamily);
+    root.style.setProperty('--app-font-family', selectedFont);
+    root.style.setProperty('--ion-font-family', selectedFont); 
     root.style.setProperty('--app-line-height', settings.lineHeight.toString());
     root.style.setProperty('--app-text-align', settings.textAlign);
     
     // Aplicar a nivel global de CSS
-    document.body.style.fontSize = `calc(1rem * ${settings.fontSizeMultiplier})`;
-    document.body.style.fontFamily = settings.fontFamily === 'system' ? 'inherit' : settings.fontFamily;
-    document.body.style.lineHeight = settings.lineHeight.toString();
+    document.body.style.fontFamily = selectedFont;
     document.body.style.textAlign = settings.textAlign;
   }
 
