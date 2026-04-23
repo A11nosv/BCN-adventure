@@ -13,6 +13,37 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <!-- Progress Section -->
+  <div class="profile-card-container ion-padding" *ngIf="userProgressService.progress$ | async as progress">
+    <ion-card class="profile-card">
+      <ion-card-content>
+        <div class="profile-header">
+          <div class="level-badge">
+            <span class="level-label">NIVEL</span>
+            <span class="level-number">{{ progress.level }}</span>
+          </div>
+          <div class="stats-container">
+            <div class="xp-info">
+              <ion-label>Explorador de Barcelona</ion-label>
+              <p>{{ progress.xp }} XP totales</p>
+            </div>
+            <div class="badges-count">
+              <ion-icon name="trophy-outline" color="warning" aria-hidden="true"></ion-icon>
+              <span>{{ progress.badges.length }} insignias</span>
+            </div>
+          </div>
+        </div>
+        <div class="progress-bar-wrapper">
+          <ion-progress-bar [value]="(progress.xp % 1000) / 1000" color="warning"></ion-progress-bar>
+          <div class="progress-labels">
+            <span>{{ progress.xp % 1000 }} / 1000 XP</span>
+            <span>Próximo Nivel: {{ progress.level + 1 }}</span>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
   <div class="welcome-container ion-padding">
     <h1>Explora Barcelona</h1>
     <p>Selecciona una temática para comenzar tu aventura gamificada por la ciudad.</p>

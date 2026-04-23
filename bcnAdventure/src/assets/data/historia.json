@@ -80,6 +80,11 @@
       {
         "id": "necropolis",
         "title": "Cementerio Romano (Vía Sepulcral)",
+        "quiz": {
+          "question": "¿Por qué las necrópolis romanas se situaban fuera de las murallas?",
+          "options": ["Por falta de espacio interior", "Por higiene y motivos religiosos", "Para asustar a los enemigos"],
+          "correctOptionIndex": 1
+        },
         "hints": ["Los ciudadanos de Barcino descansan fuera de los muros. Ve a presentar tus respetos a los antepasados para que te den su bendición.", "Busca el lugar donde las estelas de piedra se alinean junto al camino de salida hacia el norte.", "Dirígete a la Plaza de la Vila de Madrid, cerca de la calle Canuda."],
         "description": "Descanso de los ciudadanos.",
         "coords": [41.3848, 2.1725],

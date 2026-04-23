@@ -11,14 +11,14 @@
   <ion-list lines="inset" aria-label="Ajustes de la aplicación">
     <ion-item>
       <ion-icon slot="start" name="notifications-outline" color="success" aria-hidden="true"></ion-icon>
-      <ion-label>Notificaciones de proximidad</ion-label>
-      <ion-toggle slot="end" [checked]="settings.proximityNotifications" (ionChange)="updateSetting('proximityNotifications', $event.detail.checked)" aria-label="Activar o desactivar notificaciones de proximidad"></ion-toggle>
+      <ion-label id="proximity-label">Notificaciones de proximidad</ion-label>
+      <ion-toggle slot="end" [checked]="settings.proximityNotifications" (ionChange)="updateSetting('proximityNotifications', $event.detail.checked)" aria-labelledby="proximity-label"></ion-toggle>
     </ion-item>
 
     <ion-item>
       <ion-icon slot="start" name="navigate-outline" color="tertiary" aria-hidden="true"></ion-icon>
-      <ion-label>Mostrar distancia</ion-label>
-      <ion-toggle slot="end" [checked]="settings.showDistance" (ionChange)="updateSetting('showDistance', $event.detail.checked)" aria-label="Mostrar u ocultar distancia a la siguiente parada"></ion-toggle>
+      <ion-label id="distance-label">Mostrar distancia</ion-label>
+      <ion-toggle slot="end" [checked]="settings.showDistance" (ionChange)="updateSetting('showDistance', $event.detail.checked)" aria-labelledby="distance-label"></ion-toggle>
     </ion-item>
 
     <ion-item>

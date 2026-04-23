@@ -1,26 +1,58 @@
 import { Component, OnInit, OnDestroy, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonButtons, IonBackButton, IonButton, IonIcon, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonModal, IonList, IonItem, IonLabel, IonBadge, IonFab, IonFabButton, IonProgressBar } from '@ionic/angular/standalone';
+import { HttpClient } from '@angular/common/http';
+import {
+  IonHeader, IonToolbar, IonTitle, IonContent, IonButtons, IonBackButton,
+  IonButton, IonIcon, IonCard, IonCardHeader, IonCardTitle, IonCardContent,
+  IonModal, IonList, IonItem, IonLabel, IonBadge, IonFab, IonFabButton,
+  IonProgressBar, IonFooter, IonTextarea, IonSpinner, IonChip
+} from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { timeOutline, walkOutline, locationOutline, play, bulbOutline, checkmarkCircle, trophyOutline, mapOutline, listOutline, closeOutline, locate, navigate, chevronDownOutline, chevronUpOutline, playOutline, expandOutline, contractOutline, cashOutline, time, navigateOutline } from 'ionicons/icons';
+import {
+  timeOutline, walkOutline, locationOutline, play, bulbOutline,
+  checkmarkCircle, trophyOutline, mapOutline, listOutline, closeOutline,
+  locate, navigate, chevronDownOutline, chevronUpOutline, playOutline,
+  expandOutline, contractOutline, cashOutline, time, navigateOutline,
+  chatbubbleEllipsesOutline, sendOutline, personOutline, starOutline,
+  alertCircleOutline, downloadOutline, cloudDownloadOutline, checkmarkCircleOutline
+} from 'ionicons/icons';
 import * as L from 'leaflet';
 import { Geolocation } from '@capacitor/geolocation';
 import { LocalNotifications } from '@capacitor/local-notifications';
 import { Capacitor } from '@capacitor/core';
 import { SettingsService } from '../services/settings.service';
 import { DataService, MapDetails } from '../services/data.service';
+import { GeminiService } from '../services/gemini.service';
+import { UserProgressService } from '../services/user-progress.service';
+
+interface ChatMessage {
+  role: 'user' | 'assistant';
+  text: string;
+  timestamp: Date;
+}
 
 @Component({
   selector: 'app-map-details',
   templateUrl: './map-details.page.html',
   styleUrls: ['./map-details.page.scss'],
   standalone: true,
-  imports: [CommonModule, IonHeader, IonToolbar, IonTitle, IonContent, IonButtons, IonBackButton, IonButton, IonIcon, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonModal, IonList, IonItem, IonLabel, IonBadge, IonFab, IonFabButton, IonProgressBar]
+  imports: [
+    CommonModule, FormsModule, IonHeader, IonToolbar, IonTitle, IonContent,
+    IonButtons, IonBackButton, IonButton, IonIcon, IonCard, IonCardHeader,
+    IonCardTitle, IonCardContent, IonModal, IonList, IonItem, IonLabel,
+    IonBadge, IonFab, IonFabButton, IonProgressBar, IonFooter,
+    IonTextarea, IonSpinner, IonChip
+  ]
 })
 export class MapDetailsPage implements OnInit, OnDestroy {
   private route = inject(ActivatedRoute);
   private dataService = inject(DataService);
+  private geminiService = inject(GeminiService);
+  public userProgressService = inject(UserProgressService);
+  public settingsService = inject(SettingsService);
+  private httpClient = inject(HttpClient);
   
   themeId: string | null = null;
   mapId: string | null = null;
@@ -34,6 +66,12 @@ export class MapDetailsPage implements OnInit, OnDestroy {
   resolvedStops: boolean[] = [];
   maxScorePerStop = 100;
   
+  // Chat con Gemini
+  showChatModal = false;
+  chatMessages: ChatMessage[] = [];
+  userQuestion = '';
+  isAssistantLoading = false;
+
   // Mapa
   private map!: L.Map;
   private markers: L.Marker[] = [];
@@ -49,33 +87,173 @@ export class MapDetailsPage implements OnInit, OnDestroy {
   displayStopIndex = 0;
   isViewingHistory = false;
   showResolvedList = false;
+
+  // Quiz
+  showQuizModal = false;
+  selectedQuizOption: number | null = null;
+  quizResult: 'correct' | 'wrong' | null = null;
   
-  // Routing (Leaflet Machine Routing - Simulado o Simplificado para este ejemplo)
+  // Routing
   private routePolyline: L.Polyline | null = null;
   private targetMarker: L.Marker | null = null;
   isRoutingActive = false;
   routingDirections: string[] = [];
   showRoutingPanel = false;
   private isLocationRevealed = false;
-  public settingsService = inject(SettingsService);
+
+  // Offline
+  isDownloading = false;
+  isDownloaded = false;
+  downloadProgress = 0;
   
-  // Seguimiento de notificaciones enviadas por parada
   constructor() {
-    addIcons({ timeOutline, walkOutline, locationOutline, play, bulbOutline, checkmarkCircle, trophyOutline, mapOutline, listOutline, closeOutline, locate, navigate, chevronDownOutline, chevronUpOutline, playOutline, expandOutline, contractOutline, cashOutline, time, navigateOutline });
+    addIcons({
+      timeOutline, walkOutline, locationOutline, play, bulbOutline,
+      checkmarkCircle, trophyOutline, mapOutline, listOutline, closeOutline,
+      locate, navigate, chevronDownOutline, chevronUpOutline, playOutline,
+      expandOutline, contractOutline, cashOutline, time, navigateOutline,
+      chatbubbleEllipsesOutline, sendOutline, personOutline, starOutline,
+      alertCircleOutline, downloadOutline, cloudDownloadOutline, checkmarkCircleOutline
+    });
   }
 
   ngOnInit() {
     this.themeId = this.route.snapshot.paramMap.get('themeId');
     this.mapId = this.route.snapshot.paramMap.get('mapId');
     
+    if (this.mapId) {
+      this.isDownloaded = localStorage.getItem(`downloaded_${this.mapId}`) === 'true';
+    }
+
     if (this.themeId && this.mapId) {
       this.dataService.getRouteDetails(this.themeId, this.mapId).subscribe(details => {
         if (details) {
           this.details = details;
           this.resolvedStops = new Array(this.details.stops.length).fill(false);
+          
+          // Mensaje de bienvenida del guía
+          this.chatMessages.push({
+            role: 'assistant',
+            text: `¡Hola! Soy tu guía para la ruta "${this.details.title}". ¿En qué puedo ayudarte hoy?`,
+            timestamp: new Date()
+          });
         }
       });
     }
+  }
+
+  async downloadForOffline() {
+    if (!this.details || !this.mapId) return;
+
+    this.isDownloading = true;
+    this.downloadProgress = 0;
+
+    const assetsToDownload = [
+      `assets/data/${this.themeId}.json`,
+      `assets/data/themes.json`,
+      ...this.details.stops.map(s => s.imageUrl)
+    ];
+
+    let downloadedCount = 0;
+    const totalAssets = assetsToDownload.length;
+
+    try {
+      for (const assetUrl of assetsToDownload) {
+        await fetch(assetUrl).catch(err => console.warn(`Error pre-caching ${assetUrl}`, err));
+        downloadedCount++;
+        this.downloadProgress = downloadedCount / totalAssets;
+      }
+
+      // Pre-cache some map tiles
+      const center = this.details.center;
+      const zooms = [this.details.zoom, this.details.zoom + 1];
+      for (const z of zooms) {
+        const x = Math.floor((center[1] + 180) / 360 * Math.pow(2, z));
+        const y = Math.floor((1 - Math.log(Math.tan(center[0] * Math.PI / 180) + 1 / Math.cos(center[0] * Math.PI / 180)) / Math.PI) / 2 * Math.pow(2, z));
+        
+        for (let dx = -1; dx <= 1; dx++) {
+          for (let dy = -1; dy <= 1; dy++) {
+            const tileUrl = `https://a.tile.openstreetmap.org/${z}/${x + dx}/${y + dy}.png`;
+            await fetch(tileUrl).catch(() => {});
+          }
+        }
+      }
+
+      this.isDownloaded = true;
+      localStorage.setItem(`downloaded_${this.mapId}`, 'true');
+    } catch (error) {
+      console.error('Error during offline download:', error);
+    } finally {
+      this.isDownloading = false;
+    }
+  }
+
+  useHint() {
+    if (this.currentHintIndex < 2) {
+      const stop = this.details?.stops[this.currentStopIndex];
+      if ((stop as any).quiz && this.currentHintIndex === 0) {
+        this.showQuizModal = true;
+      } else {
+        this.currentHintIndex++;
+      }
+    }
+  }
+
+  async answerQuiz() {
+    if (this.selectedQuizOption === null || !this.details) return;
+
+    const stop = this.details.stops[this.currentStopIndex] as any;
+    if (this.selectedQuizOption === stop.quiz.correctOptionIndex) {
+      this.quizResult = 'correct';
+      await this.userProgressService.addXP(100);
+      setTimeout(() => {
+        this.currentHintIndex++;
+        this.closeQuiz();
+      }, 1500);
+    } else {
+      this.quizResult = 'wrong';
+      setTimeout(() => {
+        this.quizResult = null;
+        this.selectedQuizOption = null;
+      }, 1500);
+    }
+  }
+
+  closeQuiz() {
+    this.showQuizModal = false;
+    this.selectedQuizOption = null;
+    this.quizResult = null;
+  }
+
+  async askGemini() {
+    if (!this.userQuestion.trim() || this.isAssistantLoading || !this.details) return;
+
+    const question = this.userQuestion;
+    this.chatMessages.push({
+      role: 'user',
+      text: question,
+      timestamp: new Date()
+    });
+    this.userQuestion = '';
+    this.isAssistantLoading = true;
+
+    const context = {
+      title: this.details.title,
+      description: this.details.description
+    };
+
+    const answer = await this.geminiService.getHistoricalResponse(question, context);
+    
+    this.chatMessages.push({
+      role: 'assistant',
+      text: answer,
+      timestamp: new Date()
+    });
+    this.isAssistantLoading = false;
+  }
+
+  openChat() {
+    this.showChatModal = true;
   }
 
   ionViewDidEnter() {
@@ -162,12 +340,6 @@ export class MapDetailsPage implements OnInit, OnDestroy {
     this.score = 0;
     if (!this.watchId) {
       this.startTracking();
-    }
-  }
-
-  useHint() {
-    if (this.currentHintIndex < 2) {
-      this.currentHintIndex++;
     }
   }
 

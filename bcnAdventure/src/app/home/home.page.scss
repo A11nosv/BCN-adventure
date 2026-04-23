@@ -21,6 +21,90 @@ ion-toolbar {
   }
 }
 
+/* Gamification Styles */
+.profile-card {
+  margin: 0;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .level-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.15);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid var(--ion-color-warning);
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+
+    .level-label {
+      font-size: 0.6rem;
+      font-weight: bold;
+      opacity: 0.8;
+    }
+
+    .level-number {
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: var(--ion-color-warning);
+    }
+  }
+
+  .stats-container {
+    flex: 1;
+
+    ion-label {
+      font-size: 1.1rem;
+      font-weight: bold;
+      display: block;
+    }
+
+    p {
+      margin: 2px 0;
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+
+    .badges-count {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-top: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      color: var(--ion-color-warning);
+    }
+  }
+
+  .progress-bar-wrapper {
+    ion-progress-bar {
+      height: 10px;
+      border-radius: 5px;
+      --background: rgba(255,255,255,0.2);
+    }
+
+    .progress-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 6px;
+      font-size: 0.75rem;
+      font-weight: bold;
+      opacity: 0.9;
+    }
+  }
+}
+
 .theme-card {
   margin: 8px;
   display: flex;

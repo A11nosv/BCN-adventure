@@ -1,10 +1,18 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonGrid, IonRow, IonCol, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonIcon, IonButton, IonButtons, IonMenuButton } from '@ionic/angular/standalone';
+import {
+  IonHeader, IonToolbar, IonTitle, IonContent, IonGrid, IonRow, IonCol,
+  IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent,
+  IonIcon, IonButton, IonButtons, IonMenuButton, IonProgressBar, IonBadge, IonLabel
+} from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { library, business, book, fastFood, skull, videocam, map, settingsOutline, restaurant } from 'ionicons/icons';
+import {
+  library, business, book, fastFood, skull, videocam, map,
+  settingsOutline, restaurant, trophyOutline, starOutline, personCircleOutline
+} from 'ionicons/icons';
 import { DataService } from '../services/data.service';
+import { UserProgressService } from '../services/user-progress.service';
 
 interface ThemeDisplay {
   id: string;
@@ -19,16 +27,27 @@ interface ThemeDisplay {
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [CommonModule, IonHeader, IonToolbar, IonTitle, IonContent, IonGrid, IonRow, IonCol, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonIcon, IonButton, IonButtons, RouterModule, IonMenuButton],
+  imports: [
+    CommonModule, IonHeader, IonToolbar, IonTitle, IonContent,
+    IonGrid, IonRow, IonCol, IonCard, IonCardHeader,
+    IonCardTitle, IonCardSubtitle, IonCardContent, IonIcon,
+    IonButton, IonButtons, RouterModule, IonMenuButton,
+    IonProgressBar, IonBadge, IonLabel
+  ],
 })
 export class HomePage implements OnInit {
   private router = inject(Router);
   private dataService = inject(DataService);
+  public userProgressService = inject(UserProgressService);
 
   themes: ThemeDisplay[] = [];
 
   constructor() {
-    addIcons({ library, business, book, 'fast-food': fastFood, skull, videocam, map, settingsOutline, restaurant });
+    addIcons({
+      library, business, book, 'fast-food': fastFood, skull,
+      videocam, map, settingsOutline, restaurant, trophyOutline,
+      starOutline, personCircleOutline
+    });
   }
 
   ngOnInit() {

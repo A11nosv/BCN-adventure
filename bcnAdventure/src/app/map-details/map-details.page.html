@@ -24,8 +24,63 @@
       <ion-fab-button size="small" (click)="toggleMapExpansion()" color="primary" class="ion-margin-top" [attr.aria-label]="isMapExpanded ? 'Contraer mapa' : 'Expandir mapa a pantalla completa'">
         <ion-icon [name]="isMapExpanded ? 'contract-outline' : 'expand-outline'" aria-hidden="true"></ion-icon>
       </ion-fab-button>
+      <ion-fab-button size="small" (click)="openChat()" color="secondary" class="ion-margin-top" aria-label="Hablar con el guía histórico">
+        <ion-icon name="chatbubble-ellipses-outline" aria-hidden="true"></ion-icon>
+      </ion-fab-button>
     </ion-fab>
   </div>
+
+  <!-- Chat with Gemini Modal -->
+  <ion-modal [isOpen]="showChatModal" (didDismiss)="showChatModal = false" class="chat-modal">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar color="secondary">
+          <ion-buttons slot="start">
+            <ion-icon name="person-outline" class="ion-padding-start" style="font-size: 1.5rem;"></ion-icon>
+          </ion-buttons>
+          <ion-title>Guía Histórico</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="showChatModal = false">
+              <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      
+      <ion-content class="chat-content">
+        <div class="chat-messages-container ion-padding">
+          <div *ngFor="let msg of chatMessages" [class]="'chat-bubble ' + msg.role">
+            <div class="message-text">{{ msg.text }}</div>
+            <div class="message-time">{{ msg.timestamp | date:'HH:mm' }}</div>
+          </div>
+          
+          <div class="chat-bubble assistant" *ngIf="isAssistantLoading">
+            <div class="message-text">
+              <ion-spinner name="dots" color="light"></ion-spinner>
+            </div>
+          </div>
+        </div>
+      </ion-content>
+
+      <ion-footer>
+        <ion-toolbar>
+          <ion-textarea
+            [(ngModel)]="userQuestion"
+            placeholder="Pregunta algo sobre la historia..."
+            autoGrow="true"
+            rows="1"
+            class="chat-input"
+            aria-label="Escribe tu pregunta para el guía">
+          </ion-textarea>
+          <ion-buttons slot="end">
+            <ion-button (click)="askGemini()" [disabled]="!userQuestion.trim() || isAssistantLoading" color="primary">
+              <ion-icon slot="icon-only" name="send-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-footer>
+    </ng-template>
+  </ion-modal>
 
   <!-- Route Summary View -->
   <div class="details-card-container" *ngIf="!isGameActive && !isMapExpanded">
@@ -58,6 +113,20 @@
         <div class="route-description ion-padding-top">
           <h3>Sobre esta aventura</h3>
           <p>{{ details?.description }}</p>
+        </div>
+
+        <div class="offline-actions ion-margin-top">
+          <ion-button expand="block" fill="outline" shape="round" color="secondary" (click)="downloadForOffline()" [disabled]="isDownloading" *ngIf="!isDownloaded">
+            <ion-icon slot="start" [name]="isDownloading ? 'cloud-download-outline' : 'download-outline'"></ion-icon>
+            {{ isDownloading ? 'Descargando...' : 'Descargar para Offline' }}
+          </ion-button>
+          <div class="downloaded-badge ion-text-center" *ngIf="isDownloaded">
+            <ion-chip color="success">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+              <ion-label>Disponible sin conexión</ion-label>
+            </ion-chip>
+          </div>
+          <ion-progress-bar *ngIf="isDownloading" [value]="downloadProgress"></ion-progress-bar>
         </div>
 
         <ion-button expand="block" shape="round" class="start-button ion-margin-top" (click)="startAdventure()" aria-label="Comenzar esta aventura">

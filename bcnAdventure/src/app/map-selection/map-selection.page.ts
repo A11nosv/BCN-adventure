@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterModule, Router } from '@angular/router';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel, IonButtons, IonBackButton, IonIcon, IonBadge } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { map, flag, time, book, restaurant, skull, videocam, business } from 'ionicons/icons';
+import { map, flag, time, book, restaurant, skull, videocam, business, checkmarkCircleOutline } from 'ionicons/icons';
 import { DataService, Theme } from '../services/data.service';
 
 @Component({
@@ -36,7 +36,7 @@ export class MapSelectionPage implements OnInit {
   themeInfo: Theme | null = null;
 
   constructor() {
-    addIcons({ map, flag, time, book, restaurant, skull, videocam, business });
+    addIcons({ map, flag, time, book, restaurant, skull, videocam, business, checkmarkCircleOutline });
   }
 
   ngOnInit() {
@@ -48,6 +48,10 @@ export class MapSelectionPage implements OnInit {
         }
       });
     }
+  }
+
+  isDownloaded(mapId: string): boolean {
+    return localStorage.getItem(`downloaded_${mapId}`) === 'true';
   }
 
   startAdventure(mapId: string) {

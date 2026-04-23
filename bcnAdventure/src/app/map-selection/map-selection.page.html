@@ -25,7 +25,13 @@
           <h2>{{ map.title }}</h2>
           <p>{{ map.description }}</p>
         </ion-label>
-        <ion-badge slot="end" color="light">Gratis</ion-badge>
+        <div slot="end" class="badge-container ion-text-end">
+          <ion-badge color="success" *ngIf="isDownloaded(map.id)" class="offline-badge">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            Offline
+          </ion-badge>
+          <ion-badge color="light">Gratis</ion-badge>
+        </div>
       </ion-item>
     </ion-list>
 

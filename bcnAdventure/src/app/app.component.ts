@@ -1,28 +1,41 @@
 import { Component, OnInit, inject } from '@angular/core';
-import { IonApp, IonRouterOutlet, IonSplitPane, IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonIcon, IonLabel, IonMenuToggle, MenuController } from '@ionic/angular/standalone';
+import { IonApp, IonRouterOutlet, IonSplitPane, IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonIcon, IonLabel, IonMenuToggle, MenuController, IonButtons, IonButton, Platform, ToastController } from '@ionic/angular/standalone';
 import { Geolocation } from '@capacitor/geolocation';
 import { LocalNotifications } from '@capacitor/local-notifications';
 import { Capacitor } from '@capacitor/core';
 import { SettingsService } from './services/settings.service';
 import { Router, RouterModule } from '@angular/router';
 import { addIcons } from 'ionicons';
-import { homeOutline, settingsOutline, informationCircleOutline } from 'ionicons/icons';
+import { homeOutline, settingsOutline, informationCircleOutline, closeOutline, wifiOutline, alertCircleOutline } from 'ionicons/icons';
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  imports: [IonApp, IonRouterOutlet, IonSplitPane, IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonIcon, IonLabel, IonMenuToggle, RouterModule],
+  imports: [IonApp, IonRouterOutlet, IonSplitPane, IonMenu, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonIcon, IonLabel, IonMenuToggle, RouterModule, IonButtons, IonButton],
 })
 export class AppComponent implements OnInit {
   private settingsService = inject(SettingsService);
   private router = inject(Router);
   private menuCtrl = inject(MenuController);
+  private platform = inject(Platform);
+  private toastCtrl = inject(ToastController);
 
   constructor() {
-    addIcons({ homeOutline, settingsOutline, informationCircleOutline });
+    addIcons({ homeOutline, settingsOutline, informationCircleOutline, closeOutline, wifiOutline, alertCircleOutline });
   }
 
   ngOnInit() {
+    // Escuchar el botón de atrás del sistema (gesto de retroceso en TalkBack/VoiceOver)
+    this.platform.backButton.subscribeWithPriority(10, async () => {
+      if (await this.menuCtrl.isOpen()) {
+        this.menuCtrl.close();
+      }
+    });
+
+    // Estado de red
+    window.addEventListener('offline', () => this.showNetworkStatus(false));
+    window.addEventListener('online', () => this.showNetworkStatus(true));
+
     // Aplicar ajustes iniciales y suscribirse a cambios
     this.settingsService.settings$.subscribe(settings => {
       this.applySettings(settings);
@@ -100,5 +113,16 @@ export class AppComponent implements OnInit {
     } catch (error) {
       console.log('Permisos: Solicitud inicial omitida o manejada por el navegador.');
     }
+  }
+
+  private async showNetworkStatus(isOnline: boolean) {
+    const toast = await this.toastCtrl.create({
+      message: isOnline ? 'Conexión restablecida' : 'Sin conexión a internet. El modo offline está activo.',
+      duration: 3000,
+      position: 'bottom',
+      color: isOnline ? 'success' : 'warning',
+      buttons: [{ icon: isOnline ? 'wifi-outline' : 'alert-circle-outline', side: 'start' }]
+    });
+    await toast.present();
   }
 }
